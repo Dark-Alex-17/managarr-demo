@@ -4,7 +4,7 @@ A demo repository with a basic HTPC configuration for demonstration and testing 
 ## One-Command Run
 To clone the repo and run the demo all in one go, the following command will download the [managarr-demo](./managarr-demo.sh) script and run it:
 ```shell
-  curl https://raw.githubusercontent.com/Dark-Alex-17/managarr-demo/main/managarr-demo.sh | sh
+curl https://raw.githubusercontent.com/Dark-Alex-17/managarr-demo/main/managarr-demo.sh | sh
 ```
 
 **Note**: This script will only work on systems with `bash` installed.
@@ -13,17 +13,17 @@ To clone the repo and run the demo all in one go, the following command will dow
 To run this demo, simply run the following command:
 
 ```shell
-  docker compose up --rm managarr && docker compose down
+docker compose up --rm managarr && docker compose down
 ```
 
 ## Cleanup
 This demo will download a handful of docker images. To clean up after this demo, run the following command:
 
 ```shell
-  docker image rm darkalex17/managarr &&\
-    docker image rm lscr.io/linuxserver/radarr &&\
-    docker image rm lscr.io/linuxserver/prowlarr &&\
-    rm -rf /tmp/managarr-demo
+docker image rm darkalex17/managarr &&\
+  docker image rm lscr.io/linuxserver/radarr &&\
+  docker image rm lscr.io/linuxserver/prowlarr &&\
+  rm -rf /tmp/managarr-demo
 ```
 
 ## Limitations
