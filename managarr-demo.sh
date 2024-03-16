@@ -17,4 +17,5 @@ set -e
 
 docker compose -f "$DEMO_TEMP_DIR/docker-compose.yml" run --rm managarr &&\
   docker compose -f "$DEMO_TEMP_DIR/docker-compose.yml" down &&\
-  docker image rm darkalex17/managarr
+  docker image rm darkalex17/managarr &&\
+  rm -rf /tmp/managarr-demo.sh
