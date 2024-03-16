@@ -1,5 +1,7 @@
 #!/bin/bash
 
+DEMO_TEMP_DIR=/tmp/managarr-demo
+
 fail() {
   result=$?
   if [ "$result" != "0" ]; then
@@ -11,7 +13,8 @@ fail() {
 trap "fail" EXIT
 set -e
 
-[ -d /tmp/managarr-demo ] || git clone git@github.com:Dark-Alex-17/managarr-demo.git /tmp/managarr-demo 
+[ -d "$DEMO_TEMP_DIR" ] || git clone git@github.com:Dark-Alex-17/managarr-demo.git "$DEMO_TEMP_DIR" 
 
-docker compose -f /tmp/managarr-demo/docker-compose.yml run --rm managarr && docker compose down && docker image rm darkalex17/managarr
-
+docker compose -f "$DEMO_TEMP_DIR/docker-compose.yml" run --rm managarr &&\
+  docker compose -f "$DEMO_TEMP_DIR/docker-compose.yml" &&\
+  docker image rm darkalex17/managarr
