@@ -20,8 +20,7 @@ docker compose up --rm managarr && docker compose down
 This demo will download a handful of docker images. To clean up after this demo, run the following command:
 
 ```shell
-docker image rm darkalex17/managarr &&\
-  docker image rm lscr.io/linuxserver/radarr &&\
+docker image rm lscr.io/linuxserver/radarr &&\
   docker image rm lscr.io/linuxserver/prowlarr &&\
   rm -rf /tmp/managarr*
 ```
