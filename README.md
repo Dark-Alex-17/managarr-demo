@@ -10,10 +10,9 @@ curl https://raw.githubusercontent.com/Dark-Alex-17/managarr-demo/main/managarr-
 **Note**: This script will only work on systems with `bash` installed.
 
 ## Running the demo
-To run this demo, simply run the following command:
-
+To run this demo, simply run the [demo script](./managarr-demo.sh):
 ```shell
-docker compose up --rm managarr && docker compose down
+./managarr-demo.sh
 ```
 
 ## Cleanup
