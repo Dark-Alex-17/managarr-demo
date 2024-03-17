@@ -23,8 +23,7 @@ This demo will download a handful of docker images. To clean up after this demo,
 docker image rm darkalex17/managarr &&\
   docker image rm lscr.io/linuxserver/radarr &&\
   docker image rm lscr.io/linuxserver/prowlarr &&\
-  rm -rf /tmp/managarr-demo &&\
-  rm -rf /tmp/managarr-demo.sh
+  rm -rf /tmp/managarr*
 ```
 
 ## Limitations
