@@ -1,32 +1,13 @@
 ---
 services:
   radarr:
-    image: lscr.io/linuxserver/radarr:latest
+    image: darkalex17/radarr-mock:latest
     container_name: radarr
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
-    volumes:
-      - ./mock-htpc/movies:/movies
-      - ./mock-htpc/films:/films
-      - ./mock-htpc/downloads:/downloads
-      - ./mock-htpc/radarr:/config
-    ports:
-      - 7878:7878
     restart: unless-stopped
 
   prowlarr:
-    image: lscr.io/linuxserver/prowlarr:latest
+    image: darkalex17/prowlarr-mock:latest
     container_name: prowlarr
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
-    volumes:
-      - ./mock-htpc/prowlarr:/config
-    ports:
-      - 9696:9696
     restart: unless-stopped
 
   managarr:
@@ -34,7 +15,7 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - ./mock-htpc/managarr:/root/.config/managarr/
+      - "${MANAGARR_CONFIG:-./mock-htpc/managarr/config.yml}:/root/.config/managarr/config.yml:ro"
     depends_on:
       radarr:
         condition: service_started

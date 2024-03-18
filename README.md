@@ -15,18 +15,30 @@ To run this demo, simply run the [demo script](./managarr-demo.sh):
 ./managarr-demo.sh
 ```
 
-## Cleanup
-This demo will download a handful of docker images. To clean up after this demo, run the following command:
-
-```shell
-docker image rm lscr.io/linuxserver/radarr &&\
-  docker image rm lscr.io/linuxserver/prowlarr &&\
-  rm -rf /tmp/managarr*
-```
-
 ## Limitations
 This demo has no download functionality. It is an eventual goal to have a mock API for one of the BitTorrent clients like Transmission
 to emulate this functionality for a full demo experience.
+
+## Building
+To build and push both the [prowlarr](./prowlarr.Dockerfile) and [radarr](./radarr.Dockerfile) images, it is easiest to just use the [build script](./build.sh):
+
+```shell
+./build.sh
+```
+
+## Running directly with docker compose
+If you wish to run the demo directly from the [docker-compose.yml](./docker-compose.yml), 
+you can either run it simply with
+
+```shell
+docker compose run --rm managarr
+```
+
+which will use the [default managarr configuration file](./mock-htpc/managarr/config.yml), or you can specify it manually with the `MANAGARR_CONFIG` environment variable:
+
+```shell
+MANAGARR_CONFIG=/tmp/managarr.yml docker compose run --rm managarr
+```
 
 ## Creator
 * [Alex Clarke](https://github.com/Dark-Alex-17)

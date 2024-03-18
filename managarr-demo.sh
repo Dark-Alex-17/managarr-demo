@@ -1,21 +1,37 @@
 #!/bin/bash
 
-DEMO_TEMP_DIR=/tmp/managarr-demo
+DEMO_TEMP_COMPOSE_FILE=/tmp/docker-compose.yml
+DEMO_TEMP_CONFIG_FILE=/tmp/config.yml
+
+cleanup() {
+  docker compose -f "$DEMO_TEMP_COMPOSE_FILE" down
+
+  docker rmi -f $(docker images | grep "darkalex17" | awk '{print $3}')
+
+  rm -f "$DEMO_TEMP_COMPOSE_FILE"
+  rm -f "$DEMO_TEMP_CONFIG_FILE"
+  rm -f /tmp/managarr-demo.sh
+}
 
 fail() {
   result=$?
+  cleanup
   if [ "$result" != "0" ]; then
-      echo "Fail to run the Managarr demo"
+      echo "Failed to run the Managarr demo"
   fi
   exit $result
 }
 
+main() {
+  [ -f "$DEMO_TEMP_COMPOSE_FILE" ] || curl https://raw.githubusercontent.com/Dark-Alex-17/managarr-demo/main/docker-compose.yml > "$DEMO_TEMP_COMPOSE_FILE"
+  [ -f "$DEMO_TEMP_CONFIG_FILE" ] || curl https://raw.githubusercontent.com/Dark-Alex-17/managarr-demo/main/mock-htpc/managarr/config.yml > "$DEMO_TEMP_CONFIG_FILE"
+
+  MANAGARR_CONFIG="$DEMO_TEMP_CONFIG_FILE" docker compose -f "$DEMO_TEMP_COMPOSE_FILE" run --rm managarr
+
+  cleanup
+}
+
 trap "fail" EXIT
 set -e
+main
 
-[ -d "$DEMO_TEMP_DIR" ] || git clone git@github.com:Dark-Alex-17/managarr-demo.git "$DEMO_TEMP_DIR" 
-
-docker compose -f "$DEMO_TEMP_DIR/docker-compose.yml" run --rm managarr &&\
-  docker compose -f "$DEMO_TEMP_DIR/docker-compose.yml" down &&\
-  docker image rm darkalex17/managarr &&\
-  rm -rf /tmp/managarr-demo.sh
