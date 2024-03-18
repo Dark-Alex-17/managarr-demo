@@ -8,9 +8,9 @@ cleanup() {
 
   docker rmi -f $(docker images | grep "darkalex17" | awk '{print $3}')
 
-  rm -f "$DEMO_TEMP_COMPOSE_FILE"
-  rm -f "$DEMO_TEMP_CONFIG_FILE"
-  rm -f /tmp/managarr-demo.sh
+  rm -rf "$DEMO_TEMP_COMPOSE_FILE"
+  rm -rf "$DEMO_TEMP_CONFIG_FILE"
+  rm -rf /tmp/managarr-demo.sh
 }
 
 fail() {
