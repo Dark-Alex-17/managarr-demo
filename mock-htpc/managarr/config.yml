@@ -1,5 +1,5 @@
 ---
 radarr:
-  host: localhost
+  host: radarr
   port: 7878
   api_token: 2374332474216e6720407021206b6579
