@@ -7,13 +7,15 @@ type: private
 encoding: UTF-8
 links:
   - https://bwtorrents.tv/
-  - https://bwtorrents.co/
+  - https://www.bwtorrents.life/
+  - https://www.bwtorrents.pro/
   - https://bwtorrents.cc/
 legacylinks:
   - https://bwtorrents.fun/
   - https://bwtorrents.xyz/
   - https://bwtorrents.us/
   - https://bwtorrents.live/
+  - https://bwtorrents.co/
 
 caps:
   categorymappings:
@@ -144,6 +146,8 @@ settings:
     type: checkbox
     label: Search freeleech only
     default: false
+  - name: info_flaresolverr
+    type: info_flaresolverr
   - name: info_activity
     type: info
     label: Account Inactivity
@@ -176,6 +180,8 @@ search:
 
   rows:
     selector: table[width="1200"] > tbody > tr:has(a[href^="download.php/"])
+    filters:
+      - name: andmatch
 
   fields:
     category:

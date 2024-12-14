@@ -16,7 +16,6 @@ legacylinks:
 caps:
   categorymappings:
     - {id: 18, cat: PC, desc: "Team-OS VIP Releases"}
-    - {id: 23, cat: PC, desc: "Team OS Program"}
     - {id: 19, cat: PC, desc: "Windows 7 Releases"}
     - {id: 20, cat: PC, desc: "Windows 7 Releases 32 Bit"}
     - {id: 21, cat: PC, desc: "Windows 7 Releases 64 Bit"}
@@ -29,6 +28,7 @@ caps:
     - {id: 109, cat: PC, desc: "Windows 10 Releases 64 Bit"}
     - {id: 110, cat: PC, desc: "Windows 10 Releases x86-x64 AIO"}
     - {id: 28, cat: PC, desc: "Operating Systems"}
+    - {id: 175, cat: PC, desc: "Windows AIO Operating Systems"}
     - {id: 29, cat: PC, desc: "Windows XP"}
     - {id: 30, cat: PC, desc: "Windows XP 32 Bit"}
     - {id: 31, cat: PC, desc: "Windows XP 64 Bit"}
@@ -46,14 +46,9 @@ caps:
     - {id: 44, cat: PC, desc: "Windows 10 (x64)"}
     - {id: 45, cat: PC, desc: "Windows 10 (x86 & x64)"}
     - {id: 157, cat: PC, desc: "Windows 11"}
-    - {id: 158, cat: PC, desc: "Windows 11 (x86)"}
     - {id: 159, cat: PC, desc: "Windows 11 (x64)"}
-    - {id: 160, cat: PC, desc: "Windows 11 (x86 & x64)"}
     - {id: 140, cat: PC/Mac, desc: "MacOS"}
     - {id: 41, cat: PC, desc: "Windows Servers/Old Windows OS/Others"}
-    - {id: 112, cat: PC, desc: "Windows Servers Ghost Images"}
-    - {id: 113, cat: PC, desc: "Windows Servers 32 Bit Ghost Images"}
-    - {id: 114, cat: PC, desc: "Windows Servers 64 Bit Ghost Images"}
     - {id: 46, cat: PC/ISO, desc: "Windows Untouched ISO(MSDN)"}
     - {id: 47, cat: PC, desc: "Windows 7 Untouched (MSDN)"}
     - {id: 48, cat: PC, desc: "Windows 7 32 Bit Untouched (MSDN)"}
@@ -92,7 +87,6 @@ caps:
     - {id: 78, cat: PC/0day, desc: "Security Tools"}
     - {id: 70, cat: PC/0day, desc: "Utility Tools"}
     - {id: 74, cat: PC/0day, desc: "Web Tools"}
-    - {id: 80, cat: PC/0day, desc: "Windows Phone Apps"}
     - {id: 81, cat: PC/0day, desc: "Developers"}
     - {id: 82, cat: PC/0day, desc: "Designers"}
     - {id: 84, cat: PC, desc: "TEAM OS Other Stuff Releases"}
@@ -103,30 +97,32 @@ caps:
     - {id: 87, cat: Other, desc: "Wallpapers, Themes & Screensavers"}
     - {id: 89, cat: PC, desc: "Other Releases"}
     - {id: 100, cat: Other, desc: "Tutorials"} # undocumented
+    - {id: 103, cat: Other, desc: "Other Topic"} # undocumented
 
   modes:
     search: [q]
     book-search: [q]
 
 settings:
+  # using cookie method because login page is dynamically generated using JS #5572
   - name: cookie
     type: text
     label: Cookie
-  - name: info
-    type: info
-    label: How to get the Cookie
-    default: "<ol><li>Login to this tracker with your browser</li><li>Open the <b>DevTools</b> panel by pressing <b>F12</b></li><li>Select the <b>Network</b> tab</li><li>Click on the <b>Doc</b> button (Chrome Browser) or <b>HTML</b> button (FireFox)</li><li>Refresh the page by pressing <b>F5</b></li><li>Click on the first row entry</li><li>Select the <b>Headers</b> tab on the Right panel</li><li>Find <b>'cookie:'</b> in the <b>Request Headers</b> section</li><li><b>Select</b> and <b>Copy</b> the whole cookie string <i>(everything after 'cookie: ')</i> and <b>Paste</b> here.</li></ol>"
+  - name: info_cookie
+    type: info_cookie
   - name: useragent
     type: text
     label: User-Agent
   - name: info_useragent
-    type: info
-    label: How to get the User-Agent
-    default: "<ol><li>From the same place you fetched the cookie,</li><li>Find <b>'user-agent:'</b> in the <b>Request Headers</b> section</li><li><b>Select</b> and <b>Copy</b> the whole user-agent string <i>(everything after 'user-agent: ')</i> and <b>Paste</b> here.</li></ol>"
+    type: info_useragent
   - name: freeleech
     type: checkbox
     label: Search freeleech only
     default: false
+  - name: info_results
+    type: info
+    label: Search results
+    default: "If you are getting the error <b>Found no results while trying to browse this tracker</b> then first access the site with your browser and read any mandatory notices that the site presents. You cannot browse torrents with unread notices outstanding."
 
 login:
   method: cookie

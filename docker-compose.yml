@@ -5,6 +5,11 @@ services:
     container_name: radarr
     restart: unless-stopped
 
+  sonarr:
+    image: darkalex17/sonarr-mock:latest
+    container_name: sonarr
+    restart: unless-stopped
+
   prowlarr:
     image: darkalex17/prowlarr-mock:latest
     container_name: prowlarr
@@ -18,6 +23,8 @@ services:
       - "${MANAGARR_CONFIG:-./mock-htpc/managarr/config.yml}:/root/.config/managarr/config.yml:ro"
     depends_on:
       radarr:
+        condition: service_started
+      sonarr:
         condition: service_started
       prowlarr:
         condition: service_started

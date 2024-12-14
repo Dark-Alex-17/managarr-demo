@@ -8,12 +8,6 @@ encoding: UTF-8
 links:
   - https://torrentz2.nz/
 legacylinks:
-  - https://torrentz2.nocensor.world/
-  - https://torrentz2.nocensor.lol/
-  - https://torrentz2.nocensor.art/
-  - https://torrentz2.mrunblock.guru/
-  - https://torrentz2.mrunblock.life/
-  - https://torrentz2.nocensor.click/
   - https://torrentz2.mrunblock.bond/
   - https://torrentz2.nocensor.cloud/
 
@@ -30,10 +24,8 @@ caps:
     movie-search: [q]
 
 settings:
-  - name: info_8000
-    type: info
-    label: About Torrentz2nz Categories
-    default: Torrentz2nz does not return categories in its search results.</br>To add to your Apps' Torznab indexer, replace all categories with 8000(Other).
+  - name: info_category_8000
+    type: info_category_8000
 
 search:
   paths:

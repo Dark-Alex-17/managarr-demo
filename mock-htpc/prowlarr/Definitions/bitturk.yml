@@ -14,7 +14,6 @@ legacylinks:
 caps:
   categorymappings:
     - {id: 56, cat: Movies, desc: "BTRG"}
-    - {id: 95, cat: Movies, desc: "BTRG HMAX"}
     - {id: 57, cat: Movies, desc: "Yerli Dizi"}
     - {id: 62, cat: Movies, desc: "Yab@ncı Dizi"}
     - {id: 63, cat: Movies, desc: "Türkçe Film"}
@@ -29,12 +28,14 @@ caps:
     - {id: 91, cat: TV, desc: "Prime Video"}
     - {id: 93, cat: TV, desc: "Gain"}
     - {id: 94, cat: TV, desc: "ATVP"}
+    - {id: 95, cat: Movies, desc: "HMAX"}
+    - {id: 98, cat: Movies, desc: "PUHUTV"}
     - {id: 58, cat: Movies, desc: "Film"}
     - {id: 72, cat: Movies, desc: "Belgesel"}
     - {id: 60, cat: Movies/3D, desc: "3D"}
     - {id: 76, cat: Movies/UHD, desc: "4K UHD"}
     - {id: 80, cat: TV/Sport, desc: "Formula-1"}
-    - {id: 45, cat: Other, desc: "Eğitim / Prog"}
+    - {id: 45, cat: Other, desc: "Eğitim/Prog"}
     - {id: 1, cat: Movies, desc: "Filmler"}
     - {id: 14, cat: Movies/3D, desc: "3D Film"}
     - {id: 77, cat: Movies/UHD, desc: "4K UHD"}
@@ -67,7 +68,6 @@ caps:
     - {id: 88, cat: Console/Other, desc: "Oyun NEO-GEO"}
     - {id: 89, cat: Console/Wii, desc: "Oyun Nintendo Wii"}
     - {id: 6, cat: PC/0day, desc: "Program"}
-    - {id: 92, cat: PC/Mobile-Android, desc: "Android"}
     - {id: 47, cat: Other, desc: "Resimler"}
     - {id: 48, cat: TV, desc: "Televizyon"}
     - {id: 49, cat: TV/HD, desc: "Tv HD"}
@@ -96,7 +96,7 @@ settings:
   - name: info
     type: info
     label: Layout
-    default: "<ol><li>Only the English Classic profile is supported.</li><li>Make sure to set the <b>Torrent Listing (Listeleme Biçimi)</b> option in your profile to <b>Classic (Klasik)</b></li><li>And set the <b>Language (Dil)</b> to <b>English</b></li><li>Using the <i>Modern</i> theme will prevent results, and using <i>Turkish</i> will prevent upload dates.</li></ol>"
+    default: "<ul><li>Only the English Classic profile is supported.</li><li>Make sure to set the <b>Torrent Listing (Listeleme Biçimi)</b> option in your profile to <b>Classic (Klasik)</b></li><li>And set the <b>Language (Dil)</b> to <b>English</b></li><li>Using the <i>Modern</i> theme will prevent results, and using <i>Turkish</i> will prevent upload dates.</li></ul>"
   - name: sort
     type: select
     label: Sort requested from site
@@ -112,6 +112,10 @@ settings:
     options:
       desc: desc
       asc: asc
+  - name: info_results
+    type: info
+    label: Search results
+    default: "If you are getting the error <b>Found no results while trying to browse this tracker</b> then first access the site with your browser and check that you are not being forced to change your password because it has expired after 365 days."
 
 login:
   path: ?p=home&pid=1

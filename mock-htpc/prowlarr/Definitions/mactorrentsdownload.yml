@@ -10,7 +10,7 @@ links:
 
 caps:
   categorymappings:
-    - {id: "applications", cat: PC/Mac, desc: "Apps"}
+    - {id: "apps", cat: PC/Mac, desc: "Apps"}
     - {id: "games", cat: PC/Games, desc: Games}
     - {id: "design-assets", cat: Other, desc: Design Assets}
     - {id: "uncategorized", cat: Other, desc: Uncategorized}
@@ -19,15 +19,23 @@ caps:
     search: [q]
 
 settings:
-  - name: flaresolverr
-    type: info
-    label: FlareSolverr
-    default: This site may use Cloudflare DDoS Protection, therefore Prowlarr requires <a href="https://wiki.servarr.com/prowlarr/faq#can-i-use-flaresolverr-indexers" target="_blank" rel="noreferrer">FlareSolverr</a> to access it.
+  - name: info_flaresolverr
+    type: info_flaresolverr
 
 download:
-  selectors:
-    - selector: a[href$=".torrent"]
+  before:
+    pathselector:
+      selector: a[href^="/download?"]
       attribute: href
+      filters:
+        - name: replace
+          args: ["/download?", "/download/?"]
+  selectors:
+    - selector: script:contains("downloadLink")
+      usebeforeresponse: true
+      filters:
+        - name: regexp
+          args: "downloadLink = '(.+?)';"
 
 search:
   paths:

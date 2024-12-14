@@ -43,10 +43,8 @@ settings:
   - name: cookie
     type: text
     label: Cookie
-  - name: info
-    type: info
-    label: How to get the Cookie
-    default: "<ol><li>Login to this tracker with your browser</li><li>Open the <b>DevTools</b> panel by pressing <b>F12</b></li><li>Select the <b>Network</b> tab</li><li>Click on the <b>Doc</b> button (Chrome Browser) or <b>HTML</b> button (FireFox)</li><li>Refresh the page by pressing <b>F5</b></li><li>Click on the first row entry</li><li>Select the <b>Headers</b> tab on the Right panel</li><li>Find <b>'cookie:'</b> in the <b>Request Headers</b> section</li><li><b>Select</b> and <b>Copy</b> the whole cookie string <i>(everything after 'cookie: ')</i> and <b>Paste</b> here.</li></ol>"
+  - name: info_cookie
+    type: info_cookie
   - name: freeleech
     type: checkbox
     label: Search freeleech only
@@ -74,9 +72,10 @@ settings:
   - name: info_activity
     type: info
     label: Account Inactivity
-    default: "Account retention rules:<ul><li>Sixth degree burn (Extreme User) and above will be retained forever</li><li>Second degree burn (Elite User) and above have their accounts parked (in the control panel) for 60 consecutive days If you do not log in for 60 days, your account will be deleted</li><li>Users who have parked their accounts and do not log in for 60 consecutive days will have their accounts deleted</li><li>Users who have not parked their accounts will have their accounts deleted if they do not log in for 60 consecutive days</li><li>Users without traffic (i.e. upload / download data are all 0) If you do not log in for 14 consecutive days, your account will be deleted.</li></ul>"
+    default: "Account retention rules:<ul><li>Sixth degree burn (Extreme User) and above will be retained forever</li><li>Second degree burn (Elite User) and above that have their accounts parked (in the control panel) for 60 consecutive days will be deleted</li><li>Users who have parked their accounts and do not log in for 60 consecutive days will have their accounts deleted</li><li>Users who have not parked their accounts will have their accounts deleted if they do not log in for 60 consecutive days</li><li>Users without traffic (i.e. upload / download data are all 0) will have their accounts deleted if they do not log in for 14 consecutive days.</li></ul>"
 
 login:
+  # using cookie method because site regularly disables login page for certain events during the year
   method: cookie
   inputs:
     cookie: "{{ .Config.cookie }}"
@@ -106,7 +105,7 @@ search:
     notnewword: 1
 
   rows:
-    selector: table.torrents > tbody > tr:has(table.torrentname)
+    selector: table.torrents > tbody > tr:has(a[href^="download.php?id="])
 
   fields:
     category:
@@ -190,4 +189,4 @@ search:
       filters:
         - name: prepend
           args: "{{ .Result.description_verified }} "
-# NexusPHP v1.8.8 2023-09-25
+# NexusPHP v1.8.13 2024-09-21

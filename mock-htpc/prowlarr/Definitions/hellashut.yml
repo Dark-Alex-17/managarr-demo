@@ -13,6 +13,7 @@ legacylinks:
 
 caps:
   categorymappings:
+    - {id: 85, cat: TV/Anime, desc: "Anime/Cartoon 4K"}
     - {id: 28, cat: TV/Anime, desc: "Anime/Cartoon HD"}
     - {id: 47, cat: TV/Anime, desc: "Anime/Cartoon HDTV"}
     - {id: 48, cat: TV/Anime, desc: "Anime/Cartoon SD"}
@@ -112,9 +113,9 @@ settings:
     default: "Accounts inactive for more than 45 days are automatically deleted."
 
 login:
-  path: account-login.php
+  path: login.php
   method: form
-  form: form[action="account-login.php"]
+  form: form[action="login.php"]
   captcha:
     type: image
     selector: img[src="captcha.php?ext=.gif"]
@@ -136,8 +137,8 @@ download:
 
 search:
   paths:
-    # https://hellashut.de/torrents-search.php?c52=1&search=&cat=0&incldead=1&advanced=1&lang=0&blah=0&freeleech=0&sort=id&order=desc
-    - path: torrents-search.php
+   # https://hellashut.net/browse.php?search=&incldead=1&freeleech=0&lang=0&blah=0&team=0
+    - path: browse.php
   inputs:
     $raw: "{{ range .Categories }}c{{.}}=1&{{end}}"
     search: "{{ if .Query.IMDBID }}{{ .Query.IMDBID }}{{ else }}{{ .Keywords }}{{ end }}"

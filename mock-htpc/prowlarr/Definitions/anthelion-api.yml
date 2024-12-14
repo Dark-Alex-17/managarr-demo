@@ -1,10 +1,14 @@
 ---
 id: anthelion-api
+replaces:
+  - tehconnectionme
+  - anthelion
 name: Anthelion (API)
 description: "Anthelion is a Private MOVIES tracker"
 language: en-US
 type: private
 encoding: UTF-8
+# Status: https://ant.trackerstatus.info/
 links:
   - https://anthelion.me/
 

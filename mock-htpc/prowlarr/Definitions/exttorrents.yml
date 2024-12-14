@@ -96,15 +96,8 @@ settings:
     options:
       desc: desc
       asc: asc
-  - name: flaresolverr
-    type: info
-    label: FlareSolverr
-    default: This site may use Cloudflare DDoS Protection, therefore Prowlarr requires <a href="https://wiki.servarr.com/prowlarr/faq#can-i-use-flaresolverr-indexers" target="_blank" rel="noreferrer">FlareSolverr</a> to access it.
-
-download:
-  selectors:
-    - selector: a[href^="magnet:?xt="]
-      attribute: href
+  - name: info_flaresolverr
+    type: info_flaresolverr
 
 search:
   paths:
@@ -133,9 +126,12 @@ search:
     details:
       selector: td:nth-child(1) div a
       attribute: href
-    download:
-      selector: td:nth-child(1) div a
+    infohash:
+      selector: a[href^="magnet:?xt="]
       attribute: href
+      filters:
+        - name: regexp
+          args: ([A-F|a-f|0-9]{40})
     size:
       selector: td:nth-child(2)
     files:

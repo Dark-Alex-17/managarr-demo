@@ -18,6 +18,7 @@ caps:
     - {id: 114, cat: Movies/UHD, desc: "Filme UHD"}
     - {id: 140, cat: Movies/BluRay, desc: "Filme BluRay"}
     - {id: 28, cat: Movies/SD, desc: "Filme SD"}
+    - {id: 145, cat: Movies/SD, desc: "Filme all SD"}
     - {id: 138, cat: Movies, desc: "Filme Pack's"}
     # Serien
     - {id: 57, cat: TV/HD, desc: "Serien HD"}
@@ -71,16 +72,16 @@ caps:
     book-search: [q]
 
 settings:
+  - name: info_password
+    type: info
+    label: About Password Expiry
+    default: "Dark Shadow has an <b>8 week Password Expiry</b> regime. So if the Indexer has stopped working then the first thing you should do is check if your password has expired by login in at <a href=\"https://dark-shadow.me/login.php\" target=\"_blank\">Dark-Shadow</a>,  and if necessary use the <b>Passwort anfordern</b> (<i>Request password</i>) button to renew it."
   - name: username
     type: text
     label: Username
   - name: password
     type: password
     label: Password
-  - name: freeleech
-    type: checkbox
-    label: Filter freeleech only
-    default: false
   - name: sort
     type: select
     label: Sort requested from site
@@ -134,7 +135,7 @@ search:
       args: ["^(.+)$", "%$1%"]
 
   rows:
-    selector: "div.selection_wrap{{ if .Config.freeleech }}:root:has(div.onlyup){{ else }}{{ end }}"
+    selector: div.selection_wrap
 
   fields:
     category_p1:
@@ -153,7 +154,7 @@ search:
       selector: a.selection_a
       attribute: href
     download:
-      selector: a[href^="download_ssl.php?torrent="]
+      selector: a[href^="download"]
       attribute: href
     poster:
       selector: div[id^="details"] img
@@ -195,7 +196,7 @@ search:
       selector: div.selection_unter_aaa
     downloadvolumefactor:
       case:
-        ":root:has(div.onlyup)": 0
+        ":root:has(div.onlyup)": 0 # GLobal Freeleech event
         "*": 1
     uploadvolumefactor:
       text: 1

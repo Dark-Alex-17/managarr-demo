@@ -6,40 +6,27 @@ language: en-US
 type: public
 encoding: UTF-8
 requestDelay: 2
+# get status and news on domains at the official site https://1337x-status.org/
 links:
   - https://1337x.to/
   - https://1337x.st/
   - https://x1337x.ws/
   - https://x1337x.eu/
   - https://x1337x.se/
-  - https://1337x.so/
-  - https://1337x.unblockit.africa/
+  - https://x1337x.cc/
   - https://1337x.unblockninja.com/
   - https://1337x.ninjaproxy1.com/
   - https://1337x.proxyninja.org/
+  - https://1337x.proxyninja.net/
   - https://1337x.torrentbay.st/
+  - https://1337x.torrentsbay.org/
 legacylinks:
   - https://1337x.is/
   - https://1337x.gd/
-  - https://1337x.nocensor.lol/
-  - https://1337x.unblockit.ink/
-  - https://1337x.nocensor.art/
-  - https://1337x.unblockit.bio/
-  - https://1337x.unblockit.boo/
-  - https://1337x.mrunblock.guru/
-  - https://1337x.mrunblock.life/
-  - https://1337x.unblockit.click/
-  - https://1337x.unblockit.asia/
-  - https://1337x.unblockit.mov/
-  - https://1337x.unblockit.rsvp/
-  - https://1337x.unblockit.vegas/
-  - https://1337x.unblockit.esq/
-  - https://1337x.unblockit.zip/
-  - https://1337x.unblockit.foo/
-  - https://1337x.unblockit.ing/
   - https://1337x.mrunblock.bond/
-  - https://1337x.unblockit.date/
-  - https://1337x.unblockit.dad/
+  - https://1337x.abcproxy.org/
+  - https://1337x.so/
+  - https://1337x.unblockit.download/
 
 caps:
   categorymappings:
@@ -133,10 +120,8 @@ caps:
   allowrawsearch: true
 
 settings:
-  - name: flaresolverr
-    type: info
-    label: FlareSolverr
-    default: This site may use Cloudflare DDoS Protection, therefore Prowlarr requires <a href="https://wiki.servarr.com/prowlarr/faq#can-i-use-flaresolverr-indexers" target="_blank" rel="noreferrer">FlareSolverr</a> to access it.
+  - name: info_flaresolverr
+    type: info_flaresolverr
   - name: downloadlink
     type: select
     label: Download link

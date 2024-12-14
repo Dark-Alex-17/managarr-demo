@@ -1,17 +1,15 @@
 ---
 id: yggtorrent
-name: YGGtorrent
-description: "YGGTorrent is a FRENCH Semi-Private Torrent Tracker for 0DAY / GENERAL"
+name: YggTorrent
+description: "YggTorrent (YGG) is a FRENCH Private Torrent Tracker for MOVIES / TV / GENERAL"
 language: fr-FR
-type: semi-private
+type: private
 encoding: UTF-8
 followredirect: true
 requestDelay: 2
 links:
-  - https://www3.yggtorrent.qa/
+  - https://www.ygg.re/
 legacylinks:
-  - https://ww3.yggtorrent.si/
-  - https://yggtorrent.si/
   - http://www2.yggtorrent.si/
   - https://www2.yggtorrent.si/
   - https://www.yggtorrent.li/
@@ -25,6 +23,8 @@ legacylinks:
   - https://www6.yggtorrent.lol/
   - https://www3.yggtorrent.do/
   - https://www3.yggtorrent.wtf/
+  - https://www3.yggtorrent.qa/
+  - https://www3.yggtorrent.cool/
 
 caps:
   categorymappings:
@@ -235,23 +235,18 @@ settings:
     options:
       desc: desc
       asc: asc
-  - name: flaresolverr
-    type: info
-    label: FlareSolverr
-    default: This site may use Cloudflare DDoS Protection, therefore Prowlarr may require <a href="https://github.com/FlareSolverr/FlareSolverr" target="_blank">FlareSolver</a> added as a proxy in Prowlarr (Settings => Indexers) to access it.
+  - name: info_flaresolverr
+    type: info_flaresolverr
 
 login:
   method: form
-  path: /
-  form: "#user-login"
+  path: /auth/login
+  form: form.login-form
   inputs:
     id: "{{ .Config.username }}"
     pass: "{{ .Config.password }}"
-    ci_csrf_token: ""
   error:
-    - selector: "#login_msg_pass[style=\"\"][style] > center"
-    - selector: "#ban_msg_login[style=\"\"][style] > center"
-    - selector: "#login_msg_mail[style=\"\"][style] > center"
+    - selector: p.error-form
     - selector: a[href$="/user/disabled"]
       message:
         # Compte Inactif
@@ -261,7 +256,7 @@ login:
             args: " - Dès que vous passez en dessous d'un ratio inférieur à 1, Votre compte devient inactif et le site vous coupe les téléchargements."
   test:
     path: /
-    selector: div#top_panel:contains("Déconnexion")
+    selector: a[href$="/user/logout"]
 
 search:
   paths:

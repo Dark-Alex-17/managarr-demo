@@ -30,6 +30,7 @@ caps:
     - {id: 97, cat: Movies/UHD, desc: "BluRay 2160p", default: true}
     - {id: 99, cat: Movies/HD, desc: "BRRip 720p", default: true}
     - {id: 100, cat: Movies/HD, desc: "BRRip 1080p", default: true}
+    - {id: 101, cat: Movies/HD, desc: "BRRip", default: true}
     # TV
     - {id: 23, cat: TV, desc: "TV", default: true}
     - {id: 24, cat: TV/HD, desc: "HDTV 720p", default: true}
@@ -84,6 +85,7 @@ caps:
     - {id: 45, cat: PC/Mobile-iOS, desc: "iOS", default: true}
     - {id: 46, cat: PC/Mac, desc: "Mac", default: true}
     - {id: 47, cat: PC/ISO, desc: "Linux", default: true}
+    - {id: 102, cat: Other, desc: "3D STL", default: true}
     # Dokumentarni
     - {id: 95, cat: TV/Documentary, desc: "Dokumentarni Film", default: true}
     - {id: 96, cat: TV/Documentary, desc: "Dokumentarna Serija", default: true}
@@ -144,7 +146,7 @@ login:
 search:
   paths:
     - path: torrents.php
-      categories: [14, 15, 16, 20, 21, 49, 50, 51, 52, 55, 71, 72, 73, 74, 77, 97, 99, 100, 23, 24, 75, 76, 78, 79, 80, 81, 82, 98, 26, 56, 93, 29, 30, 31, 34, 83, 42, 43, 53, 54, 62, 37, 85, 86, 87, 88, 89, 90, 91, 38, 39, 40, 41, 44, 45, 46, 47, 95, 96]
+      categories: [14, 15, 16, 20, 21, 49, 50, 51, 52, 55, 71, 72, 73, 74, 77, 97, 99, 100, 23, 24, 75, 76, 78, 79, 80, 81, 82, 98, 26, 56, 93, 29, 30, 31, 34, 83, 42, 43, 53, 54, 62, 37, 85, 86, 87, 88, 89, 90, 91, 38, 39, 40, 41, 44, 45, 46, 47, 102, 95, 96]
     - path: xxx.php
       categories: [60, 61, 66, 67, 68, 69, 84]
   inputs:

@@ -16,6 +16,7 @@ caps:
     - {id: 32, cat: TV/Sport, desc: "Basketball"}
     - {id: 34, cat: TV/Sport, desc: "Basketball - NBA"}
     - {id: 87, cat: TV/Sport, desc: "Basketball - NBA Playoffs"}
+    - {id: 119, cat: TV/Sport, desc: "Basketball - NBA Playoffs - 2024"}
     - {id: 117, cat: TV/Sport, desc: "Basketball - NBA Playoffs - 2023"}
     - {id: 113, cat: TV/Sport, desc: "Basketball - NBA Playoffs - 2022"}
     - {id: 111, cat: TV/Sport, desc: "Basketball - NBA Playoffs - 2021"}
@@ -37,16 +38,16 @@ caps:
     - {id: 43, cat: TV/Sport, desc: "Football - NFL"}
     - {id: 66, cat: TV/Sport, desc: "Football - Super Bowls"}
     - {id: 53, cat: TV/Sport, desc: "Football - NCAA"}
-    - {id: 110, cat: TV/Sport, desc: "Football - USFL"}
     - {id: 99, cat: TV/Sport, desc: "Football - CFL"}
+    - {id: 110, cat: TV/Sport, desc: "Football - USFL"}
     - {id: 54, cat: TV/Sport, desc: "Football - Reviews and highlights"}
     - {id: 97, cat: TV/Sport, desc: "Football - Documentaries"}
     - {id: 44, cat: TV/Sport, desc: "Football - Other"}
-    - {id: 104, cat: TV/Sport, desc: "Football - XFL"}
     - {id: 101, cat: TV/Sport, desc: "Football - AAF"}
     - {id: 46, cat: TV/Sport, desc: "Hockey"}
     - {id: 48, cat: TV/Sport, desc: "Hockey - NHL"}
     - {id: 88, cat: TV/Sport, desc: "Hockey - NHL Playoffs"}
+    - {id: 120, cat: TV/Sport, desc: "Hockey - NHL Playoffs - 2024"}
     - {id: 118, cat: TV/Sport, desc: "Hockey - NHL Playoffs - 2023"}
     - {id: 114, cat: TV/Sport, desc: "Hockey - NHL Playoffs - 2022"}
     - {id: 112, cat: TV/Sport, desc: "Hockey - NHL Playoffs - 2021"}
@@ -89,16 +90,12 @@ settings:
     type: text
     label: Cookie
   - name: info_cookie
-    type: info
-    label: How to get the Cookie
-    default: "<ol><li>Login to this tracker with your browser</li><li>Open the <b>DevTools</b> panel by pressing <b>F12</b></li><li>Select the <b>Network</b> tab</li><li>Click on the <b>Doc</b> button (Chrome Browser) or <b>HTML</b> button (FireFox)</li><li>Refresh the page by pressing <b>F5</b></li><li>Click on the first row entry</li><li>Select the <b>Headers</b> tab on the Right panel</li><li>Find <b>'cookie:'</b> in the <b>Request Headers</b> section</li><li><b>Select</b> and <b>Copy</b> the whole cookie string <i>(everything after 'cookie: ')</i> and <b>Paste</b> here.</li></ol>"
+    type: info_cookie
   - name: useragent
     type: text
     label: User-Agent
   - name: info_useragent
-    type: info
-    label: How to get the User-Agent
-    default: "<ol><li>From the same place you fetched the cookie,</li><li>Find <b>'user-agent:'</b> in the <b>Request Headers</b> section</li><li><b>Select</b> and <b>Copy</b> the whole user-agent string <i>(everything after 'user-agent: ')</i> and <b>Paste</b> here.</li></ol>"
+    type: info_useragent
   - name: sort
     type: select
     label: Sort requested from site
@@ -117,6 +114,7 @@ settings:
       a: asc
 
 login:
+  # switched from the form method to the cookie method in Nov 2020, reason not provided
   method: cookie
   inputs:
     cookie: "{{ .Config.cookie }}"

@@ -10,15 +10,17 @@ links:
 
 caps:
   categorymappings:
-    - {id: 408, cat: Audio, desc: "音乐"}
-    - {id: 409, cat: Other, desc: "其他"}
-    - {id: 407, cat: TV/Sport, desc: "体育竞技"}
+    - {id: 401, cat: Movies, desc: "电影 / Movies"}
+    - {id: 402, cat: TV, desc: "电视剧 / TVSeries"}
+    - {id: 413, cat: TV/Other, desc: "短剧 / Playlet"}
+    - {id: 408, cat: Audio, desc: "音乐 / Music"}
+    - {id: 405, cat: TV/Anime, desc: "动漫 / Anime"}
     - {id: 406, cat: Audio/Video, desc: "MV"}
-    - {id: 403, cat: Movies, desc: "综艺/真人秀"}
-    - {id: 402, cat: TV, desc: "电视剧"}
-    - {id: 405, cat: TV, desc: "动画"}
-    - {id: 404, cat: TV/Anime, desc: "纪录片"}
-    - {id: 401, cat: Movies, desc: "电影"}
+    - {id: 403, cat: Movies, desc: "综艺 / TV Shows"}
+    - {id: 407, cat: TV/Sport, desc: "体育竞技 / Sports"}
+    - {id: 404, cat: TV/Documentary, desc: "纪录片 / Documentary"}
+    - {id: 409, cat: Other, desc: "其他 / Other"}
+    - {id: 415, cat: Books/Comics, desc: "漫画 / Cartoon"}
 
   modes:
     search: [q]
@@ -65,6 +67,10 @@ settings:
     type: info
     label: Results Per Page
     default: For best results, change the <b>Torrents per page:</b> setting to <b>100</b> on your account profile.
+  - name: info_activity
+    type: info
+    label: Account Inactivity
+    default: "Account retention rules:<ol><li>Veteran User and above will be retained forever</li><li>Elite User and above will not have their account deleted after parking (in the control panel)</li><li> Users with a parked account will be deleted if they do not log in for 400 consecutive days</li><li>Users with a non-parked account will be deleted if they do not log in for 150 consecutive days</li><li>Users who have no traffic (i.e. upload/download data are both 0) will be deleted if they do not log in for 100 consecutive days.</li></ol>"
 
 login:
   path: login.php
@@ -108,7 +114,7 @@ search:
     notnewword: 1
 
   rows:
-    selector: table.torrents > tbody > tr:has(a[href^="details.php?id="])
+    selector: table.torrents > tbody > tr:has(a[href^="download.php?id="])
 
   fields:
     category:
@@ -192,4 +198,4 @@ search:
     description:
       selector: td.rowfollow:nth-child(2)
       remove: a, b, font, img, span
-# NexusPHP v1.8.8 2023-09-25
+# NexusPHP v1.8.13 2024-09-21

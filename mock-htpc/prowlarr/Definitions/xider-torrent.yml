@@ -5,43 +5,32 @@ description: "Xider-Torrent is a HUNGARIAN Private Tracker for MOVIES / TV"
 language: hu-HU
 type: private
 encoding: UTF-8
+certificates:
+  - 2191bbeb4c86d287861b0a63d26aecc0983d5087 # Expired 18th November 2024
 links:
   - https://xider.eu/
 
 caps:
   categorymappings:
-    - {id: 4, cat: Movies/SD, desc: "Film/Cam/Eng"}
-    - {id: 3, cat: Movies/SD, desc: "Film/Cam/Hun"}
-    - {id: 8, cat: Movies/DVD, desc: "Film/DVD/Eng"}
-    - {id: 7, cat: Movies/DVD, desc: "Film/DVD/Hun"}
-    - {id: 10, cat: Movies/DVD, desc: "Film/DVD9/Eng"}
-    - {id: 9, cat: Movies/DVD, desc: "Film/DVD9/Hun"}
-    - {id: 37, cat: Movies/HD, desc: "Film/FHD/Eng"}
-    - {id: 36, cat: Movies/HD, desc: "Film/FHD/Hun"}
-    - {id: 12, cat: Movies/HD, desc: "Film/HD/Eng"}
-    - {id: 11, cat: Movies/HD, desc: "Film/HD/Hun"}
-    - {id: 2, cat: Movies/SD, desc: "Film/SD/Eng"}
-    - {id: 1, cat: Movies/SD, desc: "Film/SD/Hun"}
-    - {id: 18, cat: PC/Games, desc: "Játék/ISO"}
-    - {id: 19, cat: PC/Games, desc: "Játék/Rip"}
-    - {id: 24, cat: Other, desc: "Képek"}
-    - {id: 23, cat: Books, desc: "Könyv/Eng"}
-    - {id: 22, cat: Books, desc: "Könyv/Hun"}
-    - {id: 20, cat: Console, desc: "Konzol"}
-    - {id: 32, cat: Audio/Lossless, desc: "Lossless/Eng"}
-    - {id: 31, cat: Audio/Lossless, desc: "Lossless/Hun"}
-    - {id: 30, cat: TV/Anime, desc: "Mese/HD/Eng"}
-    - {id: 29, cat: TV/Anime, desc: "Mese/HD/Hun"}
-    - {id: 28, cat: TV/Anime, desc: "Mese/SD/Eng"}
-    - {id: 27, cat: TV/Anime, desc: "Mese/SD/Hun"}
-    - {id: 21, cat: PC/Mobile-Other, desc: "Mobil"}
-    - {id: 16, cat: Audio/MP3, desc: "Mp3/Eng"}
-    - {id: 15, cat: Audio/MP3, desc: "Mp3/Hun"}
-    - {id: 17, cat: PC, desc: "Program"}
-    - {id: 14, cat: TV, desc: "Sorozat/Eng"}
-    - {id: 13, cat: TV, desc: "Sorozat/Hun"}
-    - {id: 25, cat: XXX, desc: "XXX/Film"}
-    - {id: 26, cat: XXX/ImageSet, desc: "XXX/Kép"}
+    - {id: 56, cat: TV, desc: " Film Sorozat"}
+    - {id: 44, cat: Movies/SD, desc: "Film-Cam/Eng"}
+    - {id: 45, cat: Movies/SD, desc: "Film-Cam/Hun"}
+    - {id: 58, cat: Movies/DVD, desc: "Film-DVD/Eng"}
+    - {id: 59, cat: Movies/DVD, desc: "Film-DVD/Hun"}
+    - {id: 64, cat: Movies/HD, desc: "Film-HD"}
+    - {id: 60, cat: Movies/SD, desc: "Film-Xvid/Eng"}
+    - {id: 62, cat: Movies/SD, desc: "Film-Xvid/Hun"}
+    - {id: 53, cat: Audio/Audiobook, desc: "Hangoskönyv"}
+    - {id: 51, cat: Other, desc: "Hátterek-Képek"}
+    - {id: 55, cat: PC/Games, desc: "Játék-ISO"}
+    - {id: 54, cat: PC/Games, desc: "Játék-RIP"}
+    - {id: 43, cat: Books, desc: "Könyvek"}
+    - {id: 50, cat: TV/Anime, desc: "Mesefilm"}
+    - {id: 42, cat: PC/Mobile-Other, desc: "Mobilok"}
+    - {id: 39, cat: PC, desc: "Program"}
+    - {id: 57, cat: Audio/MP3, desc: "Zene-MP3"}
+    - {id: 72, cat: XXX, desc: "XXX-Film"}
+    - {id: 71, cat: XXX/ImageSet, desc: "XXX-Kép"}
 
   modes:
     search: [q]
@@ -108,12 +97,15 @@ search:
     incldead: 1
     sort: "{{ .Config.sort }}"
     type: "{{ .Config.type }}"
-    # does not support imdbid search
+    # does not support imdbid search or return imdbid in results.
 
   rows:
-    selector: "tr.torrentDataRow:has(a[href^=\"download.php?\"]){{ if .Config.freeleech }}:has(span[style^=\"font\"]:contains(\"0x\")){{ else }}{{ end }}"
+    selector: "tr.torrentDataRow{{ if .Config.freeleech }}:has(span[style^=\"font\"]:contains(\"0x\")){{ else }}{{ end }}"
 
   fields:
+    _id:
+      selector: a[data-torrent-id]
+      attribute: data-torrent-id
     category:
       selector: a[href^="browse.php?cat="]
       attribute: href
@@ -121,7 +113,7 @@ search:
         - name: querystring
           args: cat
     title:
-      selector: a[href^="details.php?id="]
+      selector: a[data-torrent-id]
       attribute: title
       filters:
         - name: replace
@@ -131,34 +123,32 @@ search:
         - name: replace
           args: ["Második név: -", ""]
     details:
-      selector: a[href^="details.php?id="]
-      attribute: href
+      text: "details.php?id={{ .Result._id }}"
     download:
-      selector: a[href^="download.php?torrent="]
+      text: "download.php?torrent={{ .Result._id }}"
       attribute: href
-    imdbid:
-      selector: a[href*="imdb.com/title/tt"]
+    poster:
+      selector: a[href^="kepek/"]
       attribute: href
-    files:
-      selector: a[href$="filelist=1"]
     date:
-      selector: td:nth-child(7)
+      selector: td:nth-child(4) span
+      attribute: title
       filters:
         - name: append
           args: " +01:00" # CET
         - name: dateparse
           args: "yyyy-MM-dd HH:mm:ss zzz"
     size:
-      selector: td:nth-child(8)
+      selector: td:nth-child(5)
     grabs:
-      selector: td:nth-child(9)
+      selector: td:nth-child(8)
     seeders:
-      selector: td:nth-child(10)
+      selector: td:nth-child(6)
     leechers:
-      selector: td:nth-child(11)
+      selector: td:nth-child(7)
     description:
       case:
-        i.fa-check: Verified
+        span[style*="color:#ccc;"]: Verified
         i.fa-question: Unverified
     downloadvolumefactor:
       case:

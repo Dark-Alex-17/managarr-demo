@@ -16,7 +16,9 @@ links:
   - https://rarbg.unblockninja.com/
   - https://rarbg.ninjaproxy1.com/
   - https://rarbg.proxyninja.org/
+  - https://rarbg.proxyninja.net/
   - https://rarbg.torrentbay.st/
+  - https://rarbg.torrentsbay.org/
 legacylinks:
   - https://therarbg.com/
 
@@ -35,7 +37,7 @@ caps:
 
   modes:
     search: [q]
-    tv-search: [q, season, ep, imdbid]
+    tv-search: [q, season, ep]
     movie-search: [q, imdbid]
     music-search: [q]
     book-search: [q]
@@ -68,7 +70,7 @@ download:
 
 search:
   paths:
-    - path: "get-posts/order:{{ .Config.sort }}{{ range .Categories }}:category:{{.}}{{end}}{{ if or .Query.IMDBID .Keywords }}:keywords:{{ or .Query.IMDBID .Keywords }}{{ else }}{{ end }}:paginate_by:100:format:json/"
+    - path: "get-posts/order:{{ .Config.sort }}{{ range .Categories }}:category:{{.}}{{end}}{{ if or .Query.IMDBID .Keywords }}:keywords:{{ or .Query.IMDBID .Keywords }}{{ else }}:time:10D{{ end }}:paginate_by:100:format:json/"
       response:
         type: json
 

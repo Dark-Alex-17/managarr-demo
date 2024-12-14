@@ -8,33 +8,17 @@ encoding: UTF-8
 # changes to this indexer should also be made to limetorrentsclone
 links:
   - https://www.limetorrents.lol/
-  - https://limetorrents.unblockit.africa/
   - https://limetorrents.unblockninja.com/
   - https://limetorrents.ninjaproxy1.com/
   - https://limetorrents.proxyninja.org/
+  - https://limetorrents.proxyninja.net/
   - https://limetorrents.torrentbay.st/
+  - https://limetorrents.torrentsbay.org/
 legacylinks:
-  - https://limetorrents.nocensor.lol/
-  - https://limetorrents.unblockit.ink/
-  - https://limetorrents.nocensor.art/
-  - https://limetorrents.unblockit.bio/
-  - https://limetorrents.unblockit.boo/
-  - https://limetorrents.mrunblock.guru/
-  - https://limetorrents.unblockit.click/
-  - https://limetorrents.unblockit.asia/
-  - https://limetorrents.unblockit.mov/
-  - https://limetorrents.mrunblock.life/
-  - https://limetorrents.unblockit.rsvp/
-  - https://limetorrents.nocensor.click/
-  - https://limetorrents.unblockit.vegas/
-  - https://limetorrents.unblockit.esq/
-  - https://limetorrents.unblockit.zip/
-  - https://limetorrents.unblockit.foo/
-  - https://limetorrents.unblockit.ing/
   - https://limetorrents.mrunblock.bond/
   - https://limetorrents.nocensor.cloud/
-  - https://limetorrents.unblockit.date/
-  - https://limetorrents.unblockit.dad/
+  - https://limetorrents.abcproxy.org/
+  - https://limetorrents.unblockit.download/
 
 caps:
   categorymappings:
@@ -81,7 +65,7 @@ settings:
       date: created
       seeds: seeders
       size: size
-  - name: info_8000
+  - name: info_category_8000
     type: info
     label: About LimeTorrents Categories
     default: LimeTorrents only returns category <b>Other</b> in its <i>Keywordless</i> search results page.</br>To pass your apps' indexer TEST you will need to include the 8000(Other) category.

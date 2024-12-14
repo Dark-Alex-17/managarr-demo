@@ -6,9 +6,10 @@ language: ro-RO
 type: private
 encoding: UTF-8
 links:
-  - https://www.seedfile.ro/
+  - https://seedfile.io/
 legacylinks:
   - https://www.seedfile.io/
+  - https://www.seedfile.ro/
 
 caps:
   categorymappings:
@@ -16,7 +17,6 @@ caps:
     - {id: 2, cat: Other, desc: "Desene SD"}
     - {id: 3, cat: Other, desc: "Diverse n/a"}
     - {id: 5, cat: Movies/BluRay, desc: "Filme Blu-Ray"}
-    - {id: 40, cat: Movies/BluRay, desc: "Filme Blu-Ray RO"}
     - {id: 6, cat: Movies/DVD, desc: "Filme DVD"}
     - {id: 7, cat: Movies/DVD, desc: "Filme DVD-RO"}
     - {id: 8, cat: Movies/HD, desc: "Filme HD"}
@@ -39,6 +39,8 @@ caps:
     - {id: 36, cat: Movies/3D, desc: "Video 3D"}
     - {id: 37, cat: Movies/UHD, desc: "Filme 4K"}
     - {id: 38, cat: Movies/UHD, desc: "Filme 4K RO"}
+    - {id: 40, cat: Movies/BluRay, desc: "Filme Blu-Ray RO"}
+    - {id: 41, cat: TV/UHD, desc: "Seriale 4K"}
 
   modes:
     search: [q]
@@ -73,7 +75,7 @@ login:
     - selector: div.recover-error2
   test:
     path: home
-    selector: a[href^="logout.php"]
+    selector: a[href^="/logout.php?id="]
 
 download:
   selectors:

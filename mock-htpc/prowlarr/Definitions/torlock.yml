@@ -8,31 +8,13 @@ encoding: UTF-8
 requestDelay: 2
 links:
   - https://www.torlock.com/
-  - https://www.torlock2.com/
-  - https://torlock.unblockit.africa/
 legacylinks:
   - https://torlock.com/
   - https://www.torlock.icu/
-  - https://torlock.nocensor.lol/
-  - https://torlock.unblockit.ink/
-  - https://torlock.unblockit.bio/
-  - https://torlock.unblockit.boo/
-  - https://torlock.mrunblock.guru/
-  - https://torlock.unblockit.click/
-  - https://torlock.unblockit.asia/
-  - https://torlock.mrunblock.life/
-  - https://torlock.unblockit.mov/
-  - https://torlock.unblockit.rsvp/
-  - https://torlock.nocensor.click/
-  - https://torlock.unblockit.vegas/
-  - https://torlock.unblockit.esq/
-  - https://torlock.unblockit.zip/
-  - https://torlock.unblockit.foo/
-  - https://torlock.unblockit.ing/
   - https://torlock.nocensor.cloud/
   - https://torlock.mrunblock.bond/
-  - https://torlock.unblockit.date/
-  - https://torlock.unblockit.dad/
+  - https://torlock.unblockit.download/
+  - https://www.torlock2.com/ # 400 Bad Request No required SSL certificate was sent
 
 caps:
   # dont forget to update the search fields category case block

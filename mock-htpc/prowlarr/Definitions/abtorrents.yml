@@ -1,5 +1,7 @@
 ---
 id: abtorrents
+replaces:
+  - audiobooktorrents
 name: ABtorrents
 description: "ABtorrents (ABT) is a Private Torrent Tracker for AUDIOBOOKS"
 language: en-US
@@ -86,10 +88,8 @@ settings:
   - name: cookie
     type: text
     label: Cookie
-  - name: info
-    type: info
-    label: How to get the Cookie
-    default: "<ol><li>Login to this tracker with your browser</li><li>Open the <b>DevTools</b> panel by pressing <b>F12</b></li><li>Select the <b>Network</b> tab</li><li>Click on the <b>Doc</b> button (Chrome Browser) or <b>HTML</b> button (FireFox)</li><li>Refresh the page by pressing <b>F5</b></li><li>Click on the first row entry</li><li>Select the <b>Headers</b> tab on the Right panel</li><li>Find <b>'cookie:'</b> in the <b>Request Headers</b> section</li><li><b>Select</b> and <b>Copy</b> the whole cookie string <i>(everything after 'cookie: ')</i> and <b>Paste</b> here.</li></ol>"
+  - name: info_cookie
+    type: info_cookie
   - name: freeleech
     type: checkbox
     label: Search freeleech only
@@ -104,6 +104,7 @@ settings:
     default: "Account retention rules:<ol><li>Any account that has unread PMs older than 14 days or has not logged in for 30 days will be suspended</li><li>Any account that has not been logged into for 90 days is deemed inactive and will thus be purged</li><li>Any account that has not been logged into for 30 days is deemed inactive and will be put on suspension until User logs in again</li><li>User’s stats, points, and history are irrevocably lost when purged</li><li>Logging into the site is the ONLY way to keep an account active</li><li>SEEDING ONLY does NOT constitute site activity.</li></ol>"
 
 login:
+  # using cookie method because login page simplecaptcha generates Exception: Cannot access child value on Newtonsoft.Json.Linq.JValue.
   method: cookie
   test:
     path: index.php
@@ -157,7 +158,7 @@ search:
       optional: true
       filters:
         - name: dateparse
-          args: "MMM d yyyy h:mm tt"
+          args: "MMM d yyyyh:mm tt"
     date:
       text: "{{ if or .Result.date_day .Result.date_year }}{{ or .Result.date_day .Result.date_year }}{{ else }}now{{ end }}"
     size:

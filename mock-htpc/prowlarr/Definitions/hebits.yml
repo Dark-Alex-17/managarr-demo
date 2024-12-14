@@ -5,6 +5,7 @@ description: "The Israeli Tracker"
 language: he-IL
 type: private
 encoding: UTF-8
+# Status: https://status.hebits.net/
 links:
   - https://hebits.net/
 
@@ -32,10 +33,8 @@ settings:
   - name: cookie
     type: text
     label: Cookie
-  - name: info
-    type: info
-    label: How to get the Cookie
-    default: "<ol><li>Login to this tracker with your browser</li><li>Open the <b>DevTools</b> panel by pressing <b>F12</b></li><li>Select the <b>Network</b> tab</li><li>Click on the <b>Doc</b> button (Chrome Browser) or <b>HTML</b> button (FireFox)</li><li>Refresh the page by pressing <b>F5</b></li><li>Click on the first row entry</li><li>Select the <b>Headers</b> tab on the Right panel</li><li>Find <b>'cookie:'</b> in the <b>Request Headers</b> section</li><li><b>Select</b> and <b>Copy</b> the whole cookie string <i>(everything after 'cookie: ')</i> and <b>Paste</b> here.</li></ol>"
+  - name: info_cookie
+    type: info_cookie
   - name: freeleech
     type: checkbox
     label: Search freeleech only
@@ -59,8 +58,13 @@ settings:
     type: info
     label: Account Inactivity
     default: "There is an automatic system for blocking inactive accounts. The system will block any account below Heb Prophet rank without activity for at least 90 days."
+  - name: info_results
+    type: info
+    label: Search results
+    default: "If you are getting the error <b>Login failed: Selector \"a[href*=\"/logout.php?auth=\"]\" didn't match</b> then first access the site with your browser and check that you are not being forced to change your password because it has expired after 180 days."
 
 login:
+  # using cookie method because login page has a custom captcha with multiple possible answers on individual radio buttons not supported via yaml
   method: cookie
   inputs:
     cookie: "{{ .Config.cookie }}"
@@ -75,7 +79,7 @@ search:
         type: json
 
   inputs:
-    searchstr: "{{ if .Query.IMDBID }}{{ .Query.IMDBID }}{{ else }}{{ .Keywords }}{{ end }}"
+    searchstr: "{{ if .Query.IMDBID }}{{ .Query.IMDBID }} {{ else }}{{ end }}{{ .Keywords }}"
     order_by: "{{ .Config.sort }}"
     order_way: "{{ .Config.type }}"
     imdbgt: 0
@@ -83,6 +87,7 @@ search:
     # 1 freeleech, 2 neutral, 3 50%, 4 2x, 5 3x, 9 75%, 11 only perks, 0 normal
     freetorrent: "{{ if .Config.freeleech }}1{{ else }}{{ end }}"
     action: browse
+    group_results: 0
     $raw: "{{ range .Categories }}filter_cat[{{.}}]=1&{{end}}"
 
   rows:

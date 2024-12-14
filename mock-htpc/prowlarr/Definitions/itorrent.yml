@@ -8,9 +8,7 @@ encoding: UTF-8
 links:
   - https://itorrent.ws/
 legacylinks:
-  - https://itorrent.unblockit.pro/
-  - https://itorrent.unblockit.one/
-  - https://itorrent.unblockit.me/ # currently mirroring 01torrent.net
+  - https://itorrent.hu/
 
 caps:
   categorymappings:

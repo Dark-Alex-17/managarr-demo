@@ -1,7 +1,7 @@
 ---
 id: hawke-uno
 name: hawke-uno
-description: "hawke-uno is a Private Torrent Tracker for (X265 / HEVC) MOVIES / TV"
+description: "hawke-uno (HUNO) is a Private Torrent Tracker for (X265 / HEVC) MOVIES / TV"
 language: en-US
 type: private
 encoding: UTF-8
@@ -61,11 +61,12 @@ login:
     - selector: a[href*="/login"]
       message:
         text: "The API key was not accepted by {{ .Config.sitelink }}."
+    - selector: :root:contains("Account is Banned")
 
 search:
   paths:
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/wiki/Torrent-API-(UNIT3D-v7.0.0)
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/blob/master/app/Http/Controllers/API/TorrentController.php#L349
+    # https://github.com/HDInnovations/UNIT3D-Community-Edition/wiki/Torrent-API-(UNIT3D-v8.x.x)
+    # https://github.com/HDInnovations/UNIT3D-Community-Edition/blob/master/app/Http/Controllers/API/TorrentController.php#L476
     - path: "/api/torrents/filter"
       response:
         type: json
@@ -153,4 +154,4 @@ search:
     minimumseedtime:
       # 5 days (as seconds = 5 x 24 x 60 x 60)
       text: 432000
-# json UNIT3D 5.3.0
+# json UNIT3D 5.3.0 (custom 0.5.0)

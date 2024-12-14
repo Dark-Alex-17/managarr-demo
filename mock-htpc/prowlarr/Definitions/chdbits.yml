@@ -6,9 +6,8 @@ language: zh-CN
 type: private
 encoding: UTF-8
 links:
-  - https://ptchdbits.co/
-legacylinks:
   - https://chdbits.co/
+  - https://ptchdbits.co/
 
 caps:
   categorymappings:
@@ -40,6 +39,8 @@ settings:
     type: checkbox
     label: Search freeleech only
     default: false
+  - name: info_flaresolverr
+    type: info_flaresolverr
   - name: info_tpp
     type: info
     label: Results Per Page
@@ -83,6 +84,11 @@ login:
     path: torrents.php
     selector: a[href*="logout.php"]
 
+download:
+  selectors:
+    - selector: a[href^="download.php?id="]
+      attribute: href
+
 search:
   paths:
     - path: torrents.php
@@ -121,19 +127,11 @@ search:
       selector: a[href^="details.php?id="]
       attribute: href
     download:
-      selector: a[href^="download.php?id="]
+      selector: a[href^="details.php?id="]
       attribute: href
-    size:
-      selector: td:nth-child(5)
-    grabs:
-      selector: td:nth-child(8)
-    seeders:
-      selector: td:nth-child(6)
-    leechers:
-      selector: td:nth-child(7)
     date_elapsed:
       # time type: time elapsed (default)
-      selector: td:nth-child(4) > span[title]
+      selector: td.rowfollow:nth-last-child(7) > span[title]
       attribute: title
       optional: true
       filters:
@@ -143,7 +141,7 @@ search:
           args: "yyyy-MM-dd HH:mm:ss zzz"
     date_added:
       # time added
-      selector: td:nth-child(4):not(:has(span))
+      selector: td.rowfollow:nth-last-child(7):not(:has(span))
       optional: true
       filters:
         - name: append
@@ -152,6 +150,14 @@ search:
           args: "yyyy-MM-ddHH:mm:ss zzz"
     date:
       text: "{{ if or .Result.date_elapsed .Result.date_added }}{{ or .Result.date_elapsed .Result.date_added }}{{ else }}now{{ end }}"
+    size:
+      selector: td.rowfollow:nth-last-child(6)
+    seeders:
+      selector: td.rowfollow:nth-last-child(5)
+    leechers:
+      selector: td.rowfollow:nth-last-child(4)
+    grabs:
+      selector: td.rowfollow:nth-last-child(3)
     downloadvolumefactor:
       case:
         img.pro_free: 0
@@ -169,4 +175,4 @@ search:
     description:
       selector: td:nth-child(2)
       remove: a, b, font, img, span
-# NexusPHP 73f201530b 2023-08-07
+# NexusPHP Standard v1.5 Beta 4 (customised)

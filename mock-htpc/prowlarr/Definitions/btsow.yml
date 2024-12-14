@@ -9,7 +9,6 @@ encoding: UTF-8
 links:
   - https://btsow.motorcycles/
 legacylinks:
-  - https://btsow.rest/
   - https://btsow.bar/
   - https://btsow.click/
   - https://btsow.cfd/
@@ -24,6 +23,7 @@ legacylinks:
   - https://btsow.skin/
   - https://btsow.makeup/
   - https://btsow.homes/
+  - https://btsow.yachts/
 
 caps:
   categories:
@@ -37,10 +37,8 @@ caps:
     book-search: [q]
 
 settings:
-  - name: info_8000
-    type: info
-    label: About BTSOW Categories
-    default: BTSOW does not return categories in its search results.</br>To add to your Apps' Torznab indexer, replace all categories with 8000(Other).
+  - name: info_category_8000
+    type: info_category_8000
 
 download:
   selectors:

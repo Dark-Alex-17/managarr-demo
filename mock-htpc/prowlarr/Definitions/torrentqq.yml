@@ -7,23 +7,34 @@ type: public
 encoding: UTF-8
 followredirect: true
 links:
-  - https://torrentqq302.com/
+  - https://torrentqq346.com/
+  - https://torrentegg38.com/
 legacylinks:
-  - https://torrentqq286.com/
-  - https://torrentqq287.com/
-  - https://torrentqq288.com/
-  - https://torrentqq289.com/
-  - https://torrentqq290.com/
-  - https://torrentqq291.com/
-  - https://torrentqq292.com/
-  - https://torrentqq293.com/
-  - https://torrentqq294.com/
-  - https://torrentqq295.com/
-  - https://torrentqq296.com/
-  - https://torrentqq297.com/
-  - https://torrentqq298.com/
-  - https://torrentqq299.com/
-  - https://torrentqq301.com/
+  - https://torrentqq331.com/
+  - https://torrentqq332.com/
+  - https://torrentqq333.com/
+  - https://torrentqq334.com/
+  - https://torrentqq335.com/
+  - https://torrentqq336.com/
+  - https://torrentegg28.com/
+  - https://torrentqq337.com/
+  - https://torrentegg29.com/
+  - https://torrentqq338.com/
+  - https://torrentegg30.com/
+  - https://torrentqq339.com/
+  - https://torrentegg31.com/
+  - https://torrentqq340.com/
+  - https://torrentegg32.com/
+  - https://torrentegg33.com/
+  - https://torrentqq341.com/
+  - https://torrentqq342.com/
+  - https://torrentegg34.com/
+  - https://torrentqq343.com/
+  - https://torrentegg35.com/
+  - https://torrentegg36.com/
+  - https://torrentqq344.com/
+  - https://torrentegg37.com/
+  - https://torrentqq345.com/
 
 caps:
   categorymappings:
@@ -44,10 +55,8 @@ caps:
     music-search: [q]
 
 settings:
-  - name: flaresolverr
-    type: info
-    label: FlareSolverr
-    default: This site may use Cloudflare DDoS Protection, therefore Prowlarr requires <a href="https://wiki.servarr.com/prowlarr/faq#can-i-use-flaresolverr-indexers" target="_blank" rel="noreferrer">FlareSolverr</a> to access it.
+  - name: info_flaresolverr
+    type: info_flaresolverr
 
 download:
   infohash:

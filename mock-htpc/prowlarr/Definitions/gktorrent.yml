@@ -5,24 +5,20 @@ description: "GkTorrent is a French Public site for TV / MOVIES / GENERAL"
 language: fr-FR
 type: public
 encoding: UTF-8
-followredirect: true
 # to fetch current domain use https://www.protege-torrent.com/Gktorrent
 links:
-  - https://www.gktorrent.sh/
+  - https://www.gktorrent.si/
 legacylinks:
+  - https://www.protege-liens.com/
+  - https://www.protege-liens.net/
+  # latest domains list
+  - https://www.protege-torrent.com/
+  - https://www.site-torrent.com/
   - https://www.rantop.org/
-  - https://gktorrent.nocensor.work/
-  - https://gktorrent.nocensor.biz/
-  - https://gktorrent.nocensor.sbs/
-  - https://gktorrent.nocensor.world/
-  - https://gktorrent.nocensor.lol/
-  - https://gktorrent.mrunblock.guru/
-  - https://gktorrent.mrunblock.life/
-  - https://gktorrent.nocensor.click/
-  - https://www.gktorrents.cc/
-  - https://www.gktorrent.ac/
-  - https://www.gktorrent.ph/
-  - https://www.gktorrent.vc/
+  - https://www.torrent.ws/
+  - https://www.torrent.onl/
+  - https://gktorrent.news/
+  # actual legacylinks
   - https://www.gktorrent.mx/
   - https://www.gktorrent.fi/
   - https://www.gktorrent.wf/
@@ -31,10 +27,20 @@ legacylinks:
   - https://www.gktorrent.wtf/
   - https://www.gktorrent.vg/
   - https://www.gktorrent.lol/
+  - https://www.gktorrent.sh/
+  - https://www.gktorrent.eu/
+  - https://www.gktorrent.xyz/
+  - https://www.gktorrent.pm/
+  - https://www.gktorrent.tw/
+  - https://www.gktorrent.in/
+  - https://www.gktorrent.sk/
+  - https://www.gktorrent.uno/
+  - https://www.gktorrent.gy/
 
 caps:
   categorymappings:
     - {id: Films, cat: Movies, desc: "Movies"}
+    - {id: Vidéos, cat: Movies, desc: "Vidéos"}
     - {id: Animes, cat: TV/Anime, desc: "Anime"}
     - {id: Séries, cat: TV, desc: "TV Series"}
     - {id: Spectacles, cat: TV, desc: "TV Shows"}
@@ -57,6 +63,8 @@ caps:
   allowrawsearch: true
 
 settings:
+  - name: info_flaresolverr
+    type: info_flaresolverr
   - name: multilang
     type: checkbox
     label: Replace MULTi by another language in release name
@@ -97,7 +105,7 @@ search:
       args: ["(?i)(S)(\\d{1,3})$", "saison $2"]
 
   rows:
-    selector: table.table-hover > tbody > tr:has(a[onclick*="torrent/"])
+    selector: table.table-hover > tbody > tr:has(td a[href])
 
   fields:
     category:
@@ -124,10 +132,10 @@ search:
       text: "{{ if .Config.multilang }}{{ .Result.title_multilang }}{{ else }}{{ .Result.title_phase2 }}{{ end }}"
     details:
       selector: td:nth-child(1) a
-      attribute: onclick
+      attribute: href
       filters:
         - name: regexp
-          args: (/?torrent/\d+)
+          args: (/?detail/\d+)
     download:
       text: "{{ .Result.details }}"
     size:

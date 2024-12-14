@@ -46,10 +46,8 @@ settings:
   - name: cookie
     type: text
     label: Cookie
-  - name: info
-    type: info
-    label: How to get the Cookie
-    default: "<ol><li>Login to this tracker with your browser</li><li>Open the <b>DevTools</b> panel by pressing <b>F12</b></li><li>Select the <b>Network</b> tab</li><li>Click on the <b>Doc</b> button (Chrome Browser) or <b>HTML</b> button (FireFox)</li><li>Refresh the page by pressing <b>F5</b></li><li>Click on the first row entry</li><li>Select the <b>Headers</b> tab on the Right panel</li><li>Find <b>'cookie:'</b> in the <b>Request Headers</b> section</li><li><b>Select</b> and <b>Copy</b> the whole cookie string <i>(everything after 'cookie: ')</i> and <b>Paste</b> here.</li></ol>"
+  - name: info_cookie
+    type: info_cookie
   - name: freeleech
     type: checkbox
     label: Search freeleech only
@@ -76,6 +74,7 @@ settings:
       asc: asc
 
 login:
+  # using cookie method because login page has embedded Google reCAPTCHA
   method: cookie
   inputs:
     cookie: "{{ .Config.cookie }}"
@@ -96,7 +95,7 @@ search:
     # 0 all, 1 active, 2 dead
     incldead: 0
     # 0 all, 1 polish, 5 dubbed, 6 subs, 2 non-polish, 3 freeleech, 4 highlighted
-    polish: "{{ if .Config.freeleech }}3{{ else }}1{{ end }}"
+    polish: "{{ if .Config.freeleech }}3{{ else }}0{{ end }}"
     sort: "{{ .Config.sort }}"
     type: "{{ .Config.type }}"
 
@@ -106,7 +105,7 @@ search:
       args: [" +(?:19|20)\\d{2} *$", ""]
 
   rows:
-    selector: table[class="text"][border="0"][cellspacing="0"][cellpadding="4"] > tbody > tr:has(a[href^="details.php?id="]):has(td[class*="tableBody1"])
+    selector: table[class="text"][border="0"][cellspacing="0"][cellpadding="4"] > tbody > tr:has(a[href^="details.php?id="]):has(td[class*="tableBody1"], td[class*="tableBody1B"])
     filters:
       - name: andmatch
 
@@ -118,9 +117,9 @@ search:
         - name: querystring
           args: cat
     title_raw:
-      selector: a[href^="details.php?id="]
+      selector: div[class="span_title"] > a[href^="details.php?id="]
     title_stripped:
-      selector: a[href^="details.php?id="]
+      selector: div[class="span_title"] > a[href^="details.php?id="]
       filters:
         - name: re_replace
           args: ["^(.*/)(.*)$", "$2"]
@@ -131,8 +130,11 @@ search:
       selector: a[href^="details.php?id="]
       attribute: href
     download:
-      selector: a[href^="download.php/"], a[href^="downloadfl.php/"]
-      attribute: href
+      selector: div.span_icon > a[onclick^="return downloadTorrent"]
+      attribute: onclick
+      filters:
+        - name: re_replace
+          args: ["^return downloadTorrent\\('([^']+)', '([^']+)', '[^']*'\\);$", "download.php/$1/$2.torrent"]
     genre:
       selector: div.span_title span div
     _language:

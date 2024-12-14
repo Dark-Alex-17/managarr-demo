@@ -11,7 +11,7 @@ links:
 caps:
   categorymappings:
     - {id: 2, cat: XXX, desc: "порно видео"}
-    - {id: 4, cat: XXX, desc: "блондинки"}
+    - {id: 4, cat: XXX, desc: "Порно с блондинками"}
     - {id: 5, cat: XXX, desc: "лесбиянки"}
     - {id: 19, cat: XXX, desc: "эротика"}
     - {id: 20, cat: XXX, desc: "груповушка"}
@@ -19,9 +19,15 @@ caps:
     - {id: 22, cat: XXX, desc: "молодые"}
     - {id: 24, cat: XXX, desc: "минет / куннилингус / орал"}
     - {id: 25, cat: XXX, desc: "большая грудь"}
+    - {id: 28, cat: XXX, desc: "порно видео зрелых"}
+    - {id: 29, cat: XXX, desc: "видео кастинг"}
+    - {id: 32, cat: XXX, desc: "девушки с красивыми попами"}
+    - {id: 33, cat: XXX, desc: "порно с мулатками"}
     - {id: 21, cat: XXX, desc: "любительское видео"}
     - {id: 3, cat: XXX, desc: "порно фильмы"}
-    - {id: 7, cat: XXX, desc: "русское порно"}
+    - {id: 30, cat: XXX, desc: "зарубежные порно фильмы"}
+    - {id: 31, cat: XXX, desc: "фильмы с русским переводом"}
+    - {id: 7, cat: XXX, desc: "русское порно видео"}
     - {id: 27, cat: XXX, desc: "убойная эротика"}
     - {id: 26, cat: XXX, desc: "онлайн порно"}
 
@@ -71,25 +77,18 @@ search:
     poster:
       selector: img[src*="/uploads/posts/"]
       attribute: src
-    date_today:
+    date_day:
       # Сегодня, 19:56
-      selector: div.mini:contains("Сегодня")
-      optional: true
-      filters:
-        - name: regexp
-          args: "(Сегодня, \\d{2}:\\d{2})"
-        - name: replace
-          args: ["Сегодня", "Today"]
-        - name: fuzzytime
-    date_yday:
       # Вчера, 20:01
-      selector: div.mini:contains("Вчера")
+      selector: div.mini:contains("Сегодня"), div.mini:contains("Вчера")
       optional: true
       filters:
         - name: regexp
-          args: "(Вчера, \\d{2}:\\d{2})"
+          args: "((Вчера|Сегодня)(, \\d{2}:\\d{2}))"
         - name: replace
           args: ["Вчера", "Yesterday"]
+        - name: replace
+          args: ["Сегодня", "Today"]
         - name: fuzzytime
     date_year:
       # 20-09-2020, 19:41
@@ -103,7 +102,7 @@ search:
         - name: dateparse
           args: "d-MM-yyyy, HH:mm zzz"
     date:
-      text: "{{ if or .Result.date_year .Result.date_today .Result.date_yday }}{{ or .Result.date_year .Result.date_today .Result.date_yday }}{{ else }}now{{ end }}"
+      text: "{{ if or .Result.date_year .Result.date_day }}{{ or .Result.date_year .Result.date_day }}{{ else }}now{{ end }}"
     size:
       text: "1 GB"
     seeders:

@@ -11,28 +11,33 @@ links:
 caps:
   categorymappings:
     - {id: 6, cat: PC/0day, desc: "Aplikacje/Programy"}
-    - {id: 4, cat: TV/Anime, desc: "Bajki/Anime"}
+    - {id: 31, cat: TV/Anime, desc: "Anime"}
+    - {id: 4, cat: Movies, desc: "Bajki"}
+    - {id: 30, cat: TV, desc: "TV Seriale Bajki"}
     - {id: 1, cat: Movies/HD, desc: "Filmy HD"}
     - {id: 13, cat: Movies/DVD, desc: "DVD5/9"}
     - {id: 12, cat: Movies/BluRay, desc: "BD25/50_5/9"}
     - {id: 14, cat: Movies/3D, desc: "Filmy 3D"}
     - {id: 16, cat: Movies/SD, desc: "Filmy SD"}
     - {id: 17, cat: Movies/Other, desc: "Filmy inne"}
-    - {id: 15, cat: TV/Documentary, desc: "Dokumentalne"}
     - {id: 5, cat: PC/Games, desc: "Gry pc"}
     - {id: 24, cat: PC/Games, desc: "Gry dodatki"}
-    - {id: 18, cat: PC/Mobile-Android, desc: "Mobile"}
     - {id: 10, cat: Console, desc: "Gry Konsole"}
+    - {id: 18, cat: PC/Mobile-Android, desc: "Mobile"}
     - {id: 19, cat: Other, desc: "Inne"}
     - {id: 8, cat: Audio, desc: "Muzyka"}
     - {id: 11, cat: Movies, desc: "Paczki"}
-    - {id: 20, cat: Books, desc: "Book"}
+    - {id: 27, cat: TV/Other, desc: "Teatr Telewizyjny"}
     - {id: 25, cat: Audio/Audiobook, desc: "Audiobook"}
+    - {id: 20, cat: Books, desc: "Book"}
     - {id: 21, cat: TV/Sport, desc: "Sport"}
-    - {id: 9, cat: TV/HD, desc: "Seriale HD"}
-    - {id: 22, cat: TV/SD, desc: "Seriale SD"}
+    - {id: 29, cat: Movies, desc: "Stare Filmy"}
+    - {id: 22, cat: TV/SD, desc: "TV Seriale SD"}
     - {id: 23, cat: Movies/UHD, desc: "Filmy 4K"}
+    - {id: 9, cat: TV/HD, desc: "TV Seriale HD"}
+    - {id: 28, cat: TV/Documentary, desc: "TV Dokument"}
     - {id: 2, cat: TV/UHD, desc: "TV 4K"}
+    - {id: 15, cat: Movies, desc: "Filmy bez lektora"}
     - {id: 7, cat: XXX, desc: "XXX 18+"}
 
   modes:
@@ -54,6 +59,10 @@ settings:
     type: checkbox
     label: Search freeleech only
     default: false
+  - name: single_file_release_use_filename
+    type: checkbox
+    label: Use filename as title for single file releases
+    default: true
   - name: multilang
     type: checkbox
     label: Replace MULTI by another language in release name
@@ -81,6 +90,10 @@ settings:
     options:
       desc: desc
       asc: asc
+  - name: info_activity
+    type: info
+    label: Account Inactivity
+    default: "<ul><li>Your account must be at least 90 days old to be subject to deactivation.</li><li>Last Login: You must be inactive for at least 90 days for your account to be deactivated.</li><li>Soft deletion of accounts: Deactivated user accounts will be soft deleted 120 days after deactivation.</li><li>User Groups: Accounts belonging to the following user groups may be automatically deactivated: Leech, User, PowerUser and SuperUser.</li><li>Please do not disregard the above information and log in to your account regularly to avoid deactivation.</li></ul>"
 
 login:
   path: /api/torrents
@@ -90,14 +103,16 @@ login:
     - selector: a[href*="/login"]
       message:
         text: "The API key was not accepted by {{ .Config.sitelink }}."
+    - selector: :root:contains("Account is Banned")
 
 search:
   paths:
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/wiki/Torrent-API-(UNIT3D-v7.0.0)
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/blob/master/app/Http/Controllers/API/TorrentController.php#L349
+    # https://github.com/HDInnovations/UNIT3D-Community-Edition/wiki/Torrent-API-(UNIT3D-v8.x.x)
+    # https://github.com/HDInnovations/UNIT3D-Community-Edition/blob/master/app/Http/Controllers/API/TorrentController.php#L476
     - path: "/api/torrents/filter"
       response:
         type: json
+        noResultsMessage: "No Torrents Found"
 
   headers:
     Authorization: ["Bearer {{ .Config.apikey }}"]
@@ -114,7 +129,7 @@ search:
     "free[]": "{{ if .Config.freeleech }}100{{ else }}{{ end }}"
     sortField: "{{ .Config.sort }}"
     sortDirection: "{{ .Config.type }}"
-    perPage: 100
+    perPage: 50
 
   keywordsfilters:
     - name: re_replace
@@ -127,10 +142,17 @@ search:
   fields:
     category:
       selector: category_id
+    title_optional:
+      selector: name
+    title_filename:
+      selector: "files[0].name"
+      optional: true
+    files:
+      selector: num_file
     title_phase1:
-      selector: name
+      text: "{{ if and (.Config.single_file_release_use_filename) (eq .Result.files \"1\") (.Result.title_filename) }}{{ .Result.title_filename }}{{ else }}{{ .Result.title_optional }}{{ end }}"
     title_multilang:
-      selector: name
+      text: "{{ .Result.title_phase1 }}"
       filters:
         - name: re_replace
           args: ["(?i)\\b(MULTI(?!.*(?:POLISH|ENGLISH|\\bPL\\b)))\\b", "{{ .Config.multilanguage }}"]
@@ -159,8 +181,6 @@ search:
       selector: meta.genres
       filters:
         - name: re_replace
-          args: ["(?i)^None$", ""]
-        - name: re_replace
           args: ["(?i)(Akcja i Przygoda)", "Akcja_i_Przygoda"]
         - name: re_replace
           args: ["(?i)(film TV)", "film_TV"]
@@ -168,8 +188,6 @@ search:
           args: [" & ", "_&_"]
     description:
       text: "{{ .Result.genre }}"
-    files:
-      selector: num_file
     seeders:
       selector: seeders
     leechers:
@@ -186,7 +204,12 @@ search:
           args: "MM/dd/yyyy HH:mm:ss zzz"
     size:
       selector: size
-    downloadvolumefactor:
+    _featured:
+      selector: featured
+      case:
+        False: "{{ .False }}"
+        True: "{{ .True }}"
+    downloadvolumefactor_freeleech:
       # api returns 0%, 25%, 50%, 75%, 100%
       selector: freeleech
       case:
@@ -196,13 +219,17 @@ search:
         75%: 0.25
         100%: 0 # freeleech
         "*": 0 # catch errors
-    uploadvolumefactor:
+    downloadvolumefactor:
+      text: "{{ if .Result._featured }}0{{ else }}{{ .Result.downloadvolumefactor_freeleech }}{{ end }}"
+    uploadvolumefactor_double_upload:
       # api returns False, True
       selector: double_upload
       case:
         False: 1 # normal
         True: 2 # double
+    uploadvolumefactor:
+      text: "{{ if .Result._featured }}2{{ else }}{{ .Result.uploadvolumefactor_double_upload }}{{ end }}"
     minimumseedtime:
       # 7 day (as seconds = 7 x 24 x 60 x 60)
       text: 604800
-# json UNIT3D 7.2.5
+# json UNIT3D 8.3.0 (custom)

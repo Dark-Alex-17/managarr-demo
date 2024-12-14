@@ -5,6 +5,7 @@ description: "Torrent[CORE] is a Public DHT Crawler"
 language: en-US
 type: public
 encoding: UTF-8
+requestDelay: 10.1
 links:
   - https://torrentcore.xyz/
 
@@ -41,10 +42,8 @@ caps:
     book-search: [q]
 
 settings:
-  - name: flaresolverr
-    type: info
-    label: FlareSolverr
-    default: This site may use Cloudflare DDoS Protection, therefore Prowlarr requires <a href="https://wiki.servarr.com/prowlarr/faq#can-i-use-flaresolverr-indexers" target="_blank" rel="noreferrer">FlareSolverr</a> to access it.
+  - name: info_flaresolverr
+    type: info_flaresolverr
 
 download:
   infohash:
@@ -63,6 +62,12 @@ search:
   paths:
     - path: "{{ if .Keywords }}search?s={{ .Keywords }}{{ else }}index{{ end }}"
     # search is an exact match, there are no wild cards, or +word or AND/OR, and spaces and dots are treated uniquely
+  error:
+    - selector: :root:contains("Service Unavailable")
+    - selector: :root:contains("Connection failed")
+      message:
+        text: "Connection failed: Connection refused"
+    - selector: :root:contains("[Anti-DDoS]")
 
   rows:
     selector: div.content font[color="purple"], div.content font[color="orange"]:has(a), div.content font[color="gray"], div.content font[color="white"]

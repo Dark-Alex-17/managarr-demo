@@ -182,8 +182,8 @@ caps:
     - {id: 972, cat: TV, desc: "Сватьи"}
     - {id: 1073, cat: TV, desc: "Чужое гнездо"}
     - {id: 1078, cat: TV, desc: "Чтец"}
-    - {id: 691, cat: TV, desc: "Черные кошки"}
     - {id: 628, cat: TV, desc: "Карпов"}
+    - {id: 691, cat: TV, desc: "Черные кошки"}
     - {id: 1101, cat: TV, desc: "Квест"}
     - {id: 1088, cat: TV, desc: "Лондонград"}
     - {id: 1072, cat: TV, desc: "Меч"}
@@ -475,6 +475,7 @@ caps:
     - {id: 1477, cat: TV/Documentary, desc: "Последний герой"}
     - {id: 1478, cat: TV/Documentary, desc: "Бородина против Бузовой"}
     - {id: 1488, cat: TV/Documentary, desc: "Док-ток"}
+    - {id: 1493, cat: TV/Documentary, desc: "'Рожденные в СССР' Ностальгия"}
     - {id: 24, cat: TV/Documentary, desc: "Документальные передачи"}
     - {id: 1460, cat: TV/Documentary, desc: "Специальный репортаж (ТК Звезда)"}
     - {id: 728, cat: TV/Documentary, desc: "Чудо техники с Сергеем Малозёмовым"}
@@ -757,6 +758,7 @@ caps:
     - {id: 1471, cat: Books, desc: "Кулинария"}
     - {id: 1333, cat: Books, desc: "Разное"}
     - {id: 1485, cat: Books, desc: "Медицина"}
+    - {id: 1494, cat: Books, desc: "Манга / Комиксы"}
     - {id: 1312, cat: Books, desc: "Аудиокниги"}
     - {id: 1398, cat: Books, desc: "Приключения"}
     - {id: 1396, cat: Books, desc: "Детектив"}
@@ -791,6 +793,13 @@ caps:
     - {id: 1349, cat: Books, desc: "Детские журналы"}
     - {id: 1351, cat: Books, desc: "Военные журналы"}
     - {id: 1350, cat: Books, desc: "Хобби (Разное)"}
+    - {id: 1292, cat: Other, desc: "Шаблоны оформления раздач"}
+    - {id: 1310, cat: Other, desc: "Шаблон RePack от xatab"}
+    - {id: 1298, cat: Other, desc: "Шаблон оформления VickNet"}
+    - {id: 1300, cat: Other, desc: "Шаблон стандартного оформления"}
+    - {id: 1353, cat: Other, desc: "Стандартное оформление"}
+    - {id: 1406, cat: Other, desc: "Шаблон RG Games"}
+    - {id: 1707, cat: Other, desc: "Шаблоны BBCode таблиц"}
 
   modes:
     search: [q]
@@ -830,10 +839,8 @@ settings:
     options:
       d: desc
       a: asc
-  - name: flaresolverr
-    type: info
-    label: FlareSolverr
-    default: This site may use Cloudflare DDoS Protection, therefore Prowlarr requires <a href="https://wiki.servarr.com/prowlarr/faq#can-i-use-flaresolverr-indexers" target="_blank" rel="noreferrer">FlareSolverr</a> to access it.
+  - name: info_flaresolverr
+    type: info_flaresolverr
 
 login:
   path: ucp.php?mode=login
@@ -877,11 +884,14 @@ search:
     selector: li.row:has(a[href^="./download/file.php?id="])
 
   fields:
-    categorydesc_optional:
-      selector: dt a:last-of-type
+    category_optional:
+      selector: a[href*="/viewtopic.php?f="]
       optional: true
-    categorydesc:
-      text: "{{ if .Result.categorydesc_optional }}{{ .Result.categorydesc_optional }}{{ else }}Разное{{ end }}"
+      filters:
+        - name: querystring
+          args: f
+    category:
+      text: "{{ if .Result.category_optional }}{{ .Result.category_optional }}{{ else }}726{{ end }}"
     title:
       selector: a.topictitle
       filters:

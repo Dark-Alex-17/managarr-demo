@@ -1,9 +1,11 @@
 ---
 id: miobt
+replaces:
+  - kisssub
 name: MioBT
-description: "MioBT is a CHINESE Public torrent index"
+description: "MioBT is a CHINESE Semi-Private torrent index"
 language: zh-CN
-type: public
+type: semi-private
 encoding: UTF-8
 links:
   - https://miobt.com/
@@ -27,6 +29,13 @@ caps:
 
 settings: []
 
+login:
+  path: addon.php?r=document/view&page=visitor-test
+  method: form
+  form: form#visitor-test-form
+  inputs:
+    visitor_test: human
+
 search:
   paths:
     # https://miobt.com/search.php?keyword=moon+720p
@@ -49,21 +58,14 @@ search:
       filters:
         - name: regexp
           args: show-([0-9A-Fa-f]{40})
-    date_today:
-       # 今天 00:35	 (Today)
+    date_day:
+      # 今天 00:35	 (Today)
+      # 昨天 22:50	 (Yesterday)
       optional: true
-      selector: td:nth-child(1):contains("今天")
+      selector: td:nth-child(1):contains("今天"),  td:nth-child(1):contains("昨天")
       filters:
         - name: replace
           args: ["今天", "Today"]
-        - name: append
-          args: " +08:00" # CST
-        - name: fuzzytime
-    date_yday:
-      # 昨天 22:50	 (Yesterday)
-      optional: true
-      selector: td:nth-child(1):contains("昨天")
-      filters:
         - name: replace
           args: ["昨天", "Yesterday"]
         - name: append
@@ -79,15 +81,13 @@ search:
         - name: dateparse
           args: "yyyy/MM/dd zzz"
     date:
-      text: "{{ if or .Result.date_year .Result.date_today .Result.date_yday }}{{ or .Result.date_year .Result.date_today .Result.date_yday }}{{ else }}now{{ end }}"
+      text: "{{ if or .Result.date_year .Result.date_day }}{{ or .Result.date_year .Result.date_day }}{{ else }}now{{ end }}"
     size:
       selector: td:nth-child(4)
     seeders:
-      selector: td:nth-child(5)
+      text: 1
     leechers:
-      selector: td:nth-child(6)
-    grabs:
-      selector: td:nth-child(7)
+      text: 1
     downloadvolumefactor:
       text: 0
     uploadvolumefactor:

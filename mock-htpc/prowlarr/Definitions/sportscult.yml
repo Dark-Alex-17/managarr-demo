@@ -20,22 +20,21 @@ caps:
     - {id: 29, cat: TV/Sport, desc: "Boxing"}
     - {id: 19, cat: TV/Sport, desc: "BrainGames"}
     - {id: 36, cat: TV/Sport, desc: "BreakDance"}
-    - {id: 40, cat: TV/Sport, desc: "Golf"}
     - {id: 23, cat: TV/Sport, desc: "Cycling"}
     - {id: 31, cat: TV/Sport, desc: "Documentary"}
     - {id: 1, cat: TV/Sport, desc: "European Basketball"}
-    - {id: 6, cat: TV/Sport, desc: "European Soccer"}
     - {id: 37, cat: TV/Sport, desc: "Extreme Sports"}
     - {id: 9, cat: TV/Sport, desc: "Fight Sports"}
     - {id: 32, cat: TV/Sport, desc: "Formula1"}
     - {id: 45, cat: TV/Sport, desc: "GAA (Gaelic)"}
-    - {id: 8, cat: TV/Sport, desc: "Golf"}
     - {id: 22, cat: TV/Sport, desc: "Gymnastics"}
+    - {id: 59, cat: TV/Sport, desc: "UFL"}
     - {id: 39, cat: TV/Sport, desc: "Handball"}
     - {id: 2, cat: TV/Sport, desc: "International Basket"}
     - {id: 25, cat: TV/Sport, desc: "IceHockey"}
     - {id: 4, cat: TV/Sport, desc: "International Soccer"}
     - {id: 42, cat: TV/Sport, desc: "KHL"}
+    - {id: 55, cat: TV/Sport, desc: "MotoGP"}
     - {id: 35, cat: TV/Sport, desc: "KickBoxing/Muay Thai"}
     - {id: 43, cat: TV/Sport, desc: "La Liga"}
     - {id: 15, cat: TV/Sport, desc: "MotorSport"}
@@ -51,14 +50,56 @@ caps:
     - {id: 38, cat: TV/Sport, desc: "Snooker/Pool"}
     - {id: 30, cat: TV/Sport, desc: "Streetball"}
     - {id: 18, cat: TV/Sport, desc: "Swimming/Aquatics"}
+    - {id: 56, cat: TV/Sport, desc: "Ligue1"}
     - {id: 46, cat: TV/Sport, desc: "AFL(AustralianFB)"}
     - {id: 12, cat: TV/Sport, desc: "Tennis"}
-    - {id: 20, cat: TV/Sport, desc: "Volleyball/Beach"}
+    - {id: 20, cat: TV/Sport, desc: "Volleyball"}
     - {id: 21, cat: TV/Sport, desc: "Weightlifting"}
     - {id: 16, cat: TV/Sport, desc: "WinterSport"}
     - {id: 33, cat: TV/Sport, desc: "Wrestling/Grapling"}
     - {id: 48, cat: TV/Sport, desc: "Uncategorised"}
+    - {id: 60, cat: TV/Sport, desc: "Champions League"}
+    - {id: 61, cat: TV/Sport, desc: "Europa League"}
+    - {id: 63, cat: TV/Sport, desc: "WNBA"}
+    - {id: 64, cat: TV/Sport, desc: "NASCAR"}
+    - {id: 65, cat: TV/Sport, desc: "FIBA 3x3 Basketball"}
+    - {id: 67, cat: TV/Sport, desc: "Bundesliga"}
+    - {id: 68, cat: TV/Sport, desc: "MLS"}
+    - {id: 69, cat: TV/Sport, desc: "EuroLeague Basketbal"}
+    - {id: 70, cat: TV/Sport, desc: "ELC"}
+    - {id: 71, cat: TV/Sport, desc: "RhythmicGymnastics"}
+    - {id: 72, cat: TV/Sport, desc: "BeachVolleyball"}
+    - {id: 73, cat: TV/Sport, desc: "BeachSoccer"}
+    - {id: 74, cat: TV/Sport, desc: "Chess"}
+    - {id: 75, cat: TV/Sport, desc: "Bowling"}
+    - {id: 76, cat: TV/Sport, desc: "BelgianProLeague"}
+    - {id: 77, cat: TV/Sport, desc: "Bellator"}
+    - {id: 78, cat: TV/Sport, desc: "Billard"}
+    - {id: 79, cat: TV/Sport, desc: "Climbing"}
+    - {id: 80, cat: TV/Sport, desc: "CrossFit"}
+    - {id: 81, cat: TV/Sport, desc: "DutchEredivisie"}
+    - {id: 82, cat: TV/Sport, desc: "IndyCar"}
+    - {id: 83, cat: TV/Sport, desc: "NbaGLeague"}
+    - {id: 84, cat: TV/Sport, desc: "NCAABasketball"}
+    - {id: 85, cat: TV/Sport, desc: "NCAAFootball"}
+    - {id: 86, cat: TV/Sport, desc: "Sailing"}
+    - {id: 87, cat: TV/Sport, desc: "Surfing"}
+    - {id: 88, cat: TV/Sport, desc: "TableTennis"}
+    - {id: 89, cat: TV/Sport, desc: "TourDeFrance"}
+    - {id: 90, cat: TV/Sport, desc: "LaVuelta"}
+    - {id: 91, cat: TV/Sport, desc: "Girod'Italia"}
+    - {id: 92, cat: TV/Sport, desc: "UefaConferenceLeague"}
+    - {id: 93, cat: TV/Sport, desc: "UEFAEuro"}
+    - {id: 94, cat: TV/Sport, desc: "OlympicGamesParis24"}
+    - {id: 95, cat: TV/Sport, desc: "WRCRally"}
+    - {id: 96, cat: TV/Sport, desc: "CPL"}
+    - {id: 97, cat: TV/Sport, desc: "CFL"}
+    - {id: 98, cat: TV/Sport, desc: "PrimeiraPortugal"}
     - {id: 53, cat: TV/Sport, desc: "Cricket"}
+    - {id: 6, cat: TV/Sport, desc: "European Soccer"}
+    - {id: 52, cat: TV/Sport, desc: "Field Hockey"}
+    - {id: 58, cat: TV/Sport, desc: "UFC"}
+    - {id: 57, cat: TV/Sport, desc: "NRL"}
 
   modes:
     search: [q]
@@ -96,10 +137,8 @@ settings:
     type: info
     label: Results Per Page
     default: For best results, change the <b>Torrents per page:</b> setting to <b>100</b> on your account profile.
-  - name: flaresolverr
-    type: info
-    label: FlareSolverr
-    default: This site may use Cloudflare DDoS Protection, therefore Prowlarr requires <a href="https://wiki.servarr.com/prowlarr/faq#can-i-use-flaresolverr-indexers" target="_blank" rel="noreferrer">FlareSolverr</a> to access it.
+  - name: info_flaresolverr
+    type: info_flaresolverr
 
 login:
   path: index.php?page=login

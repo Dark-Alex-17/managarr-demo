@@ -7,31 +7,13 @@ type: public
 encoding: UTF-8
 links:
   - https://extratorrent.st/
-  - https://extratorrent.unblockit.africa/
   - https://extratorrent.ninjaproxy1.com/
   - https://extratorrent.proxyninja.org/
+  - https://extratorrent.proxyninja.net/
 legacylinks:
-  - https://extratorrent.nocensor.lol/
-  - https://extratorrent.unblockit.ink/
-  - https://extratorrent.nocensor.art/
-  - https://extratorrent.unblockit.bio/
-  - https://extratorrent.unblockit.boo/
-  - https://extratorrent.mrunblock.guru/
-  - https://extratorrent.unblockit.click/
-  - https://extratorrent.unblockit.asia/
-  - https://extratorrent.unblockit.mov/
-  - https://extratorrent.mrunblock.life/
-  - https://extratorrent.unblockit.rsvp/
-  - https://extratorrent.nocensor.click/
-  - https://extratorrent.unblockit.vegas/
-  - https://extratorrent.unblockit.esq/
-  - https://extratorrent.unblockit.zip/
-  - https://extratorrent.unblockit.foo/
-  - https://extratorrent.unblockit.ing/
   - https://extratorrent.mrunblock.bond/
   - https://extratorrent.nocensor.cloud/
-  - https://extratorrent.unblockit.date/
-  - https://extratorrent.unblockit.dad/
+  - https://extratorrent.unblockit.download/ # 502
 
 caps:
   categorymappings:
@@ -53,12 +35,12 @@ caps:
     - {id: Music videos, cat: Audio/Video, desc: Music Videos}
     - {id: Other Music, cat: Audio/Other, desc: Music Other}
     - {id: Radio Shows, cat: Audio/Other, desc: Music Radio}
-    - {id: Video, cat: XXX, desc: Adult / Porn}
-    - {id: "Adult / Porn", cat: XXX, desc: Adult / Porn}
-    - {id: Pictures, cat: XXX/ImageSet, desc: Adult Pictures}
-    - {id: Magazines, cat: XXX/Other, desc: Adult Magazines}
-    - {id: Games, cat: XXX/Other, desc: Adult Games}
-    - {id: Hentai, cat: XXX/Other, desc: Adult Hentai}
+    - {id: Video, cat: XXX, desc: Adult / Porn}
+    - {id: "Adult / Porn", cat: XXX, desc: Adult / Porn}
+    - {id: Pictures, cat: XXX/ImageSet, desc: Adult Pictures}
+    - {id: Magazines, cat: XXX/Other, desc: Adult Magazines}
+    - {id: Games, cat: XXX/Other, desc: Adult Games}
+    - {id: Hentai, cat: XXX/Other, desc: Adult Hentai}
     - {id: Windows, cat: PC, desc: Software Windows}
     - {id: Android, cat: PC/Mobile-Android, desc: Software Android}
     - {id: Mac, cat: PC/Mac, desc: Software Mac}
@@ -88,10 +70,8 @@ caps:
     book-search: [q]
 
 settings:
-  - name: flaresolverr
-    type: info
-    label: FlareSolverr
-    default: This site may use Cloudflare DDoS Protection, therefore Prowlarr requires <a href="https://wiki.servarr.com/prowlarr/faq#can-i-use-flaresolverr-indexers" target="_blank" rel="noreferrer">FlareSolverr</a> to access it.
+  - name: info_flaresolverr
+    type: info_flaresolverr
 
 search:
   paths:

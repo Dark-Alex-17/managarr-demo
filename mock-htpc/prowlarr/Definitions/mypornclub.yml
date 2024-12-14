@@ -5,6 +5,8 @@ description: "MyPornClub is a Public Torrent Tracker for 3X"
 language: en-US
 type: public
 encoding: UTF-8
+certificates:
+  - 21debda35c67d63e823d122df5824a3f8465759a # expired 2 Nov 2024
 links:
   - https://myporn.club/
 
@@ -16,10 +18,8 @@ caps:
     search: [q]
 
 settings:
-  - name: flaresolverr
-    type: info
-    label: FlareSolverr
-    default: This site may use Cloudflare DDoS Protection, therefore Prowlarr requires <a href="https://wiki.servarr.com/prowlarr/faq#can-i-use-flaresolverr-indexers" target="_blank" rel="noreferrer">FlareSolverr</a> to access it.
+  - name: info_flaresolverr
+    type: info_flaresolverr
 
 download:
   selectors:

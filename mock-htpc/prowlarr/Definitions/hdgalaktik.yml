@@ -40,10 +40,8 @@ settings:
   - name: cookie
     type: text
     label: Cookie
-  - name: info
-    type: info
-    label: How to get the Cookie
-    default: "<ol><li>Login to this tracker with your browser</li><li>Open the <b>DevTools</b> panel by pressing <b>F12</b></li><li>Select the <b>Network</b> tab</li><li>Click on the <b>Doc</b> button (Chrome Browser) or <b>HTML</b> button (FireFox)</li><li>Refresh the page by pressing <b>F5</b></li><li>Click on the first row entry</li><li>Select the <b>Headers</b> tab on the Right panel</li><li>Find <b>'cookie:'</b> in the <b>Request Headers</b> section</li><li><b>Select</b> and <b>Copy</b> the whole cookie string <i>(everything after 'cookie: ')</i> and <b>Paste</b> here.</li></ol>"
+  - name: info_cookie
+    type: info_cookie
   - name: stripcyrillic
     type: checkbox
     label: Strip Cyrillic Letters
@@ -78,6 +76,7 @@ settings:
     default: For best results, change the <b>Torrents per page:</b> setting to <b>100</b> on your account profile.
 
 login:
+  # using the cookie method because the site expects a single session only, so using browser and Jackett can cause a lockout
   method: cookie
   inputs:
     cookie: "{{ .Config.cookie }}"
@@ -116,26 +115,20 @@ search:
       args: ["[^a-zA-Z0-9]+", "%"]
 
   rows:
-    selector: table.embedded > tbody > tr.torcontduo
+    selector: table.table > tbody > tr.torcontduo
 
   fields:
-    category_default:
-      selector: td:nth-child(1)
-      optional: true
-      filters:
-        - name: replace
-          args: ["---", 4]
     category:
       selector: a[href^="browse.php?cat="]
       attribute: href
       optional: true
-      default: "{{ .Result.category_default }}"
+      default: 4
       filters:
         - name: querystring
           args: cat
     title:
-      selector: a.alink
-      attribute: onmouseover
+      selector: a.link-secondary
+      attribute: title
       filters:
         - name: regexp
           args: \'>(.+?)</div
@@ -197,14 +190,17 @@ search:
         - name: append
           args: "{{ if .Config.addrussiantotitle }} RUS{{ else }}{{ end }}"
     details:
-      selector: a.alink
+      selector: a.link-secondary
       attribute: href
     download:
-      selector: a.alink
+      selector: a.link-secondary
       attribute: href
       filters:
         - name: replace
           args: ["details", "download"]
+    poster:
+      selector: img.s
+      attribute: src
     imdbid:
       selector: a[href^="browse.php?imdb="]
       attribute: href
@@ -214,32 +210,19 @@ search:
     size:
       selector: td:nth-child(4)
     seeders:
-      selector: td:nth-child(6)
-      filters:
-        - name: split
-          args: ["|", 0]
+      selector: span[title="Раздают"]
     leechers:
-      selector: td:nth-child(6)
-      filters:
-        - name: split
-          args: ["|", 1]
-    date_today:
+      selector: span[title="Качают"]
+    date_day:
       # Сегодня в 18:22
-      selector: a[href^="browse.php?date="]:contains("Сегодня")
+      # Вчера в 20:52
+      selector: a[href^="browse.php?date="]:contains("Сегодня"), a[href^="browse.php?date="]:contains("Вчера")
       optional: true
       filters:
         - name: regexp
-          args: "(Сегодня в \\d{2}:\\d{2})"
+          args: "((Вчера в|Сегодня в)( \\d{2}:\\d{2}))"
         - name: replace
           args: ["Сегодня в", "Today"]
-        - name: fuzzytime
-    date_yday:
-      # Вчера в 20:52
-      selector: a[href^="browse.php?date="]:contains("Вчера")
-      optional: true
-      filters:
-        - name: regexp
-          args: "(Вчера в \\d{2}:\\d{2})"
         - name: replace
           args: ["Вчера в", "Yesterday"]
         - name: fuzzytime
@@ -255,7 +238,7 @@ search:
         - name: dateparse
           args: "HH:mm dd/MM zzz"
     date:
-      text: "{{ if or .Result.date_year .Result.date_today .Result.date_yday }}{{ or .Result.date_year .Result.date_today .Result.date_yday }}{{ else }}now{{ end }}"
+      text: "{{ if or .Result.date_year .Result.date_day }}{{ or .Result.date_year .Result.date_day }}{{ else }}now{{ end }}"
     downloadvolumefactor:
       case:
         img[src="/pic/freedownload.gif"]: 0
@@ -265,6 +248,6 @@ search:
     minimumratio:
       text: 1.0
     description:
-      selector: a.alink
+      selector: a[href*="?tag="]
       attribute: title
 # engine n/a

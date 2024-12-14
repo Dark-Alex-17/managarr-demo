@@ -7,10 +7,17 @@ type: public
 encoding: UTF-8
 # to fetch current domain use https://www.protege-torrent.com/Zetorrents
 links:
-  - https://www.zetorrents.pw/
+  - https://www.zetorrents.sk/
 legacylinks:
-  - https://wvw.zetorrents.io/
-  - https://vww.zetorrents.io/
+  - https://www.protege-liens.com/
+  - https://www.protege-liens.net/
+  # latest domains list
+  - https://www.protege-torrent.com/
+  - https://www.site-torrent.com/
+  - https://www.rantop.org/
+  - https://www.torrent.ws/
+  - https://www.torrent.onl/
+  # actual legacylinks
   - https://wwv.zetorrents.io/
   - https://ww1.zetorrents.io/
   - https://www.zetorrents.org/
@@ -19,16 +26,15 @@ legacylinks:
   - https://www.zetorrents.tv/
   - https://www.zetorrents.bz/
   - https://www.zetorrents.nl/
-  - https://zetorrents.nocensor.world/
   - https://www.zetorrents.biz/
-  - https://zetorrents.nocensor.lol/
-  - https://zetorrents.nocensor.art/
   - https://www.zetorrents.ch/
-  - https://zetorrents.mrunblock.guru/
-  - https://zetorrents.mrunblock.life/
-  - https://zetorrents.nocensor.click/
   - https://zetorrents.mrunblock.bond/
   - https://zetorrents.nocensor.cloud/
+  - https://www.zetorrents.pw/
+  - https://www.zetorrents.tw/
+  - https://www.zetorrents.in/
+  - https://www.zetorrents.vg/
+  - https://www.zetorrents.vc/
 
 caps:
   categories:
@@ -41,10 +47,8 @@ caps:
   allowrawsearch: true
 
 settings:
-  - name: info_8000
-    type: info
-    label: About zetorrents Categories
-    default: zetorrents does not return categories in its search results.</br>To add to your Apps' Torznab indexer, replace all categories with 8000(Other).
+  - name: info_category_8000
+    type: info_category_8000
   - name: multilang
     type: checkbox
     label: Replace MULTi by another language in release name
@@ -66,18 +70,10 @@ settings:
     default: false
 
 download:
-  infohash:
-    hash:
-      selector: a[href^="/get_torrent/"]
+  selectors:
+    - selector: a[href^="magnet:?"]
       attribute: href
-      filters:
-        - name: regexp
-          args: ([A-F|a-f|0-9]{40})
-    title:
-      selector: ul#breadcrumbs > li:nth-child(3) > h2
-      filters:
-        - name: trim
-        - name: validfilename
+
 search:
   paths:
     - path: "{{ if .Keywords }}recherche/{{ .Keywords }}{{ else }}{{ end }}"
@@ -89,17 +85,14 @@ search:
       args: ["(?i)(S)(\\d{1,3})$", "saison $2"]
 
   rows:
-    selector: table.table > tbody > tr:has(a[href^="/torrent/"])
+    selector: table.table > tbody > tr:has(a[href^="/detail/"])
 
   fields:
     category:
       text: Other
     title_phase1:
-      selector: a[href^="/torrent/"]
-      attribute: title
+      selector: a[href^="/detail/"]
       filters:
-        - name: replace
-          args: [" en Torrent", ""]
         - name: replace
           args: ["WEBRIP", "WEBDL"]
         - name: re_replace
@@ -119,10 +112,10 @@ search:
     title:
       text: "{{ if .Config.multilang }}{{ .Result.title_multilang }}{{ else }}{{ .Result.title_phase2 }}{{ end }}"
     details:
-      selector: a[href^="/torrent/"]
+      selector: a[href^="/detail/"]
       attribute: href
     download:
-      selector: a[href^="/torrent/"]
+      selector: a[href^="/detail/"]
       attribute: href
     date:
       text: now
