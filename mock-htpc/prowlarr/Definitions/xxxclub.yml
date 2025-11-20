@@ -49,12 +49,12 @@ download:
 
 search:
   paths:
-    # https://xxxclub.to/torrents/search/2,4/metartx?sort=size&order=asc
-    - path: "torrents/search/{{ if .Categories }}{{ join .Categories \",\" }}{{ else }}all{{ end }}/{{ .Keywords }}?sort={{ .Config.sort }}&order={{ .Config.type }}"
+    # https://xxxclub.to/torrents/browse/all/?sort=size&order=asc
+    # https://xxxclub.to/torrents/search?q=metartx&sort=uploaded&order=desc
+    - path: "torrents/{{ if .Keywords }}search?q={{ .Keywords }}&{{ else }}browse/all/?{{ end }}sort={{ .Config.sort }}&order={{ .Config.type }}"
 
   headers:
-    # site blocks Prowlarr's UAs
-    User-Agent: ["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.35"]
+    User-Agent: ["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"]
 
   rows:
     selector: div.browsetableinside > ul > li:not(:first-child)

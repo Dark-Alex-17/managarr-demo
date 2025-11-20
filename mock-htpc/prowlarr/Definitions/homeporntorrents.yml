@@ -108,7 +108,7 @@ search:
 
   rows:
     # exclude redbar torrents
-    selector: table#torrent_table > tbody > tr[class^="torrent row"]
+    selector: table#torrent_table > tbody > tr.torrent.shaded_row
 
   fields:
     category:

@@ -1,12 +1,12 @@
 ---
 id: hqmusic
 name: HQMusic
-description: "HQMusic is a Private Torrent Tracker for MUSIC"
-language: en-US
+description: "HQMusic is a VIETNAMESE Private Torrent Tracker for MUSIC"
+language: vi-VN
 type: private
 encoding: UTF-8
 links:
-  - http://hqmusic.info/
+  - https://tracker.hqmusic.info/
 
 caps:
   categorymappings:
@@ -14,15 +14,14 @@ caps:
 
   modes:
     search: [q]
-    music-search: [q, album, artist, label, track, year, genre]
+    music-search: [q, album, artist]
 
 settings:
-  - name: username
+  - name: cookie
     type: text
-    label: Username
-  - name: password
-    type: password
-    label: Password
+    label: Cookie
+  - name: info_cookie
+    type: info_cookie
   - name: freeleech
     type: checkbox
     label: Search freeleech only
@@ -30,11 +29,12 @@ settings:
   - name: sort
     type: select
     label: Sort requested from site
-    default: time
+    default: 4
     options:
-      time: created
-      seeders: seeders
-      size: size
+      4: created
+      7: seeders
+      5: size
+      1: title
   - name: type
     type: select
     label: Order requested from site
@@ -45,147 +45,119 @@ settings:
   - name: info_activity
     type: info
     label: Account Inactivity
-    default: "User and Member classes must access their accounts regularly. Power Users and above are immune to inactivity pruning."
+    default: "Inactive accounts will be deleted according to the following rules:<ol><li> Power Users and above will never have their accounts deleted.</li><li>Users and above will never have their accounts deleted if they park their accounts (See [User CP]).</li><li>Parked accounts will be deleted if they do not log in within 365 days.</li><li>Unparked accounts will be deleted if they do not log in within 240 days.</li><li>Inactive accounts downloading or uploading on the tracker will be deleted after 240 days of not logging in or after 120 days from the time of registration.</li></ol>"
 
 login:
-  path: login.php
-  method: post
+  # switched from the form method to the cookie method due to https://github.com/Prowlarr/Prowlarr/issues/792
+  method: cookie
   inputs:
-    username: "{{ .Config.username }}"
-    password: "{{ .Config.password }}"
-    keeplogged: 1
-    login: "Log In"
-  error:
-    - selector: form#loginform > span.warning
+    cookie: "{{ .Config.cookie }}"
   test:
-    path: torrents.php
-    selector: a[href^="logout.php?auth="]
+    path: index.php
+    selector: a[href="logout.php"]
 
 search:
-  # http://hqmusic.info/ajax.php?artistname=John&groupname=Born&recordlabel=Sony&year=2012&filelist=Queen&freetorrent=&taglist=rock&tags_type=1&order_by=time&order_way=desc&filter_cat%5B1%5D=1&group_results=1&action=browse
   paths:
-    - path: ajax.php
-      response:
-        type: json
-
+    # https://tracker.hqmusic.info/torrents.php?search=&search_area=0&search_mode=0&incldead=0&haslog=0&cue=0&cover=0&tracks=0&spstate=0
+    - path: torrents.php
   inputs:
-    $raw: "{{ range .Categories }}filter_cat[{{.}}]=1&{{end}}"
-    searchstr: "{{ .Keywords }}"
-    artistname: "{{ if and (.Query.Artist) (ne .Query.Artist \"VA\") }}{{ .Query.Artist }}{{ else }}{{ end }}"
-    groupname: "{{ .Query.Album }}"
-    recordlabel: "{{ .Query.Label }}"
-    year: "{{ .Query.Year }}"
-    filelist: "{{ .Query.Track }}"
-    freetorrent: "{{ if .Config.freeleech }}1{{ else }}{{ end }}"
-    taglist: "{{ .Query.Genre }}"
-    # 0 Any, 1 All
-    tags_type: 1
-    order_by: "{{ .Config.sort }}"
-    order_way: "{{ .Config.type }}"
-    group_results: 1
-    action: browse
+    search: "{{ if .Query.Artist }}{{ .Query.Artist }}{{ else }}{{ end }}{{ if .Query.Album }} {{ .Query.Album }}{{ else }}{{ end }}{{ if or .Query.Artist .Query.Album }}{{ else }}{{ .Keywords }}{{ end }}"
+    # 0 title, 1 descr, 3 uploader, 4 imdburl
+    search_area: 0
+    # 0 AND, 1 OR, 2 exact
+    search_mode: 0
+    # 0 incldead, 1 active, 2 dead
+    incldead: 0
+    # 0 has log, 1 yes, 2 no, 3 100% only, 4 100% Unscored
+    haslog: 0
+    # 0 cue, 1 yes, 2 no
+    cue: 0
+    # 0 cover, 1 yes, 2 no
+    cover: 0
+    # tracks, 1 yes, 2 no
+    tracks: 0
+    # 0 all, 1 normal, 2 free, 3 2x, 4 2xfree, 5 50%, 6 2x50%, 7 30%
+    spstate: "{{ if .Config.freeleech }}2{{ else }}0{{ end }}"
+    sort: "{{ .Config.sort }}"
+    type: "{{ .Config.type }}"
+    notnewword: 1
 
   rows:
-    selector: response.results
-    attribute: torrents
-    multiple: true
+    selector: table.main > tbody > tr > td.embedded > table.torrents > tbody > tr:has(a[href^="download.php?id="])
 
   fields:
-    _groupid:
-      selector: ..groupId
-    _torrentid:
-      selector: torrentId
     category:
       text: 1
-    artist:
-      selector: ..artist
-      filters:
-        - name: htmldecode
-    _groupName:
-      selector: ..groupName
-      filters:
-        - name: htmldecode
-    _releaseType:
-      selector: ..releaseType
-    album:
-      optional: true
-      text: "{{ if eq .Result._releaseType \"Album\" }}{{ .Result._groupName }}{{ else }}{{ end }}"
-    track:
-      optional: true
-      text: "{{ if eq .Result._releaseType \"Single\" }}{{ .Result._groupName }}{{ else }}{{ end }}"
-    year:
-      optional: true
-      selector: ..groupYear
-      filters:
-        - name: re_replace
-          args: ["^0$", ""]
-    _format:
-      selector: format
-    _encoding:
-      selector: encoding
-    _hasLog:
-      selector: hasLog
-    _logScore:
-      selector: logScore
-    _hasCue:
-      selector: hasCue
-    _media:
-      selector: media
-    year_remaster:
-      selector: remasterYear
-    title_remaster:
-      optional: true
-      selector: remasterTitle
+    title_default:
+      selector: a[href*="details.php?id="]
     title:
-      # John Mayer - Born And Raised [2012] [Album] FLAC / Lossless / Log (100%) / Cue / CD
-      # Duy - I Go [2022] [Single] Other / Lossless / WEB
-      text: "{{ .Result.artist }} - {{ .Result._groupName }} {{ if .Result.year }}[{{ .Result.year }}] {{ else }}{{ end }}[{{ .Result._releaseType }}] {{ .Result._format }} / {{ .Result._encoding }} {{ if eq .Result._hasLog \"True\" }}/ Log {{ else }}{{ end }}{{ if ne .Result._logScore \"0\" }}({{ .Result._logScore }}%){{ else }}{{ end }}{{ if eq .Result._hasCue \"True\" }} / Cue{{ else }}{{ end }} / {{ .Result._media }}{{ if ne .Result.year_remaster \"0\" }} / {{ .Result.year_remaster }}{{ else }}{{ end }}{{ if .Result.title_remaster }} {{ .Result.title_remaster }}{{ else }}{{ end }}"
+      selector: a[title][href*="details.php?id="]
+      attribute: title
+      optional: true
+      default: "{{ .Result.title_default }}"
     details:
-      text: "torrents.php?id={{ .Result._groupid }}&torrentid={{ .Result._torrentid }}"
+      selector: a[href*="details.php?id="]
+      attribute: href
     download:
-      text: "torrents.php?action=download&id={{ .Result._torrentid }}"
+      selector: a[href^="download.php?id="]
+      attribute: href
     poster:
-      selector: ..cover
-    date:
-      selector: time
+      selector: img[src^="imagescover"]
+      attribute: src
+      filters:
+        - name: prepend
+          args: "https://images.weserv.nl/?url={{ .Config.sitelink }}" # for display on dashboard
+        - name: append
+          args: "&w=180&h=270" # for display on dashboard
+    date_elapsed:
+      # time type: time elapsed (default)
+      selector: td.rowfollow:nth-child(4) > span[title]
+      attribute: title
+      optional: true
       filters:
         - name: append
-          args: " +00:00" # GMT
+          args: " +07:00" # ICT
         - name: dateparse
           args: "yyyy-MM-dd HH:mm:ss zzz"
-    size:
-      selector: size
-    files:
-      selector: fileCount
-    grabs:
-      selector: snatches
-    seeders:
-      selector: seeders
-    leechers:
-      selector: leechers
-    genre:
-      selector: ..tags
-      filters:
-        - name: replace
-          args: [".", "_"]
-    description:
-      text: "{{ .Result.genre }}"
-    _free:
-      selector: isFreeleech
-    _neutral:
-      selector: isNeutralLeech
-    _personal:
-      selector: isPersonalFreeleech
-    downloadvolumefactor_special:
+    date_added:
+      # time added
+      selector: td.rowfollow:nth-child(4):not(:has(span))
       optional: true
-      text: "{{ if eq .Result._neutral \"True\" }}0{{ else }}{{ end }}{{ if eq .Result._free \"True\" }}0{{ else }}{{ end }}{{ if eq .Result._personal \"True\" }}0{{ else }}{{ end }}"
+      filters:
+        - name: append
+          args: " +07:00" # ICT
+        - name: dateparse
+          args: "yyyy-MM-ddHH:mm:ss zzz"
+    date:
+      text: "{{ if or .Result.date_elapsed .Result.date_added }}{{ or .Result.date_elapsed .Result.date_added }}{{ else }}now{{ end }}"
+    size:
+      selector: td.rowfollow:nth-child(5)
+    seeders:
+      selector: td.rowfollow:nth-child(6)
+    leechers:
+      selector: td.rowfollow:nth-child(7)
+    grabs:
+      selector: td.rowfollow:nth-child(8)
     downloadvolumefactor:
-      text: "{{ if .Result.downloadvolumefactor_special }}{{ .Result.downloadvolumefactor_special }}{{ else }}1{{ end }}"
+      case:
+        img.pro_free: 0
+        img.pro_free2up: 0
+        img.pro_50pctdown: 0.5
+        img.pro_50pctdown2up: 0.5
+        img.pro_30pctdown: 0.3
+        "*": 1
     uploadvolumefactor:
-      text: "{{ if eq .Result._neutral \"True\" }}0{{ else }}1{{ end }}"
+      case:
+        img.pro_50pctdown2up: 2
+        img.pro_free2up: 2
+        img.pro_2up: 2
+        "*": 1
     minimumratio:
-      text: 0.6
+      text: 0.4
     minimumseedtime:
-      # 3 days (as seconds = 3 x 24 x 60 x 60)
-      text: 259200
-# JSON Gazelle
+      # 60 hours (as seconds = 60 x 60 x 60)
+      text: 216000
+    description:
+      selector: td:nth-child(1)
+      remove: a, b, font, img, span
+# NexusPHP Standard v1.5 Beta 4 (custom)

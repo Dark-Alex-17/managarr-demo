@@ -13,12 +13,12 @@ caps:
     - {id: 1, cat: Movies, desc: "Movies"}
     - {id: 2, cat: TV, desc: "TV"}
     - {id: 3, cat: Audio, desc: "Music"}
-    - {id: 6, cat: TV/Anime, desc: "Anime"}
-    - {id: 10, cat: TV, desc: "TV Pack"}
     - {id: 4, cat: PC/Games, desc: "Games"}
     - {id: 5, cat: PC/0day, desc: "Apps"}
+    - {id: 6, cat: TV/Anime, desc: "Anime"}
     - {id: 9, cat: TV/Sport, desc: "Sport"}
-    - {id: 11, cat: Other, desc: "Miscellaneous"}
+    - {id: 14, cat: Other, desc: "Tutorials"}
+    - {id: 11, cat: Other, desc: "Assorted"}
 
   modes:
     search: [q]
@@ -58,6 +58,10 @@ settings:
     options:
       desc: desc
       asc: asc
+  - name: info_activity
+    type: info
+    label: Account Inactivity
+    default: "Accounts that have not logged in for 150 days will be disabled, and may be deleted shortly afterwards."
 
 login:
   path: /api/torrents
@@ -71,9 +75,9 @@ login:
 
 search:
   paths:
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/wiki/Torrent-API-(UNIT3D-v8.x.x)
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/blob/master/app/Http/Controllers/API/TorrentController.php#L476
-    - path: "/api/torrents/filter"
+    # https://hdinnovations.github.io/UNIT3D/torrent_api.html
+    # https://github.com/HDInnovations/UNIT3D/blob/master/app/Http/Controllers/API/TorrentController.php#L657
+    - path: api/torrents/filter
       response:
         type: json
 
@@ -140,8 +144,13 @@ search:
           args: ["(?i)(TV Movie)", "TV_Movie"]
         - name: replace
           args: [" & ", "_&_"]
+    _internal:
+      selector: internal
+      case:
+        False: "{{ .False }}"
+        True: "{{ .True }}"
     description:
-      text: "{{ .Result.genre }}"
+      text: "{{ if .Result._internal }}Internal{{ else }}{{ end }}{{ if and .Result._internal .Result.genre }} | {{ else }}{{ end }}{{ .Result.genre }}"
     seeders:
       selector: seeders
     leechers:
@@ -183,10 +192,6 @@ search:
         True: 2 # double
     uploadvolumefactor:
       text: "{{ if .Result._featured }}2{{ else }}{{ .Result.uploadvolumefactor_double_upload }}{{ end }}"
-# global MR is 0.71 but torrents must be seeded for 7 days regardless of ratio
-#    minimumratio:
-#      text: 0.71
-    minimumseedtime:
-      # 7 days (as seconds = 7 x 24 x 60 x 60)
-      text: 604800
-# json UNIT3D 8.3.3
+    minimumratio:
+      text: 0.81
+# json UNIT3D 9.1.5

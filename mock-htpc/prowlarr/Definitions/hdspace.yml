@@ -1,7 +1,7 @@
 ---
 id: hdspace
 name: HD-Space
-description: "HD-Space is a Private Torrent Tracker for MOVIES / TV / GENERAL"
+description: "HD-Space (HDS) is a Private Torrent Tracker for HD MOVIES / TV"
 language: en-US
 type: private
 encoding: UTF-8
@@ -108,8 +108,23 @@ search:
       filters:
         - name: querystring
           args: category
-    title:
+    title_default:
       selector: td a[href^="index.php?page=torrent-details"]
+      filters:
+        - name: htmldecode
+    title:
+      selector: a[href^="download.php?id="]
+      attribute: href
+      filters:
+        - name: querystring
+          args: f
+        - name: htmldecode
+        - name: htmldecode # double usage is intentional
+        - name: replace
+          args: [".torrent", ""]
+        - name: trim
+      optional: true
+      default: "{{ .Result.title_default }}"
     details:
       selector: td a[href^="index.php?page=torrent-details"]
       attribute: href

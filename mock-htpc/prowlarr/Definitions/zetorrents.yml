@@ -5,26 +5,24 @@ description: "zetorrents is a FRENCH Public site for MOVIES / TV / GENERAL"
 language: fr-FR
 type: public
 encoding: UTF-8
-# to fetch current domain use https://www.protege-torrent.com/Zetorrents
+# to fetch current domain use https://www.rantop.org/
 links:
-  - https://www.zetorrents.sk/
+  - https://www.zetorrents.town/
+  - https://zetorrents-proxy.site/
 legacylinks:
+  # latest domains list
+  - https://www.rantop.org/
+  - https://www.site-torrent.cc/
+  - https://www.torrent-site.com/
+  # domain lists no longer working
+  - https://www.protege-torrent.com/
+  - https://www.torrent.ws/
   - https://www.protege-liens.com/
   - https://www.protege-liens.net/
-  # latest domains list
-  - https://www.protege-torrent.com/
-  - https://www.site-torrent.com/
-  - https://www.rantop.org/
-  - https://www.torrent.ws/
   - https://www.torrent.onl/
+  - https://www.site-torrent.com/
+  - https://www.rantop.my/
   # actual legacylinks
-  - https://wwv.zetorrents.io/
-  - https://ww1.zetorrents.io/
-  - https://www.zetorrents.org/
-  - https://wvw.zetorrents.org/
-  - https://www.zetorrents.cc/
-  - https://www.zetorrents.tv/
-  - https://www.zetorrents.bz/
   - https://www.zetorrents.nl/
   - https://www.zetorrents.biz/
   - https://www.zetorrents.ch/
@@ -35,6 +33,13 @@ legacylinks:
   - https://www.zetorrents.in/
   - https://www.zetorrents.vg/
   - https://www.zetorrents.vc/
+  - https://www.zetorrents.sk/
+  - https://www.zetorrents.my/
+  - https://wvw-zetorrents.com/
+  - https://www-zetorrents.com/
+  - https://www.zetorrents1.com/
+  - https://www.zetorrents.diy/
+  - https://www.zetorrents2.com/
 
 caps:
   categories:
@@ -96,7 +101,7 @@ search:
         - name: replace
           args: ["WEBRIP", "WEBDL"]
         - name: re_replace
-          args: ["(?i)\\b(FRENCH|MULTI|TRUEFRENCH|VOSTFR|SUBFRENCH)\\b(.+?)(\\b(19|20\\d{2})\\b)$", "$3 $1$2"]
+          args: ["(?i)\\b(FRENCH|MULTI|TRUEFRENCH|VOSTFR|SUBFRENCH)\\b(.+?)(\\b((19|20)\\d{2})\\b)$", "$3 $1$2"]
     title_vostfr:
       text: "{{ .Result.title_phase1 }}"
       filters:

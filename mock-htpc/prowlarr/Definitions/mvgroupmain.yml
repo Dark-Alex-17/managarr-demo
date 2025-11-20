@@ -1,7 +1,7 @@
 ---
 id: mvgroupmain
 name: MVGroup Main
-description: "MVGroup is a Semi-Private site dedicated to UK TV and DOCUMENTARIES. This definition is for the Main Tracker site."
+description: "MVGroup is a Semi-Private Torrent Tracker dedicated to UK TV and DOCUMENTARIES. This definition is for the Main Tracker site."
 language: en-US
 type: semi-private
 encoding: UTF-8
@@ -26,6 +26,8 @@ settings:
   - name: password
     type: password
     label: Password
+  - name: info_flaresolverr
+    type: info_flaresolverr
   - name: info_category_8000
     type: info_category_8000
   - name: hidef

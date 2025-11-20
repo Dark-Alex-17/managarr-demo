@@ -1,7 +1,7 @@
 ---
 id: shareisland-api
 name: Shareisland (API)
-description: "A general italian tracker"
+description: "Shareisland is a ITALIAN Private Torrent Tracker for MOVIES / TV / GENERAL"
 language: it-IT
 type: private
 encoding: UTF-8
@@ -17,11 +17,10 @@ caps:
     - {id: 2, cat: TV, desc: "Serie TV"}
     - {id: 15, cat: Books/EBook, desc: "Ebook"}
     - {id: 17, cat: Books/Mags, desc: "Riviste e Giornali"}
-    - {id: 19, cat: XXX, desc: "XXX"}
     - {id: 3, cat: Audio, desc: "Music"}
     - {id: 7, cat: PC/Games, desc: "Games"}
     - {id: 23, cat: PC, desc: "Software"}
-    - {id: 24, cat: TV/Sport, desc: "EVENTI SPORTIVI"}
+    - {id: 24, cat: TV/Sport, desc: "Eventi Sportivi"}
     - {id: 25, cat: Other, desc: "Misc"}
 
   modes:
@@ -80,9 +79,9 @@ login:
 
 search:
   paths:
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/wiki/Torrent-API-(UNIT3D-v8.x.x)
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/blob/master/app/Http/Controllers/API/TorrentController.php#L476
-    - path: "/api/torrents/filter"
+    # https://hdinnovations.github.io/UNIT3D/torrent_api.html
+    # https://github.com/HDInnovations/UNIT3D/blob/master/app/Http/Controllers/API/TorrentController.php#L657
+    - path: api/torrents/filter
       response:
         type: json
 
@@ -130,7 +129,7 @@ search:
       text: "{{ if and (.Config.single_file_release_use_filename) (eq .Result.files \"1\") (.Result.title_filename) }}{{ .Result.title_filename }}{{ else }}{{ .Result.title_optional }}{{ end }}"
       filters:
         - name: re_replace # replace special characters with " " (space)
-          args: ["[\\[!\"#$%&'()*+,\\-.\\/:;<=>?@[\\]^_`{|}~]", " "]
+          args: ["[\\[!\"#$%&'()*+,\\/:;<=>?@\\^`{|}~]", " "]
         - name: diacritics
           args: replace
         - name: re_replace # replace multiple spaces
@@ -156,8 +155,6 @@ search:
       selector: details_link
     download:
       selector: download_link
-    infohash:
-      selector: info_hash
     poster:
       selector: meta.poster
       filters:
@@ -176,8 +173,13 @@ search:
           args: ["(?i)(televisione film)", "televisione_film"]
         - name: replace
           args: [" & ", "_&_"]
+    _internal:
+      selector: internal
+      case:
+        False: "{{ .False }}"
+        True: "{{ .True }}"
     description:
-      text: "{{ .Result.genre }}"
+      text: "{{ if .Result._internal }}Internal{{ else }}{{ end }}{{ if and .Result._internal .Result.genre }} | {{ else }}{{ end }}{{ .Result.genre }}"
     seeders:
       selector: seeders
     leechers:
@@ -225,4 +227,4 @@ search:
     minimumseedtime:
       # 6 days (as seconds = 6 x 24 x 60 x 60)
       text: 518400
-# json UNIT3D 8.3.3 (custom)
+# json UNIT3D 9.1.7 (custom)

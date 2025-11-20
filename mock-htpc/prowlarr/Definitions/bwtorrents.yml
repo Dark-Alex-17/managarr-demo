@@ -1,21 +1,21 @@
 ---
 id: bwtorrents
 name: BwTorrents
-description: "BwTorrents is a Private Torrent Tracker for BollyWood MOVIES / TV / GENERAL"
+description: "BwTorrents is an INDIAN Private Torrent Tracker for MOVIES / TV"
 language: en-US
 type: private
 encoding: UTF-8
 links:
   - https://bwtorrents.tv/
-  - https://www.bwtorrents.life/
   - https://www.bwtorrents.pro/
   - https://bwtorrents.cc/
+  - https://bwtorrents.live/
 legacylinks:
   - https://bwtorrents.fun/
   - https://bwtorrents.xyz/
   - https://bwtorrents.us/
-  - https://bwtorrents.live/
   - https://bwtorrents.co/
+  - https://www.bwtorrents.life/
 
 caps:
   categorymappings:

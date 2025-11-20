@@ -1,0 +1,687 @@
+2025-11-20 17:23:46.7|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr - Version 5.3.6.8612
+2025-11-20 17:23:46.8|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-11-20 17:23:46.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-11-20 17:23:47.2|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-11-20 17:23:47.2|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-20 17:23:47.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-20 17:23:47.4|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-20 17:23:47.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-20 17:23:47.4|Info|DatabaseEngineVersionCheck|SQLite 3.41.2
+2025-11-20 17:23:47.4|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0488572s
+2025-11-20 17:23:47.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-20 17:23:47.4|Info|FluentMigrator.Runner.MigrationRunner|=> 0.051042s
+2025-11-20 17:23:47.5|Warn|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No XML encryptor configured. Key {eb35e00d-7dbb-4f8e-be16-20107ebc6ce3} may be persisted to storage in unencrypted form.
+2025-11-20 17:23:47.6|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-20 17:23:47.6|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-20 17:23:47.6|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-20 17:23:47.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-20 17:23:47.6|Info|DatabaseEngineVersionCheck|SQLite 3.41.2
+2025-11-20 17:23:47.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0029679s
+2025-11-20 17:23:47.6|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-20 17:23:47.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0030848s
+2025-11-20 17:23:47.9|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:7878
+2025-11-20 17:23:48.2|Info|CommandExecutor|Starting 2 threads for tasks.
+2025-11-20 17:23:48.2|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-11-20 17:23:48.2|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-11-20 17:23:48.2|Info|Microsoft.Hosting.Lifetime|Content root path: /app/radarr/bin
+2025-11-20 17:23:58.8|Error|DownloadClientRemovesCompletedDownloadsCheck|Unknown error occurred in DownloadClientHistoryRetentionCheck HealthCheck
+
+[v5.3.6.8612] System.Net.Http.HttpRequestException: Resource temporarily unavailable (transmission:9091)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 298
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 284
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 107
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./Radarr.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 223
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 260
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetSessionVariables(TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 146
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetConfig(TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 120
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetStatus() in ./Radarr.Core/Download/Clients/Transmission/TransmissionBase.cs:line 186
+   at NzbDrone.Core.HealthCheck.Checks.DownloadClientRemovesCompletedDownloadsCheck.Check() in ./Radarr.Core/HealthCheck/Checks/DownloadClientRemovesCompletedDownloadsCheck.cs:line 42
+
+
+2025-11-20 17:24:04.3|Info|Radarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:04.4|Info|Radarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:04.4|Info|Radarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:04.4|Info|Radarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:04.5|Info|Radarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:04.5|Info|Radarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:04.5|Info|Radarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:09.0|Error|DownloadClientSortingCheck|Unknown error occurred in DownloadClientSortingCheck HealthCheck
+
+[v5.3.6.8612] System.Net.Http.HttpRequestException: Resource temporarily unavailable (transmission:9091)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 298
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 284
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 107
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./Radarr.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 223
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 260
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetSessionVariables(TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 146
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetConfig(TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 120
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetStatus() in ./Radarr.Core/Download/Clients/Transmission/TransmissionBase.cs:line 186
+   at NzbDrone.Core.HealthCheck.Checks.DownloadClientSortingCheck.Check() in ./Radarr.Core/HealthCheck/Checks/DownloadClientSortingCheck.cs:line 43
+
+
+2025-11-20 17:24:18.3|Info|HousekeepingService|Running housecleaning tasks
+2025-11-20 17:24:18.3|Info|BackupService|Starting Backup
+2025-11-20 17:24:18.3|Info|RefreshMovieService|Updating info for Batman Begins
+2025-11-20 17:24:18.4|Info|Database|Vacuuming Log database
+2025-11-20 17:24:18.4|Info|Database|Log database compressed
+2025-11-20 17:24:18.4|Info|Database|Vacuuming Main database
+2025-11-20 17:24:18.5|Info|Database|Main database compressed
+2025-11-20 17:24:18.7|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2025-11-20 17:24:19.0|Info|DiskScanService|Scanning disk for Batman Begins
+2025-11-20 17:24:19.0|Info|MediaCoverService|Downloading Poster for [Batman Begins (2005)][tt0372784, 272] https://image.tmdb.org/t/p/original/sPX89Td70IDDjVr85jdSBb4rWGr.jpg
+2025-11-20 17:24:19.1|Info|DiskScanService|Completed scanning disk for Batman Begins
+2025-11-20 17:24:19.1|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Batman Begins (2005)/batman-begins.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x22756c0] EBML header parsing failed
+/movies/Batman Begins (2005)/batman-begins.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:19.1|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:19.1|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:19.1|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:19.1|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:19.2|Info|RefreshMovieService|Updating info for The Dark Knight
+2025-11-20 17:24:19.2|Info|MediaCoverService|Downloading Fanart for [Batman Begins (2005)][tt0372784, 272] https://image.tmdb.org/t/p/original/ew5FcYiRhTYNJAkxoVPMNlCOdVn.jpg
+2025-11-20 17:24:19.4|Info|DiskScanService|Scanning disk for The Dark Knight
+2025-11-20 17:24:19.4|Info|DiskScanService|Completed scanning disk for The Dark Knight
+2025-11-20 17:24:19.4|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/The Dark Knight (2008)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x24e36c0] EBML header parsing failed
+/movies/The Dark Knight (2008)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:19.4|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:19.4|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:19.4|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:19.4|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:19.4|Info|MediaCoverService|Downloading Poster for [The Dark Knight (2008)][tt0468569, 155] https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg
+2025-11-20 17:24:19.5|Info|RefreshMovieService|Updating info for The Dark Knight Rises
+2025-11-20 17:24:19.5|Info|MediaCoverService|Downloading Fanart for [The Dark Knight (2008)][tt0468569, 155] https://image.tmdb.org/t/p/original/dqK9Hag1054tghRQSqLSfrkvQnA.jpg
+2025-11-20 17:24:19.7|Info|DiskScanService|Scanning disk for The Dark Knight Rises
+2025-11-20 17:24:19.7|Info|DiskScanService|Completed scanning disk for The Dark Knight Rises
+2025-11-20 17:24:19.7|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/The Dark Knight Rises (2012)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2b046c0] EBML header parsing failed
+/movies/The Dark Knight Rises (2012)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:19.7|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:19.7|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:19.7|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:19.7|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:19.8|Info|DiskScanService|Scanning disk for Dead Space: Downfall
+2025-11-20 17:24:19.8|Info|DiskScanService|Completed scanning disk for Dead Space: Downfall
+2025-11-20 17:24:19.8|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:19.8|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:19.8|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:19.8|Info|MediaCoverService|Downloading Poster for [The Dark Knight Rises (2012)][tt1345836, 49026] https://image.tmdb.org/t/p/original/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg
+2025-11-20 17:24:19.8|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:19.8|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2025-11-20 17:24:19.8|Info|RefreshMovieService|Updating info for Dune Messiah
+2025-11-20 17:24:19.8|Info|MediaCoverService|Downloading Fanart for [The Dark Knight Rises (2012)][tt1345836, 49026] https://image.tmdb.org/t/p/original/c3OHQncTAnKFhdOTX7D3LTW6son.jpg
+2025-11-20 17:24:19.9|Info|DiskScanService|Scanning disk for Dune: Part Three
+2025-11-20 17:24:19.9|Info|DiskScanService|Completed scanning disk for Dune: Part Three
+2025-11-20 17:24:19.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:19.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:19.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:19.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:19.9|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2025-11-20 17:24:19.9|Info|MediaCoverService|Downloading Poster for [Dune: Part Three (2026)][tt31378509, 1170608] https://image.tmdb.org/t/p/original/d1Xd1R45mz2iFAenTs7ofDp0OIv.jpg
+2025-11-20 17:24:19.9|Info|RefreshMovieService|Updating info for The Empire Strikes Back
+2025-11-20 17:24:20.1|Info|MetadataService|Movie folder does not exist, skipping metadata image creation
+2025-11-20 17:24:20.3|Info|DiskScanService|Scanning disk for The Empire Strikes Back
+2025-11-20 17:24:20.3|Info|DiskScanService|Completed scanning disk for The Empire Strikes Back
+2025-11-20 17:24:20.3|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/The Empire Strikes Back (1980)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2fbd6c0] EBML header parsing failed
+/movies/The Empire Strikes Back (1980)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:20.3|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:20.3|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:20.3|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:20.3|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:20.3|Info|MediaCoverService|Downloading Poster for [The Empire Strikes Back (1980)][tt0080684, 1891] https://image.tmdb.org/t/p/original/nNAeTmF4CtdSgMDplXTDPOpYzsX.jpg
+2025-11-20 17:24:20.4|Info|RefreshMovieService|Updating info for Halo
+2025-11-20 17:24:20.4|Info|MediaCoverService|Downloading Fanart for [The Empire Strikes Back (1980)][tt0080684, 1891] https://image.tmdb.org/t/p/original/dMZxEdrWIzUmUoOz2zvmFuutbj7.jpg
+2025-11-20 17:24:20.4|Info|DiskScanService|Scanning disk for Halo
+2025-11-20 17:24:20.5|Info|DiskScanService|Completed scanning disk for Halo
+2025-11-20 17:24:20.5|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Halo (2019)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x3a026c0] EBML header parsing failed
+/movies/Halo (2019)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:20.5|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:20.5|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:20.5|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:20.5|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:20.5|Info|MediaCoverService|Downloading Poster for [Halo (2019)][tt10276188, 770523] https://image.tmdb.org/t/p/original/90jgxI5Co5f9lAaSGNcJthouhiS.jpg
+2025-11-20 17:24:20.5|Info|RefreshMovieService|Updating info for Harry Potter and the Philosopher's Stone
+2025-11-20 17:24:20.5|Info|MediaCoverService|Downloading Fanart for [Halo (2019)][tt10276188, 770523] https://image.tmdb.org/t/p/original/fM845n4lxpX3GtTo1DGvjSVAv1Z.jpg
+2025-11-20 17:24:20.7|Info|DiskScanService|Scanning disk for Harry Potter and the Philosopher's Stone
+2025-11-20 17:24:20.7|Info|DiskScanService|Completed scanning disk for Harry Potter and the Philosopher's Stone
+2025-11-20 17:24:20.7|Error|VideoFileInfoReader|Unable to parse media info from file: /films/Harry Potter and the Philosopher's Stone (2001)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x34776c0] EBML header parsing failed
+/films/Harry Potter and the Philosopher's Stone (2001)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:20.7|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:20.7|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:20.7|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:20.7|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:20.7|Info|MediaCoverService|Downloading Poster for [Harry Potter and the Philosopher's Stone (2001)][tt0241527, 671] https://image.tmdb.org/t/p/original/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg
+2025-11-20 17:24:20.7|Info|RefreshMovieService|Updating info for Indiana Jones and the Dial of Destiny
+2025-11-20 17:24:20.8|Info|MediaCoverService|Downloading Fanart for [Harry Potter and the Philosopher's Stone (2001)][tt0241527, 671] https://image.tmdb.org/t/p/original/bfh9Z3Ghz4FOJAfLOAhmc3ccnHU.jpg
+2025-11-20 17:24:21.0|Info|DiskScanService|Scanning disk for Indiana Jones and the Dial of Destiny
+2025-11-20 17:24:21.0|Info|DiskScanService|Completed scanning disk for Indiana Jones and the Dial of Destiny
+2025-11-20 17:24:21.0|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Indiana Jones and the Dial of Destiny (2023)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x39186c0] EBML header parsing failed
+/movies/Indiana Jones and the Dial of Destiny (2023)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:21.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:21.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:21.0|Info|MediaCoverService|Downloading Poster for [Indiana Jones and the Dial of Destiny (2023)][tt1462764, 335977] https://image.tmdb.org/t/p/original/Af4bXE63pVsb2FtbW8uYIyPBadD.jpg
+2025-11-20 17:24:21.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:21.0|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:21.0|Info|RefreshMovieService|Updating info for Indiana Jones and the Kingdom of the Crystal Skull
+2025-11-20 17:24:21.1|Info|MediaCoverService|Downloading Fanart for [Indiana Jones and the Dial of Destiny (2023)][tt1462764, 335977] https://image.tmdb.org/t/p/original/57JocxmicOoAMhkUSmdKBlpZWMT.jpg
+2025-11-20 17:24:21.2|Info|DiskScanService|Scanning disk for Indiana Jones and the Kingdom of the Crystal Skull
+2025-11-20 17:24:21.2|Info|DiskScanService|Completed scanning disk for Indiana Jones and the Kingdom of the Crystal Skull
+2025-11-20 17:24:21.2|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Indiana Jones and the Kingdom of the Crystal Skull (2008)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x24cc6c0] EBML header parsing failed
+/movies/Indiana Jones and the Kingdom of the Crystal Skull (2008)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:21.2|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:21.2|Info|MediaCoverService|Downloading Poster for [Indiana Jones and the Kingdom of the Crystal Skull (2008)][tt0367882, 217] https://image.tmdb.org/t/p/original/56As6XEM1flWvprX4LgkPl8ii4K.jpg
+2025-11-20 17:24:21.2|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:21.2|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:21.2|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:21.2|Info|RefreshMovieService|Updating info for Indiana Jones and the Last Crusade
+2025-11-20 17:24:21.3|Info|MediaCoverService|Downloading Fanart for [Indiana Jones and the Kingdom of the Crystal Skull (2008)][tt0367882, 217] https://image.tmdb.org/t/p/original/p96949hcwUG2BwE6MgKmw0uYNCx.jpg
+2025-11-20 17:24:21.4|Info|DiskScanService|Scanning disk for Indiana Jones and the Last Crusade
+2025-11-20 17:24:21.4|Info|DiskScanService|Completed scanning disk for Indiana Jones and the Last Crusade
+2025-11-20 17:24:21.4|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Indiana Jones and the Last Crusade (1989)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2c246c0] EBML header parsing failed
+/movies/Indiana Jones and the Last Crusade (1989)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:21.4|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:21.4|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:21.4|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:21.4|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:21.4|Info|MediaCoverService|Downloading Poster for [Indiana Jones and the Last Crusade (1989)][tt0097576, 89] https://image.tmdb.org/t/p/original/sizg1AU8f8JDZX4QIgE4pjUMBvx.jpg
+2025-11-20 17:24:21.4|Info|RefreshMovieService|Updating info for Indiana Jones and the Temple of Doom
+2025-11-20 17:24:21.6|Info|MediaCoverService|Downloading Fanart for [Indiana Jones and the Last Crusade (1989)][tt0097576, 89] https://image.tmdb.org/t/p/original/12fvZHskx57kQfNEUXJ3v0flWYQ.jpg
+2025-11-20 17:24:21.6|Info|DiskScanService|Scanning disk for Indiana Jones and the Temple of Doom
+2025-11-20 17:24:21.6|Info|DiskScanService|Completed scanning disk for Indiana Jones and the Temple of Doom
+2025-11-20 17:24:21.6|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:21.6|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:21.6|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:21.6|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:21.6|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2025-11-20 17:24:21.6|Info|RefreshMovieService|Updating info for Raiders of the Lost Ark
+2025-11-20 17:24:21.6|Info|MediaCoverService|Downloading Poster for [Indiana Jones and the Temple of Doom (1984)][tt0087469, 87] https://image.tmdb.org/t/p/original/gpdVNUaa4LhRMLfJOPj1AZdhAZ3.jpg
+2025-11-20 17:24:21.8|Info|MediaCoverService|Downloading Fanart for [Indiana Jones and the Temple of Doom (1984)][tt0087469, 87] https://image.tmdb.org/t/p/original/f133nWlU6yUkZqqwcCXCbTEJWHr.jpg
+2025-11-20 17:24:21.8|Info|DiskScanService|Scanning disk for Raiders of the Lost Ark
+2025-11-20 17:24:21.8|Info|DiskScanService|Completed scanning disk for Raiders of the Lost Ark
+2025-11-20 17:24:21.8|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Raiders of the Lost Ark (1981)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2d856c0] EBML header parsing failed
+/movies/Raiders of the Lost Ark (1981)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:21.8|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:21.8|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:21.8|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:21.8|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:21.8|Info|MediaCoverService|Downloading Poster for [Raiders of the Lost Ark (1981)][tt0082971, 85] https://image.tmdb.org/t/p/original/ceG9VzoRAVGwivFU403Wc3AHRys.jpg
+2025-11-20 17:24:21.8|Info|RefreshMovieService|Updating info for Return of the Jedi
+2025-11-20 17:24:22.0|Info|MediaCoverService|Downloading Fanart for [Raiders of the Lost Ark (1981)][tt0082971, 85] https://image.tmdb.org/t/p/original/ueDw7djPgKPZfph0vC43aD2EMyF.jpg
+2025-11-20 17:24:22.2|Info|DiskScanService|Scanning disk for Return of the Jedi
+2025-11-20 17:24:22.2|Info|DiskScanService|Completed scanning disk for Return of the Jedi
+2025-11-20 17:24:22.2|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Return of the Jedi (1983)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1f4d6c0] EBML header parsing failed
+/movies/Return of the Jedi (1983)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:22.2|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:22.2|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:22.2|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:22.2|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:22.2|Info|MediaCoverService|Downloading Poster for [Return of the Jedi (1983)][tt0086190, 1892] https://image.tmdb.org/t/p/original/jQYlydvHm3kUix1f8prMucrplhm.jpg
+2025-11-20 17:24:22.2|Info|RefreshMovieService|Updating info for Star Wars
+2025-11-20 17:24:22.3|Info|MediaCoverService|Downloading Fanart for [Return of the Jedi (1983)][tt0086190, 1892] https://image.tmdb.org/t/p/original/r2IOBOeg5wLfLtyOnT5Pur6Tl4q.jpg
+2025-11-20 17:24:22.5|Info|DiskScanService|Scanning disk for Star Wars
+2025-11-20 17:24:22.5|Info|DiskScanService|Completed scanning disk for Star Wars
+2025-11-20 17:24:22.5|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Star Wars (1977)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x237a6c0] EBML header parsing failed
+/movies/Star Wars (1977)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:22.5|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:22.6|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:22.6|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:22.6|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:22.6|Info|MediaCoverService|Downloading Poster for [Star Wars (1977)][tt0076759, 11] https://image.tmdb.org/t/p/original/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg
+2025-11-20 17:24:22.6|Info|RefreshMovieService|Updating info for Star Wars: Episode I - The Phantom Menace
+2025-11-20 17:24:22.6|Info|MediaCoverService|Downloading Fanart for [Star Wars (1977)][tt0076759, 11] https://image.tmdb.org/t/p/original/2w4xG178RpB4MDAIfTkqAuSJzec.jpg
+2025-11-20 17:24:22.9|Info|DiskScanService|Scanning disk for Star Wars: Episode I - The Phantom Menace
+2025-11-20 17:24:22.9|Info|DiskScanService|Completed scanning disk for Star Wars: Episode I - The Phantom Menace
+2025-11-20 17:24:22.9|Info|MediaCoverService|Downloading Poster for [Star Wars: Episode I - The Phantom Menace (1999)][tt0120915, 1893] https://image.tmdb.org/t/p/original/6wkfovpn7Eq8dYNKaG5PY3q2oq6.jpg
+2025-11-20 17:24:22.9|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Star Wars Episode I - The Phantom Menace (1999)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x33276c0] EBML header parsing failed
+/movies/Star Wars Episode I - The Phantom Menace (1999)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:22.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:22.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:22.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:22.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:23.0|Info|RefreshMovieService|Updating info for Star Wars: Episode II - Attack of the Clones
+2025-11-20 17:24:23.0|Info|MediaCoverService|Downloading Fanart for [Star Wars: Episode I - The Phantom Menace (1999)][tt0120915, 1893] https://image.tmdb.org/t/p/original/dhkztgCspLkl1bKTdX9lR81PAPG.jpg
+2025-11-20 17:24:23.0|Info|MetadataService|Movie folder does not exist, skipping metadata image creation
+2025-11-20 17:24:23.3|Info|DiskScanService|Scanning disk for Star Wars: Episode II - Attack of the Clones
+2025-11-20 17:24:23.3|Info|DiskScanService|Completed scanning disk for Star Wars: Episode II - Attack of the Clones
+2025-11-20 17:24:23.3|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Star Wars Episode II - Attack of the Clones (2002)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1c136c0] EBML header parsing failed
+/movies/Star Wars Episode II - Attack of the Clones (2002)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:23.3|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:23.3|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:23.3|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:23.3|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:23.3|Info|MediaCoverService|Downloading Poster for [Star Wars: Episode II - Attack of the Clones (2002)][tt0121765, 1894] https://image.tmdb.org/t/p/original/oZNPzxqM2s5DyVWab09NTQScDQt.jpg
+2025-11-20 17:24:23.4|Info|RefreshMovieService|Updating info for Star Wars: Episode III - Revenge of the Sith
+2025-11-20 17:24:23.4|Info|MediaCoverService|Downloading Fanart for [Star Wars: Episode II - Attack of the Clones (2002)][tt0121765, 1894] https://image.tmdb.org/t/p/original/msYmRFJfXy0zsFd73PAEqdetKpO.jpg
+2025-11-20 17:24:23.7|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:24:23.7|Info|DiskScanService|Scanning disk for Star Wars: Episode III - Revenge of the Sith
+2025-11-20 17:24:23.7|Info|DiskScanService|Completed scanning disk for Star Wars: Episode III - Revenge of the Sith
+2025-11-20 17:24:23.7|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Star Wars Episode III - Revenge of the Sith (2005)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1f3a6c0] EBML header parsing failed
+/movies/Star Wars Episode III - Revenge of the Sith (2005)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:23.7|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:23.7|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:23.7|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:23.7|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:23.7|Info|MediaCoverService|Downloading Poster for [Star Wars: Episode III - Revenge of the Sith (2005)][tt0121766, 1895] https://image.tmdb.org/t/p/original/xfSAoBEm9MNBjmlNcDYLvLSMlnq.jpg
+2025-11-20 17:24:23.7|Info|RefreshMovieService|Updating info for Star Wars: The Force Awakens
+2025-11-20 17:24:23.7|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v5.3.6.8612] System.Net.Http.HttpRequestException: Resource temporarily unavailable (transmission:9091)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 298
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 284
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 107
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./Radarr.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 223
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 260
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 192
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 156
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in ./Radarr.Core/Download/Clients/Transmission/TransmissionBase.cs:line 40
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in ./Radarr.Core/Download/TrackedDownloads/DownloadMonitoringService.cs:line 90
+
+
+2025-11-20 17:24:23.8|Info|RefreshCollectionService|Updating info for The Dark Knight Collection
+2025-11-20 17:24:23.8|Info|MediaCoverService|Downloading Fanart for [Star Wars: Episode III - Revenge of the Sith (2005)][tt0121766, 1895] https://image.tmdb.org/t/p/original/jniabJVBSW3EqLlyhjxWCZjVkiE.jpg
+2025-11-20 17:24:24.0|Info|DiskScanService|Scanning disk for Star Wars: The Force Awakens
+2025-11-20 17:24:24.0|Info|DiskScanService|Completed scanning disk for Star Wars: The Force Awakens
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Star Wars The Force Awakens (2015)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2e3a6c0] EBML header parsing failed
+/movies/Star Wars The Force Awakens (2015)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:24.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:24.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:24.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:24.0|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:24.0|Info|MediaCoverService|Downloading Poster for [Star Wars: The Force Awakens (2015)][tt2488496, 140607] https://image.tmdb.org/t/p/original/wqnLdwVXoBjKibFRR5U3y0aDUhs.jpg
+2025-11-20 17:24:24.0|Info|RefreshCollectionService|Updating info for Dead Space Collection
+2025-11-20 17:24:24.0|Info|RefreshMovieService|Updating info for Star Wars: The Last Jedi
+2025-11-20 17:24:24.0|Info|MediaCoverService|Downloading Fanart for [Star Wars: The Force Awakens (2015)][tt2488496, 140607] https://image.tmdb.org/t/p/original/8BTsTfln4jlQrLXUBquXJ0ASQy9.jpg
+2025-11-20 17:24:24.1|Info|RefreshCollectionService|Updating info for Dune Collection
+2025-11-20 17:24:24.2|Info|DiskScanService|Scanning disk for Star Wars: The Last Jedi
+2025-11-20 17:24:24.2|Info|DiskScanService|Completed scanning disk for Star Wars: The Last Jedi
+2025-11-20 17:24:24.2|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Star Wars The Last Jedi (2017)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2e106c0] EBML header parsing failed
+/movies/Star Wars The Last Jedi (2017)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:24.2|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:24.2|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:24.2|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:24.2|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:24.2|Info|MediaCoverService|Downloading Poster for [Star Wars: The Last Jedi (2017)][tt2527336, 181808] https://image.tmdb.org/t/p/original/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg
+2025-11-20 17:24:24.2|Info|RefreshCollectionService|Updating info for Harry Potter Collection
+2025-11-20 17:24:24.2|Info|RefreshMovieService|Updating info for Star Wars: The Rise of Skywalker
+2025-11-20 17:24:24.3|Info|RefreshCollectionService|Updating info for Indiana Jones Collection
+2025-11-20 17:24:24.3|Info|MediaCoverService|Downloading Fanart for [Star Wars: The Last Jedi (2017)][tt2527336, 181808] https://image.tmdb.org/t/p/original/5Iw7zQTHVRBOYpA0V6z0yypOPZh.jpg
+2025-11-20 17:24:24.4|Info|DiskScanService|Scanning disk for Star Wars: The Rise of Skywalker
+2025-11-20 17:24:24.4|Info|DiskScanService|Completed scanning disk for Star Wars: The Rise of Skywalker
+2025-11-20 17:24:24.4|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Star Wars The Rise of Skywalker (2019)/movie.mkv
+
+[v5.3.6.8612] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x31056c0] EBML header parsing failed
+/movies/Star Wars The Rise of Skywalker (2019)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Radarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2025-11-20 17:24:24.4|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:24.4|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:24.4|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:24.4|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:24.4|Info|RefreshMovieService|Updating info for Test
+2025-11-20 17:24:24.4|Info|RefreshCollectionService|Updating info for Star Wars Collection
+2025-11-20 17:24:24.4|Info|MediaCoverService|Downloading Poster for [Star Wars: The Rise of Skywalker (2019)][tt2527338, 181812] https://image.tmdb.org/t/p/original/db32LaOibwEliAmSL2jjDF6oDdj.jpg
+2025-11-20 17:24:24.5|Info|DiskScanService|Scanning disk for Test
+2025-11-20 17:24:24.5|Info|DiskScanService|Completed scanning disk for Test
+2025-11-20 17:24:24.5|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:24.5|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:24.5|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:24.5|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:24.5|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2025-11-20 17:24:24.5|Info|MediaCoverService|Downloading Poster for [Test (2013)][tt2407380, 226979] https://image.tmdb.org/t/p/original/tTWRomgIMOoIB3CJLPlVbqSawEm.jpg
+2025-11-20 17:24:24.6|Info|MediaCoverService|Downloading Fanart for [Star Wars: The Rise of Skywalker (2019)][tt2527338, 181812] https://image.tmdb.org/t/p/original/auJKGst3vXpJozHZh4nMFs0xWIU.jpg
+2025-11-20 17:24:24.6|Info|RssSyncService|Starting RSS Sync
+2025-11-20 17:24:24.6|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/3/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:25:19 due to recent failures." />
+2025-11-20 17:24:24.6|Info|MediaCoverService|Downloading Fanart for [Test (2013)][tt2407380, 226979] https://image.tmdb.org/t/p/original/xySCWwZVuU03xOsJfs1Qk8yG2DF.jpg
+2025-11-20 17:24:24.6|Warn|Torznab|API Request Limit reached for Badass Torrents (Prowlarr). Disabled for 00:00:55
+2025-11-20 17:24:24.8|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 03/16/2024 22:51:45 and 11/20/2025 14:41:41 UTC. Search may be required.
+2025-11-20 17:24:24.9|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/37/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:25:19 due to recent failures." />
+2025-11-20 17:24:24.9|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/15/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:29:24 due to recent failures." />
+2025-11-20 17:24:24.9|Warn|Torznab|API Request Limit reached for kickasstorrents.to (Prowlarr). Disabled for 00:05:00
+2025-11-20 17:24:24.9|Info|MetadataService|Movie folder does not exist, skipping metadata image creation
+2025-11-20 17:24:25.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/37/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:25:19 due to recent failures." />
+2025-11-20 17:24:25.0|Warn|Torznab|API Request Limit reached for TorrentGalaxy (Prowlarr). Disabled for 00:00:55
+2025-11-20 17:24:25.0|Warn|Torznab|Indexer TheRARBG (Prowlarr) rss sync didn't cover the period between 03/04/2024 03:42:10 and 11/20/2025 10:30:31 UTC. Search may be required.
+2025-11-20 17:24:25.3|Warn|Torznab|Indexer YTS (Prowlarr) rss sync didn't cover the period between 03/16/2024 21:43:13 and 11/16/2025 13:25:12 UTC. Search may be required.
+2025-11-20 17:24:25.3|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/17/api?t=movie&cat=2000,2040,2030,2045,2070,2010,2060,2020&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:25:25 due to recent failures." />
+2025-11-20 17:24:25.3|Warn|Torznab|API Request Limit reached for Knaben (Prowlarr). Disabled for 00:01:00
+2025-11-20 17:24:26.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:24:26.7|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 03/16/2024 23:06:04 and 11/20/2025 17:24:24 UTC. Search may be required.
+2025-11-20 17:24:27.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/15/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:29:24 due to recent failures." />
+2025-11-20 17:24:27.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/15/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:29:24 due to recent failures." />
+2025-11-20 17:24:27.0|Warn|Torznab|Unable to connect to indexer
+
+[v5.3.6.8612] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr:9696/15/api?t=caps&apikey=(removed)   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.Get(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 327
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in ./Radarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 58
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.<>c__DisplayClass4_0.<GetCapabilities>b__0() in ./Radarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./Radarr.Common/Cache/Cached.cs:line 99
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities(NewznabSettings indexerSettings) in ./Radarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 37
+   at NzbDrone.Core.Indexers.Newznab.NewznabRequestGenerator.GetRecentRequests() in ./Radarr.Core/Indexers/Newznab/NewznabRequestGenerator.cs:line 92
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./Radarr.Core/Indexers/HttpIndexerBase.cs:line 352
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:29:24 due to recent failures." />
+
+
+2025-11-20 17:24:27.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log above the ValidationFailure for more details. HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr:9696/15/api?t=caps&apikey=(removed)
+2025-11-20 17:24:28.3|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:24:30.4|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:24:33.1|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:24:33.1|Warn|Torznab|Indexer Torlock (Prowlarr) rss sync didn't cover the period between 03/16/2024 22:11:47 and 11/20/2025 03:24:33 UTC. Search may be required.
+2025-11-20 17:24:33.9|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:24:34.7|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:24:36.3|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:24:36.8|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:24:38.3|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:24:40.8|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:24:42.8|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:24:55.8|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:24:58.7|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:25:21.9|Warn|Torznab|Indexer Internet Archive (Prowlarr) rss sync didn't cover the period between 03/16/2024 23:06:20 and 11/20/2025 02:12:13 UTC. Search may be required.
+2025-11-20 17:25:31.3|Warn|Torznab|Indexer YourBittorrent (Prowlarr) rss sync didn't cover the period between 12/03/2024 07:00:00 and 01/07/2025 07:00:00 UTC. Search may be required.
+2025-11-20 17:25:50.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/3/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:26:49 due to recent failures." />
+2025-11-20 17:25:50.0|Warn|Torznab|Unable to connect to indexer
+
+[v5.3.6.8612] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/3/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./Radarr.Core/Indexers/HttpIndexerBase.cs:line 335
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./Radarr.Core/Indexers/HttpIndexerBase.cs:line 317
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./Radarr.Core/Indexers/HttpIndexerBase.cs:line 458
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:26:49 due to recent failures." />
+
+
+2025-11-20 17:25:50.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log above the ValidationFailure for more details. HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/3/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100]
+2025-11-20 17:26:04.6|Warn|Torznab|Isohunt2 (Prowlarr) server is currently unavailable. http://prowlarr:9696/13/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-20 17:26:04.7|Warn|Torznab|kickasstorrents.ws (Prowlarr) server is currently unavailable. http://prowlarr:9696/16/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-20 17:26:04.7|Info|DownloadDecisionMaker|Processing 432 releases
+2025-11-20 17:26:05.7|Info|RssSyncService|RSS Sync Completed. Reports found: 432, Reports grabbed: 0
+2025-11-20 17:27:01.9|Warn|Torznab|Unable to connect to indexer.
+2025-11-20 17:27:01.9|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, indexer's server is unavailable. Try again later. Http request timed out
+2025-11-20 17:27:02.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/16/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:27:04 due to recent failures." />
+2025-11-20 17:27:02.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/16/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:27:04 due to recent failures." />
+2025-11-20 17:27:02.0|Warn|Torznab|Unable to connect to indexer
+
+[v5.3.6.8612] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/16/api?t=caps&apikey=(removed)   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.Get(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 327
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in ./Radarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 58
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.<>c__DisplayClass4_0.<GetCapabilities>b__0() in ./Radarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./Radarr.Common/Cache/Cached.cs:line 99
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities(NewznabSettings indexerSettings) in ./Radarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 37
+   at NzbDrone.Core.Indexers.Newznab.NewznabRequestGenerator.GetRecentRequests() in ./Radarr.Core/Indexers/Newznab/NewznabRequestGenerator.cs:line 90
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./Radarr.Core/Indexers/HttpIndexerBase.cs:line 458
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:27:04 due to recent failures." />
+
+
+2025-11-20 17:27:02.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log above the ValidationFailure for more details. HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/16/api?t=caps&apikey=(removed)
+2025-11-20 17:27:02.3|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:27:04.3|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:27:06.9|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:27:08.7|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:27:10.3|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:27:12.3|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:27:24.7|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:27:25.5|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:27:26.1|Warn|Torznab|Unable to connect to indexer.
+2025-11-20 17:27:26.1|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, indexer's server is unavailable. Try again later. Http request timed out
+2025-11-20 17:27:27.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:27:29.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:27:31.4|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:27:33.5|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:27:35.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:27:37.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:27:40.2|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:27:41.5|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:29:05.6|Warn|Torznab|Unable to connect to indexer.
+2025-11-20 17:29:05.6|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, indexer's server is unavailable. Try again later. Http request timed out
+2025-11-20 17:30:23.6|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v5.3.6.8612] System.Net.Http.HttpRequestException: Resource temporarily unavailable (transmission:9091)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 309
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 285
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 107
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./Radarr.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 223
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 260
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 192
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 156
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in ./Radarr.Core/Download/Clients/Transmission/TransmissionBase.cs:line 40
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in ./Radarr.Core/Download/TrackedDownloads/DownloadMonitoringService.cs:line 90
+
+
+2025-11-20 17:32:24.3|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-11-20 17:32:24.4|Info|ConsoleApp|Exiting main.

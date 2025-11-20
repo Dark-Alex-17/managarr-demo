@@ -1,7 +1,7 @@
 ---
 id: docspedia
 name: DocsPedia
-description: "DocsPedia is a Private Torrent Tracker for E-learning"
+description: "DocsPedia is a Private Torrent Tracker for E-LEARNING"
 language: en-US
 type: private
 encoding: UTF-8
@@ -26,6 +26,7 @@ caps:
     - {id: 79, cat: TV, desc: "Educational"}
     - {id: 93, cat: Books/EBook, desc: "Fantasy"}
     - {id: 71, cat: Other, desc: "Fonts"}
+    - {id: 94, cat: Books/EBook, desc: "Gaming"}
     - {id: 82, cat: Books/EBook, desc: "History"}
     - {id: 87, cat: Books/EBook, desc: "Horror"}
     - {id: 72, cat: Books, desc: "IT Books"}

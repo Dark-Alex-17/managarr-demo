@@ -3165,3 +3165,1210 @@ UNIQUE constraint failed: Tags.Label
 2024-12-14 02:35:59.7|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
 2024-12-14 02:36:57.5|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
 2024-12-14 02:36:57.6|Info|ConsoleApp|Exiting main.
+2025-11-20 17:23:46.8|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/Sonarr - Version 4.0.11.2680
+2025-11-20 17:23:46.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-11-20 17:23:46.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-11-20 17:23:47.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-11-20 17:23:47.4|Warn|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No XML encryptor configured. Key {38fcd761-1a0e-4a44-836a-f3fccf7d6c21} may be persisted to storage in unencrypted form.
+2025-11-20 17:23:47.5|Info|MigrationController|*** Migrating data source=/config/sonarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-20 17:23:47.6|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-20 17:23:47.6|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-20 17:23:47.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-20 17:23:47.7|Info|DatabaseEngineVersionCheck|SQLite 3.45.3
+2025-11-20 17:23:47.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0677913s
+2025-11-20 17:23:47.7|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-20 17:23:47.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0706774s
+2025-11-20 17:23:47.7|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-20 17:23:47.8|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-20 17:23:47.8|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-20 17:23:47.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-20 17:23:47.8|Info|DatabaseEngineVersionCheck|SQLite 3.45.3
+2025-11-20 17:23:47.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0019397s
+2025-11-20 17:23:47.8|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-20 17:23:47.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0020999s
+2025-11-20 17:23:48.1|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8989
+2025-11-20 17:23:48.4|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-11-20 17:23:48.4|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-11-20 17:23:48.4|Info|Microsoft.Hosting.Lifetime|Content root path: /app/sonarr/bin
+2025-11-20 17:23:48.5|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-11-20 17:23:59.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:23:59.3|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:23:59.3|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:23:59.3|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:23:59.3|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:23:59.4|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:23:59.4|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:23:59.4|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:23:59.4|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:23:59.4|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:23:59.7|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:23:59.7|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:00.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:00.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:00.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:00.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:00.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:00.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:00.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:00.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:00.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:00.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:00.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:00.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:00.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:00.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:00.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:00.1|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:18.4|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2025-11-20 17:24:18.5|Info|RssSyncService|Starting RSS Sync
+2025-11-20 17:24:18.5|Info|RefreshSeriesService|Updating Archive 81
+2025-11-20 17:24:18.6|Info|SceneMappingService|Updating Scene mappings
+2025-11-20 17:24:19.2|Info|RefreshEpisodeService|Starting episode info refresh for: [390936][Archive 81]
+2025-11-20 17:24:19.2|Info|RefreshEpisodeService|Finished episode refresh for series: [390936][Archive 81].
+2025-11-20 17:24:19.2|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/2/api?t=tvsearch&cat=5000,5070&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:25:19 due to recent failures." />
+2025-11-20 17:24:19.3|Info|DiskScanService|Scanning Archive 81
+2025-11-20 17:24:19.3|Warn|Torznab|API Request Limit reached for AniSource (Prowlarr). Disabled for 00:01:00
+2025-11-20 17:24:19.3|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/3/api?t=tvsearch&cat=5000,5070&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:25:19 due to recent failures." />
+2025-11-20 17:24:19.3|Warn|Torznab|API Request Limit reached for Badass Torrents (Prowlarr). Disabled for 00:01:00
+2025-11-20 17:24:19.3|Info|DiskScanService|Completed scanning disk for Archive 81
+2025-11-20 17:24:19.4|Info|MediaCoverService|Downloading Fanart for [390936][Archive 81] https://artworks.thetvdb.com/banners/v4/series/390936/backgrounds/683fce9fbc4a0.jpg
+2025-11-20 17:24:19.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Archive 81/Season 1/1.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2a516c0] EBML header parsing failed
+/tv/Archive 81/Season 1/1.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:19.5|Warn|Torznab|Indexer SubsPlease (Prowlarr) rss sync didn't cover the period between 12/13/2024 19:32:42 and 11/16/2025 17:57:01 UTC. Search may be required.
+2025-11-20 17:24:19.5|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 12/14/2024 01:08:42 and 11/20/2025 14:44:20 UTC. Search may be required.
+2025-11-20 17:24:19.6|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Archive 81/Season 1/2.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1f186c0] EBML header parsing failed
+/tv/Archive 81/Season 1/2.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:19.6|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Archive 81/Season 1/3.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2f926c0] EBML header parsing failed
+/tv/Archive 81/Season 1/3.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:19.6|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Archive 81/Season 1/4.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2aba6c0] EBML header parsing failed
+/tv/Archive 81/Season 1/4.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:19.6|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Archive 81/Season 1/5.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x330e6c0] EBML header parsing failed
+/tv/Archive 81/Season 1/5.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:19.6|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Archive 81/Season 1/6.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2e5b6c0] EBML header parsing failed
+/tv/Archive 81/Season 1/6.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:19.6|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Archive 81/Season 1/7.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1ed36c0] EBML header parsing failed
+/tv/Archive 81/Season 1/7.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:19.6|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Archive 81/Season 1/8.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1b306c0] EBML header parsing failed
+/tv/Archive 81/Season 1/8.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:19.6|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:19.6|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:19.7|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:19.7|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:19.7|Warn|Torznab|Indexer TheRARBG (Prowlarr) rss sync didn't cover the period between 12/14/2024 00:51:31 and 11/20/2025 14:18:46 UTC. Search may be required.
+2025-11-20 17:24:19.7|Info|RefreshSeriesService|Updating Chernobyl
+2025-11-20 17:24:19.8|Warn|Torznab|Indexer Shana Project (Prowlarr) rss sync didn't cover the period between 12/14/2024 01:47:00 and 11/19/2025 17:01:00 UTC. Search may be required.
+2025-11-20 17:24:20.0|Info|RefreshEpisodeService|Starting episode info refresh for: [360893][Chernobyl]
+2025-11-20 17:24:20.0|Info|RefreshEpisodeService|Finished episode refresh for series: [360893][Chernobyl].
+2025-11-20 17:24:20.0|Info|DiskScanService|Scanning Chernobyl
+2025-11-20 17:24:20.1|Info|DiskScanService|Completed scanning disk for Chernobyl
+2025-11-20 17:24:20.1|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Chernobyl/Season 1/1.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x31d46c0] EBML header parsing failed
+/tv/Chernobyl/Season 1/1.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:20.1|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/37/api?t=tvsearch&cat=5000,5040,5030,5045,5050,5070&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:25:19 due to recent failures." />
+2025-11-20 17:24:20.1|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Chernobyl/Season 1/2.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1a346c0] EBML header parsing failed
+/tv/Chernobyl/Season 1/2.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:20.1|Warn|Torznab|API Request Limit reached for TorrentGalaxy (Prowlarr). Disabled for 00:01:00
+2025-11-20 17:24:20.1|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Chernobyl/Season 1/3.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1bde6c0] EBML header parsing failed
+/tv/Chernobyl/Season 1/3.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:20.1|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Chernobyl/Season 1/4.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x34176c0] EBML header parsing failed
+/tv/Chernobyl/Season 1/4.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:20.1|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Chernobyl/Season 1/5.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x347e6c0] EBML header parsing failed
+/tv/Chernobyl/Season 1/5.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:20.1|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:20.1|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:20.1|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:20.1|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:20.1|Info|RefreshSeriesService|Updating The Enfield Haunting
+2025-11-20 17:24:20.2|Info|HousekeepingService|Running housecleaning tasks
+2025-11-20 17:24:20.3|Warn|Torznab|Indexer Tokyo Toshokan (Prowlarr) rss sync didn't cover the period between 12/14/2024 02:01:00 and 11/20/2025 12:16:00 UTC. Search may be required.
+2025-11-20 17:24:20.3|Info|Database|Vacuuming Log database
+2025-11-20 17:24:20.3|Info|Database|Log database compressed
+2025-11-20 17:24:20.3|Info|Database|Vacuuming Main database
+2025-11-20 17:24:20.4|Info|Database|Main database compressed
+2025-11-20 17:24:20.5|Info|BackupService|Starting Backup
+2025-11-20 17:24:20.7|Warn|Torznab|Indexer EZTV (Prowlarr) rss sync didn't cover the period between 12/14/2024 02:31:02 and 11/20/2025 10:37:20 UTC. Search may be required.
+2025-11-20 17:24:20.7|Info|RefreshEpisodeService|Starting episode info refresh for: [294431][The Enfield Haunting]
+2025-11-20 17:24:20.8|Info|RefreshEpisodeService|Finished episode refresh for series: [294431][The Enfield Haunting].
+2025-11-20 17:24:20.8|Info|DiskScanService|Scanning The Enfield Haunting
+2025-11-20 17:24:20.8|Info|DiskScanService|Completed scanning disk for The Enfield Haunting
+2025-11-20 17:24:20.8|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/The Enfield Haunting/Season 1/1.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2e006c0] EBML header parsing failed
+/tv/The Enfield Haunting/Season 1/1.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:20.8|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/The Enfield Haunting/Season 1/2.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1ee86c0] EBML header parsing failed
+/tv/The Enfield Haunting/Season 1/2.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:20.8|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/The Enfield Haunting/Season 1/3.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x30486c0] EBML header parsing failed
+/tv/The Enfield Haunting/Season 1/3.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:20.8|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:20.8|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:20.8|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:20.8|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:20.8|Info|RefreshSeriesService|Updating Halo Legends
+2025-11-20 17:24:20.8|Warn|Torznab|Indexer LimeTorrents (Prowlarr) rss sync didn't cover the period between 12/14/2024 02:20:02 and 11/20/2025 16:24:19 UTC. Search may be required.
+2025-11-20 17:24:20.9|Info|RefreshEpisodeService|Starting episode info refresh for: [125441][Halo Legends]
+2025-11-20 17:24:20.9|Warn|RefreshEpisodeService|Show 125441 (Halo Legends) had 1 old episodes appear, please check monitored status.
+2025-11-20 17:24:20.9|Info|RefreshEpisodeService|Finished episode refresh for series: [125441][Halo Legends].
+2025-11-20 17:24:20.9|Info|DiskScanService|Scanning Halo Legends
+2025-11-20 17:24:20.9|Info|DiskScanService|Completed scanning disk for Halo Legends
+2025-11-20 17:24:20.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:20.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:20.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:20.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:20.9|Info|MetadataService|Series folder does not exist, skipping metadata creation
+2025-11-20 17:24:20.9|Info|RefreshSeriesService|Updating Hellsing
+2025-11-20 17:24:20.9|Warn|Torznab|Indexer Bangumi Moe (Prowlarr) rss sync didn't cover the period between 12/14/2024 02:00:49 and 11/20/2025 14:31:08 UTC. Search may be required.
+2025-11-20 17:24:21.2|Info|RefreshEpisodeService|Starting episode info refresh for: [71278][Hellsing]
+2025-11-20 17:24:21.2|Warn|RefreshEpisodeService|Show 71278 (Hellsing) had 1 old episodes appear, please check monitored status.
+2025-11-20 17:24:21.2|Info|RefreshEpisodeService|Finished episode refresh for series: [71278][Hellsing].
+2025-11-20 17:24:21.2|Info|DiskScanService|Scanning Hellsing
+2025-11-20 17:24:21.2|Info|DiskScanService|Completed scanning disk for Hellsing
+2025-11-20 17:24:21.2|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Hellsing/Season 1/1.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x30f46c0] EBML header parsing failed
+/tv/Hellsing/Season 1/1.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.2|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Hellsing/Season 1/2.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x26856c0] EBML header parsing failed
+/tv/Hellsing/Season 1/2.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.3|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Hellsing/Season 1/3.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2ce06c0] EBML header parsing failed
+/tv/Hellsing/Season 1/3.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.3|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Hellsing/Season 1/4.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x30096c0] EBML header parsing failed
+/tv/Hellsing/Season 1/4.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.3|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Hellsing/Season 1/5.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x38286c0] EBML header parsing failed
+/tv/Hellsing/Season 1/5.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.3|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Hellsing/Season 1/6.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x30656c0] EBML header parsing failed
+/tv/Hellsing/Season 1/6.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.3|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Hellsing/Season 1/7.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x24d46c0] EBML header parsing failed
+/tv/Hellsing/Season 1/7.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.3|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Hellsing/Season 1/8.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x39c66c0] EBML header parsing failed
+/tv/Hellsing/Season 1/8.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.3|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:21.3|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:21.3|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:21.3|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:21.3|Info|RefreshSeriesService|Updating Manhunt (2024)
+2025-11-20 17:24:21.3|Warn|Torznab|Indexer E-Hentai (Prowlarr) rss sync didn't cover the period between 12/14/2024 02:23:00 and 11/20/2025 14:31:00 UTC. Search may be required.
+2025-11-20 17:24:21.3|Info|RefreshEpisodeService|Starting episode info refresh for: [414337][Manhunt (2024)]
+2025-11-20 17:24:21.4|Info|RefreshEpisodeService|Finished episode refresh for series: [414337][Manhunt (2024)].
+2025-11-20 17:24:21.4|Info|DiskScanService|Scanning Manhunt (2024)
+2025-11-20 17:24:21.4|Info|DiskScanService|Completed scanning disk for Manhunt (2024)
+2025-11-20 17:24:21.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Manhunt (2024)/Season 1/1.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x34456c0] EBML header parsing failed
+/tv/Manhunt (2024)/Season 1/1.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Manhunt (2024)/Season 1/2.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x246a6c0] EBML header parsing failed
+/tv/Manhunt (2024)/Season 1/2.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Manhunt (2024)/Season 1/3.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x27016c0] EBML header parsing failed
+/tv/Manhunt (2024)/Season 1/3.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Manhunt (2024)/Season 1/4.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x36f96c0] EBML header parsing failed
+/tv/Manhunt (2024)/Season 1/4.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.4|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:21.4|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:21.4|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:21.4|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:21.4|Info|RefreshSeriesService|Updating MH370: The Plane That Disappeared
+2025-11-20 17:24:21.6|Info|RefreshEpisodeService|Starting episode info refresh for: [431139][MH370: The Plane That Disappeared]
+2025-11-20 17:24:21.6|Info|RefreshEpisodeService|Finished episode refresh for series: [431139][MH370: The Plane That Disappeared].
+2025-11-20 17:24:21.6|Info|DiskScanService|Scanning MH370: The Plane That Disappeared
+2025-11-20 17:24:21.6|Info|DiskScanService|Completed scanning disk for MH370: The Plane That Disappeared
+2025-11-20 17:24:21.6|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/MH370 - The Plane That Disappeared/Season 1/1.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x264d6c0] EBML header parsing failed
+/tv/MH370 - The Plane That Disappeared/Season 1/1.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.6|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/MH370 - The Plane That Disappeared/Season 1/2.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x208e6c0] EBML header parsing failed
+/tv/MH370 - The Plane That Disappeared/Season 1/2.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.6|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/MH370 - The Plane That Disappeared/Season 1/3.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x374e6c0] EBML header parsing failed
+/tv/MH370 - The Plane That Disappeared/Season 1/3.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.6|Info|MediaCoverService|Downloading Poster for [431139][MH370: The Plane That Disappeared] https://artworks.thetvdb.com/banners/v4/series/431139/posters/67e1e50aa18b5.jpg
+2025-11-20 17:24:21.6|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:21.6|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:21.6|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:21.6|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:21.6|Info|RefreshSeriesService|Updating The Outsider (2020)
+2025-11-20 17:24:21.7|Info|MediaCoverService|Downloading Clearlogo for [431139][MH370: The Plane That Disappeared] https://artworks.thetvdb.com/banners/v4/series/431139/clearlogo/67e1e48b33a13.png
+2025-11-20 17:24:21.7|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/14/2024 02:33:02 and 11/20/2025 17:24:20 UTC. Search may be required.
+2025-11-20 17:24:21.8|Info|RefreshEpisodeService|Starting episode info refresh for: [365480][The Outsider (2020)]
+2025-11-20 17:24:21.8|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:21.8|Info|RefreshEpisodeService|Finished episode refresh for series: [365480][The Outsider (2020)].
+2025-11-20 17:24:21.9|Info|DiskScanService|Scanning The Outsider (2020)
+2025-11-20 17:24:21.9|Info|DiskScanService|Completed scanning disk for The Outsider (2020)
+2025-11-20 17:24:21.9|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/The Outsider (2020)/Season 1/1.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x20e76c0] EBML header parsing failed
+/tv/The Outsider (2020)/Season 1/1.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.9|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/The Outsider (2020)/Season 1/2.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x32086c0] EBML header parsing failed
+/tv/The Outsider (2020)/Season 1/2.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.9|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/The Outsider (2020)/Season 1/3.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x30b86c0] EBML header parsing failed
+/tv/The Outsider (2020)/Season 1/3.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.9|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/The Outsider (2020)/Season 1/4.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x22986c0] EBML header parsing failed
+/tv/The Outsider (2020)/Season 1/4.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.9|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/The Outsider (2020)/Season 1/5.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x29c06c0] EBML header parsing failed
+/tv/The Outsider (2020)/Season 1/5.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.9|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/The Outsider (2020)/Season 1/6.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x29bb6c0] EBML header parsing failed
+/tv/The Outsider (2020)/Season 1/6.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.9|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/The Outsider (2020)/Season 1/7.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x31d96c0] EBML header parsing failed
+/tv/The Outsider (2020)/Season 1/7.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.9|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/The Outsider (2020)/Season 1/8.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1da56c0] EBML header parsing failed
+/tv/The Outsider (2020)/Season 1/8.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.9|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/The Outsider (2020)/Season 1/9.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1dd56c0] EBML header parsing failed
+/tv/The Outsider (2020)/Season 1/9.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.9|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/The Outsider (2020)/Season 1/10.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1a2d6c0] EBML header parsing failed
+/tv/The Outsider (2020)/Season 1/10.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.9|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/The Outsider (2020)/Specials/11.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2f136c0] EBML header parsing failed
+/tv/The Outsider (2020)/Specials/11.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:21.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:21.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:21.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:21.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:21.9|Info|RefreshSeriesService|Updating Sense8
+2025-11-20 17:24:22.3|Info|RefreshEpisodeService|Starting episode info refresh for: [268156][Sense8]
+2025-11-20 17:24:22.3|Info|RefreshEpisodeService|Finished episode refresh for series: [268156][Sense8].
+2025-11-20 17:24:22.3|Info|DiskScanService|Scanning Sense8
+2025-11-20 17:24:22.3|Info|DiskScanService|Completed scanning disk for Sense8
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 1/1.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2ac16c0] EBML header parsing failed
+/tv/Sense8/Season 1/1.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 1/2.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x349b6c0] EBML header parsing failed
+/tv/Sense8/Season 1/2.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 1/3.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x37626c0] EBML header parsing failed
+/tv/Sense8/Season 1/3.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 1/4.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1a836c0] EBML header parsing failed
+/tv/Sense8/Season 1/4.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 1/5.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x31646c0] EBML header parsing failed
+/tv/Sense8/Season 1/5.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 1/6.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1ea56c0] EBML header parsing failed
+/tv/Sense8/Season 1/6.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 1/7.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x23d76c0] EBML header parsing failed
+/tv/Sense8/Season 1/7.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 1/8.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2e296c0] EBML header parsing failed
+/tv/Sense8/Season 1/8.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 1/9.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2dc76c0] EBML header parsing failed
+/tv/Sense8/Season 1/9.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 1/10.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2f976c0] EBML header parsing failed
+/tv/Sense8/Season 1/10.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 1/11.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x27016c0] EBML header parsing failed
+/tv/Sense8/Season 1/11.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 1/12.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x36396c0] EBML header parsing failed
+/tv/Sense8/Season 1/12.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 2/13.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x22996c0] EBML header parsing failed
+/tv/Sense8/Season 2/13.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 2/14.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x237b6c0] EBML header parsing failed
+/tv/Sense8/Season 2/14.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 2/15.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x33a26c0] EBML header parsing failed
+/tv/Sense8/Season 2/15.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 2/16.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x34df6c0] EBML header parsing failed
+/tv/Sense8/Season 2/16.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 2/17.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x218c6c0] EBML header parsing failed
+/tv/Sense8/Season 2/17.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 2/18.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x36996c0] EBML header parsing failed
+/tv/Sense8/Season 2/18.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 2/19.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x33b66c0] EBML header parsing failed
+/tv/Sense8/Season 2/19.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.4|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 2/20.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2af76c0] EBML header parsing failed
+/tv/Sense8/Season 2/20.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.5|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 2/21.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x37526c0] EBML header parsing failed
+/tv/Sense8/Season 2/21.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.5|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 2/22.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2cfb6c0] EBML header parsing failed
+/tv/Sense8/Season 2/22.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.5|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Sense8/Season 2/23.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2bf46c0] EBML header parsing failed
+/tv/Sense8/Season 2/23.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.5|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:22.5|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:22.5|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:22.5|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:22.5|Info|RefreshSeriesService|Updating Storm of the Century
+2025-11-20 17:24:22.6|Info|RefreshEpisodeService|Starting episode info refresh for: [85538][Storm of the Century]
+2025-11-20 17:24:22.6|Info|RefreshEpisodeService|Finished episode refresh for series: [85538][Storm of the Century].
+2025-11-20 17:24:22.6|Info|DiskScanService|Scanning Storm of the Century
+2025-11-20 17:24:22.6|Info|DiskScanService|Completed scanning disk for Storm of the Century
+2025-11-20 17:24:22.6|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Storm of the Century/Season 1/1.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x27976c0] EBML header parsing failed
+/tv/Storm of the Century/Season 1/1.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.6|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Storm of the Century/Season 1/2.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x260b6c0] EBML header parsing failed
+/tv/Storm of the Century/Season 1/2.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.6|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Storm of the Century/Season 1/3.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x39956c0] EBML header parsing failed
+/tv/Storm of the Century/Season 1/3.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.6|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:22.6|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:22.6|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:22.6|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:22.6|Info|RefreshSeriesService|Updating The Test
+2025-11-20 17:24:22.6|Info|MediaCoverService|Downloading Poster for [85538][Storm of the Century] https://artworks.thetvdb.com/banners/posters/85538-1.jpg
+2025-11-20 17:24:22.7|Info|RefreshEpisodeService|Starting episode info refresh for: [372848][The Test]
+2025-11-20 17:24:22.7|Info|MediaCoverService|Downloading Fanart for [85538][Storm of the Century] https://artworks.thetvdb.com/banners/fanart/original/85538-2.jpg
+2025-11-20 17:24:22.7|Info|RefreshEpisodeService|Finished episode refresh for series: [372848][The Test].
+2025-11-20 17:24:22.7|Info|DiskScanService|Scanning The Test
+2025-11-20 17:24:22.7|Info|DiskScanService|Completed scanning disk for The Test
+2025-11-20 17:24:22.7|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:22.7|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:22.7|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:22.7|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:22.7|Info|MetadataService|Series folder does not exist, skipping metadata creation
+2025-11-20 17:24:22.7|Info|RefreshSeriesService|Updating Treason
+2025-11-20 17:24:22.8|Info|RefreshEpisodeService|Starting episode info refresh for: [413526][Treason]
+2025-11-20 17:24:22.8|Info|RefreshEpisodeService|Finished episode refresh for series: [413526][Treason].
+2025-11-20 17:24:22.8|Info|DiskScanService|Scanning Treason
+2025-11-20 17:24:22.8|Info|DiskScanService|Completed scanning disk for Treason
+2025-11-20 17:24:22.8|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Treason/Season 1/1.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2ae36c0] EBML header parsing failed
+/tv/Treason/Season 1/1.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.8|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Treason/Season 1/2.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x23966c0] EBML header parsing failed
+/tv/Treason/Season 1/2.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.8|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Treason/Season 1/3.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1fcb6c0] EBML header parsing failed
+/tv/Treason/Season 1/3.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.8|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Treason/Season 1/4.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2f426c0] EBML header parsing failed
+/tv/Treason/Season 1/4.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.9|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Treason/Season 1/5.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x26dc6c0] EBML header parsing failed
+/tv/Treason/Season 1/5.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:22.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:22.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:22.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:22.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:22.9|Info|RefreshSeriesService|Updating Unus Annus
+2025-11-20 17:24:23.0|Info|RefreshEpisodeService|Starting episode info refresh for: [372288][Unus Annus]
+2025-11-20 17:24:23.0|Warn|RefreshEpisodeService|Show 372288 (Unus Annus) had 4 old episodes appear, please check monitored status.
+2025-11-20 17:24:23.0|Info|Sonarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-11-20 17:24:23.3|Info|RefreshEpisodeService|Finished episode refresh for series: [372288][Unus Annus].
+2025-11-20 17:24:23.3|Info|DiskScanService|Scanning Unus Annus
+2025-11-20 17:24:23.3|Info|DiskScanService|Completed scanning disk for Unus Annus
+2025-11-20 17:24:23.3|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:23.3|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:23.3|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:23.3|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:23.3|Info|MetadataService|Series folder does not exist, skipping metadata creation
+2025-11-20 17:24:23.3|Info|RefreshSeriesService|Updating The Watcher (2022)
+2025-11-20 17:24:23.5|Info|RefreshEpisodeService|Starting episode info refresh for: [404833][The Watcher (2022)]
+2025-11-20 17:24:23.5|Info|RefreshEpisodeService|Finished episode refresh for series: [404833][The Watcher (2022)].
+2025-11-20 17:24:23.5|Info|DiskScanService|Scanning The Watcher (2022)
+2025-11-20 17:24:23.5|Info|DiskScanService|Completed scanning disk for The Watcher (2022)
+2025-11-20 17:24:23.5|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:23.5|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:23.5|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:23.5|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:23.5|Info|MetadataService|Series folder does not exist, skipping metadata creation
+2025-11-20 17:24:23.5|Info|RefreshSeriesService|Updating Yona of the Dawn
+2025-11-20 17:24:23.8|Info|RefreshEpisodeService|Starting episode info refresh for: [283942][Yona of the Dawn]
+2025-11-20 17:24:23.8|Info|RefreshEpisodeService|Finished episode refresh for series: [283942][Yona of the Dawn].
+2025-11-20 17:24:24.0|Info|DiskScanService|Scanning Yona of the Dawn
+2025-11-20 17:24:24.0|Info|DiskScanService|Completed scanning disk for Yona of the Dawn
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/1.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x36386c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/1.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/2.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x341d6c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/2.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/3.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x395a6c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/3.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/4.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x359d6c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/4.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/5.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x35f36c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/5.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/6.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x372a6c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/6.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/7.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1abe6c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/7.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/8.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x31996c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/8.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/9.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1c146c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/9.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/10.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x29706c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/10.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/11.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x1b236c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/11.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/12.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x28676c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/12.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/13.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x37466c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/13.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/14.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2ab86c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/14.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/15.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x27f66c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/15.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/16.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2f526c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/16.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/17.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x28c26c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/17.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/18.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2a926c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/18.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/19.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x340c6c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/19.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/20.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x302a6c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/20.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/21.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x22d76c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/21.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.0|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/22.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x38536c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/22.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.1|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/23.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x29236c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/23.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.1|Error|VideoFileInfoReader|Unable to parse media info from file: /tv/Yona of the Dawn/Season 1/24.mkv
+
+[v4.0.11.2680] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2bc96c0] EBML header parsing failed
+/tv/Yona of the Dawn/Season 1/24.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./Sonarr.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 68
+
+2025-11-20 17:24:24.1|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-11-20 17:24:24.1|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-11-20 17:24:24.1|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-11-20 17:24:24.1|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-11-20 17:24:27.0|Warn|Torznab|Indexer showRSS (Prowlarr) rss sync didn't cover the period between 12/14/2024 02:20:33 and 11/19/2025 01:20:33 UTC. Search may be required.
+2025-11-20 17:24:35.8|Warn|Torznab|Indexer Torlock (Prowlarr) rss sync didn't cover the period between 12/14/2024 00:33:03 and 11/19/2025 18:24:23 UTC. Search may be required.
+2025-11-20 17:24:43.6|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/15/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:29:24 due to recent failures." />
+2025-11-20 17:24:43.6|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/15/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:29:24 due to recent failures." />
+2025-11-20 17:24:43.6|Warn|Torznab|Unable to connect to indexer
+
+[v4.0.11.2680] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr:9696/15/api?t=caps&apikey=(removed)   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.Get(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 327
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 58
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.<>c__DisplayClass4_0.<GetCapabilities>b__0() in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./Sonarr.Common/Cache/Cached.cs:line 99
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities(NewznabSettings indexerSettings) in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 37
+   at NzbDrone.Core.Indexers.Newznab.NewznabRequestGenerator.GetRecentRequests() in ./Sonarr.Core/Indexers/Newznab/NewznabRequestGenerator.cs:line 199
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 376
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:29:24 due to recent failures." />
+
+2025-11-20 17:24:43.6|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr:9696/15/api?t=caps&apikey=(removed) Check the log surrounding this error for details
+2025-11-20 17:24:43.7|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/15/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:29:24 due to recent failures." />
+2025-11-20 17:24:43.7|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/15/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:29:24 due to recent failures." />
+2025-11-20 17:24:43.7|Warn|Torznab|Unable to connect to indexer
+
+[v4.0.11.2680] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr:9696/15/api?t=caps&apikey=(removed)   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.Get(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 327
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 58
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.<>c__DisplayClass4_0.<GetCapabilities>b__0() in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./Sonarr.Common/Cache/Cached.cs:line 99
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities(NewznabSettings indexerSettings) in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 37
+   at NzbDrone.Core.Indexers.Newznab.NewznabRequestGenerator.GetRecentRequests() in ./Sonarr.Core/Indexers/Newznab/NewznabRequestGenerator.cs:line 199
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 376
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:29:24 due to recent failures." />
+
+2025-11-20 17:24:43.7|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr:9696/15/api?t=caps&apikey=(removed) Check the log surrounding this error for details
+2025-11-20 17:24:43.7|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/17/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:25:25 due to recent failures." />
+2025-11-20 17:24:43.7|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/17/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:25:25 due to recent failures." />
+2025-11-20 17:24:43.7|Warn|Torznab|Unable to connect to indexer
+
+[v4.0.11.2680] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr:9696/17/api?t=caps&apikey=(removed)   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.Get(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 327
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 58
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.<>c__DisplayClass4_0.<GetCapabilities>b__0() in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./Sonarr.Common/Cache/Cached.cs:line 99
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities(NewznabSettings indexerSettings) in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 37
+   at NzbDrone.Core.Indexers.Newznab.NewznabRequestGenerator.GetRecentRequests() in ./Sonarr.Core/Indexers/Newznab/NewznabRequestGenerator.cs:line 199
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 376
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:25:25 due to recent failures." />
+
+2025-11-20 17:24:43.7|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr:9696/17/api?t=caps&apikey=(removed) Check the log surrounding this error for details
+2025-11-20 17:24:43.7|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/17/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:25:25 due to recent failures." />
+2025-11-20 17:24:43.7|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/17/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:25:25 due to recent failures." />
+2025-11-20 17:24:43.7|Warn|Torznab|Unable to connect to indexer
+
+[v4.0.11.2680] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr:9696/17/api?t=caps&apikey=(removed)   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.Get(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 327
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 58
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.<>c__DisplayClass4_0.<GetCapabilities>b__0() in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./Sonarr.Common/Cache/Cached.cs:line 99
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities(NewznabSettings indexerSettings) in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 37
+   at NzbDrone.Core.Indexers.Newznab.NewznabRequestGenerator.GetRecentRequests() in ./Sonarr.Core/Indexers/Newznab/NewznabRequestGenerator.cs:line 199
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 376
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:25:25 due to recent failures." />
+
+2025-11-20 17:24:43.7|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr:9696/17/api?t=caps&apikey=(removed) Check the log surrounding this error for details
+2025-11-20 17:24:45.7|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:24:45.7|Error|SonarrErrorPipeline|[POST /api/v3/indexer]
+
+[v4.0.11.2680] code = Constraint (19), message = System.Data.SQLite.SQLiteException (0x800027AF): constraint failed
+UNIQUE constraint failed: Indexers.Name
+   at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1075
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1058
+   at NzbDrone.Core.Datastore.BasicRepository`1.Insert(IDbConnection connection, IDbTransaction transaction, TModel model) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 188
+   at NzbDrone.Core.Datastore.BasicRepository`1.Insert(TModel model) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 146
+   at NzbDrone.Core.ThingiProvider.ProviderFactory`2.Create(TProviderDefinition definition) in ./Sonarr.Core/ThingiProvider/ProviderFactory.cs:line 116
+   at Sonarr.Api.V3.ProviderControllerBase`4.CreateProvider(TProviderResource providerResource, Boolean forceSave) in ./Sonarr.Api.V3/ProviderControllerBase.cs:line 83
+   at lambda_method309(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Sonarr.Http.Middleware.BufferingMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/BufferingMiddleware.cs:line 28
+   at Sonarr.Http.Middleware.IfModifiedMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/IfModifiedMiddleware.cs:line 41
+   at Sonarr.Http.Middleware.CacheHeaderMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/CacheHeaderMiddleware.cs:line 33
+   at Sonarr.Http.Middleware.StartingUpMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/StartingUpMiddleware.cs:line 38
+   at Sonarr.Http.Middleware.UrlBaseMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/UrlBaseMiddleware.cs:line 29
+   at Sonarr.Http.Middleware.VersionMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/VersionMiddleware.cs:line 29
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+
+2025-11-20 17:24:48.8|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:24:49.7|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:24:51.7|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:25:04.6|Warn|Torznab|Indexer Internet Archive (Prowlarr) rss sync didn't cover the period between 12/14/2024 02:26:01 and 11/20/2025 02:12:13 UTC. Search may be required.
+2025-11-20 17:25:21.2|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/2/api?t=tvsearch&cat=5000,5070&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:26:21 due to recent failures." />
+2025-11-20 17:25:21.2|Warn|Torznab|Unable to connect to indexer
+
+[v4.0.11.2680] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/2/api?t=tvsearch&cat=5000,5070&extended=1&apikey=(removed)&offset=0&limit=100]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 363
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 347
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 383
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:26:21 due to recent failures." />
+
+2025-11-20 17:25:21.2|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/2/api?t=tvsearch&cat=5000,5070&extended=1&apikey=(removed)&offset=0&limit=100]. Check the log surrounding this error for details
+2025-11-20 17:25:38.5|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/2/api?t=tvsearch&cat=5000,5070&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:26:21 due to recent failures." />
+2025-11-20 17:25:38.5|Warn|Torznab|Unable to connect to indexer
+
+[v4.0.11.2680] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/2/api?t=tvsearch&cat=5000,5070&extended=1&apikey=(removed)&offset=0&limit=100]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 363
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 347
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 383
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:26:21 due to recent failures." />
+
+2025-11-20 17:25:38.5|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/2/api?t=tvsearch&cat=5000,5070&extended=1&apikey=(removed)&offset=0&limit=100]. Check the log surrounding this error for details
+2025-11-20 17:25:58.7|Warn|Torznab|Isohunt2 (Prowlarr) server is currently unavailable. http://prowlarr:9696/13/api?t=tvsearch&cat=5000,5070&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-20 17:25:58.8|Warn|Torznab|kickasstorrents.ws (Prowlarr) server is currently unavailable. http://prowlarr:9696/16/api?t=tvsearch&cat=5000&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-20 17:26:00.0|Warn|Torznab|YourBittorrent (Prowlarr) server is currently unavailable. http://prowlarr:9696/44/api?t=tvsearch&cat=5000,5070&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-20 17:26:00.0|Info|DownloadDecisionMaker|Processing 868 releases
+2025-11-20 17:26:01.9|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/2/api?t=tvsearch&cat=5000,5070&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:26:21 due to recent failures." />
+2025-11-20 17:26:01.9|Warn|Torznab|Unable to connect to indexer
+
+[v4.0.11.2680] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/2/api?t=tvsearch&cat=5000,5070&extended=1&apikey=(removed)&offset=0&limit=100]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 363
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 347
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 482
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:26:21 due to recent failures." />
+
+2025-11-20 17:26:01.9|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/2/api?t=tvsearch&cat=5000,5070&extended=1&apikey=(removed)&offset=0&limit=100]. Check the log surrounding this error for details
+2025-11-20 17:26:02.5|Info|RssSyncService|RSS Sync Completed. Reports found: 868, Reports grabbed: 0
+2025-11-20 17:26:11.3|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/3/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:26:49 due to recent failures." />
+2025-11-20 17:26:11.3|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/3/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:26:49 due to recent failures." />
+2025-11-20 17:26:11.3|Warn|Torznab|Unable to connect to indexer
+
+[v4.0.11.2680] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/3/api?t=caps&apikey=(removed)   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.Get(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 327
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 58
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.<>c__DisplayClass4_0.<GetCapabilities>b__0() in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./Sonarr.Common/Cache/Cached.cs:line 99
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities(NewznabSettings indexerSettings) in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 37
+   at NzbDrone.Core.Indexers.Newznab.NewznabRequestGenerator.GetRecentRequests() in ./Sonarr.Core/Indexers/Newznab/NewznabRequestGenerator.cs:line 199
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 482
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:26:49 due to recent failures." />
+
+2025-11-20 17:26:11.3|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/3/api?t=caps&apikey=(removed) Check the log surrounding this error for details
+2025-11-20 17:26:12.3|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/3/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:26:49 due to recent failures." />
+2025-11-20 17:26:12.3|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/3/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:26:49 due to recent failures." />
+2025-11-20 17:26:12.3|Warn|Torznab|Unable to connect to indexer
+
+[v4.0.11.2680] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/3/api?t=caps&apikey=(removed)   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.Get(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 327
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 58
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.<>c__DisplayClass4_0.<GetCapabilities>b__0() in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./Sonarr.Common/Cache/Cached.cs:line 99
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities(NewznabSettings indexerSettings) in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 37
+   at NzbDrone.Core.Indexers.Newznab.NewznabRequestGenerator.GetRecentRequests() in ./Sonarr.Core/Indexers/Newznab/NewznabRequestGenerator.cs:line 199
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 482
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:26:49 due to recent failures." />
+
+2025-11-20 17:26:12.3|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/3/api?t=caps&apikey=(removed) Check the log surrounding this error for details
+2025-11-20 17:27:25.6|Warn|Torznab|Unable to connect to indexer.
+2025-11-20 17:27:25.6|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, indexer's server is unavailable. Try again later. Http request timed out.
+2025-11-20 17:27:58.9|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/13/api?t=tvsearch&cat=5000,5070&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:28:27 due to recent failures." />
+2025-11-20 17:27:58.9|Warn|Torznab|Unable to connect to indexer
+
+[v4.0.11.2680] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/13/api?t=tvsearch&cat=5000,5070&extended=1&apikey=(removed)&offset=0&limit=100]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 363
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 347
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 482
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:28:27 due to recent failures." />
+
+2025-11-20 17:27:59.0|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/13/api?t=tvsearch&cat=5000,5070&extended=1&apikey=(removed)&offset=0&limit=100]. Check the log surrounding this error for details
+2025-11-20 17:29:05.7|Warn|Torznab|Unable to connect to indexer.
+2025-11-20 17:29:05.7|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, indexer's server is unavailable. Try again later. Http request timed out.
+2025-11-20 17:29:12.5|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:29:14.4|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:29:28.3|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:29:30.3|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:29:30.3|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/44/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:30:05 due to recent failures." />
+2025-11-20 17:29:30.3|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/44/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:30:05 due to recent failures." />
+2025-11-20 17:29:30.3|Warn|Torznab|Unable to connect to indexer
+
+[v4.0.11.2680] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/44/api?t=caps&apikey=(removed)   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.Get(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 327
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 91
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./Sonarr.Common/Cache/Cached.cs:line 99
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities(NewznabSettings indexerSettings) in ./Sonarr.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 37
+   at NzbDrone.Core.Indexers.Newznab.NewznabRequestGenerator.GetRecentRequests() in ./Sonarr.Core/Indexers/Newznab/NewznabRequestGenerator.cs:line 197
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./Sonarr.Core/Indexers/HttpIndexerBase.cs:line 482
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/20/2025 17:30:05 due to recent failures." />
+
+2025-11-20 17:29:30.3|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/44/api?t=caps&apikey=(removed) Check the log surrounding this error for details
+2025-11-20 17:29:39.0|Warn|Torznab|Unable to connect to indexer.
+2025-11-20 17:29:39.0|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, indexer's server is unavailable. Try again later. Http request timed out.
+2025-11-20 17:29:39.8|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:29:41.8|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:29:43.8|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:29:45.9|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-11-20 17:32:24.3|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-11-20 17:32:24.3|Info|ConsoleApp|Exiting main.

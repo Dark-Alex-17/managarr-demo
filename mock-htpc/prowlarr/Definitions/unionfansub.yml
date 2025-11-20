@@ -1,7 +1,7 @@
 ---
 id: unionfansub
 name: Union Fansub
-description: "Union Fansub is a SPANISH Semi private torrent site focused on ANIME"
+description: "Union Fansub is a SPANISH Semi-Private torrent site focused on ANIME"
 language: es-ES
 type: semi-private
 encoding: UTF-8
@@ -79,7 +79,8 @@ login:
     selector: div#statusbar
 
 search:
-  path: browse.php
+  paths:
+    - path: browse.php
   inputs:
     $raw: "{{ range .Categories }}&c{{.}}=1{{end}}"
     # 0 active, 1 incldead, 2 onlydead

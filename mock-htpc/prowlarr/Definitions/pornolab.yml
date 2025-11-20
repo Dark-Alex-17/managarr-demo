@@ -190,15 +190,20 @@ settings:
 login:
   path: forum/login.php
   method: form
-  form: form[action="login.php"]
+  form: form[action="/forum/login.php"]
   captcha:
     type: image
-    selector: img[src*="/captcha/"]
+    selector: img[src^="//static.pornolab.net/captcha/"]
     input: input[name^="cap_code_"]
   inputs:
     input[name="login_username"]: "{{ .Config.username }}"
     input[name="login_password"]: "{{ .Config.password }}"
   selectors: true
+  selectorinputs:
+    cap_sid:
+      selector: input[name="cap_sid"]
+      attribute: value
+      optional: true
   error:
     - selector: div:contains("Форум временно отключен")
     - selector: h4.warnColor1.tCenter.mrg_16

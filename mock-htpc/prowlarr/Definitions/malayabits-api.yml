@@ -68,12 +68,11 @@ login:
 
 search:
   paths:
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/wiki/Torrent-API-(UNIT3D-v8.x.x)
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/blob/master/app/Http/Controllers/API/TorrentController.php#L476
-    - path: "/api/torrents/filter"
+    # https://hdinnovations.github.io/UNIT3D/torrent_api.html
+    # https://github.com/HDInnovations/UNIT3D/blob/master/app/Http/Controllers/API/TorrentController.php#L657
+    - path: api/torrents/filter
       response:
         type: json
-        noResultsMessage: "No Torrents Found"
 
   headers:
     Authorization: ["Bearer {{ .Config.apikey }}"]
@@ -116,8 +115,6 @@ search:
       selector: details_link
     download:
       selector: download_link
-    infohash:
-      selector: info_hash
     poster:
       selector: meta.poster
       filters:
@@ -134,8 +131,13 @@ search:
       filters:
         - name: replace
           args: [" & ", "_&_"]
+    _internal:
+      selector: internal
+      case:
+        False: "{{ .False }}"
+        True: "{{ .True }}"
     description:
-      text: "{{ .Result.genre }}"
+      text: "{{ if .Result._internal }}Internal{{ else }}{{ end }}{{ if and .Result._internal .Result.genre }} | {{ else }}{{ end }}{{ .Result.genre }}"
     seeders:
       selector: seeders
     leechers:
@@ -183,4 +185,4 @@ search:
     minimumseedtime:
       # 1 day (as seconds = 1 x 24 x 60 x 60)
       text: 86400
-# json UNIT3D 8.3.0
+# json UNIT3D 9.1.7

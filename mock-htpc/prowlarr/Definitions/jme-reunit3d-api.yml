@@ -14,13 +14,14 @@ caps:
   categorymappings:
     - {id: 1, cat: Movies, desc: "Movies"}
     - {id: 2, cat: TV, desc: "TV"}
-    - {id: 3, cat: Audio, desc: "Music"}
-    - {id: 4, cat: Console, desc: "Game"}
-    - {id: 5, cat: PC, desc: "Application"}
     - {id: 6, cat: XXX, desc: "XXX"}
     - {id: 7, cat: TV/Sport, desc: "Sport"}
+    - {id: 3, cat: Audio, desc: "Music"}
+    - {id: 5, cat: PC, desc: "Application"}
+    - {id: 4, cat: Console, desc: "Game"}
     - {id: 8, cat: Books, desc: "E-Books"}
     - {id: 9, cat: Audio/Audiobook, desc: "Audio-Books"}
+    - {id: 12, cat: Audio/Video, desc: "Music-Video"}
 
   modes:
     search: [q]
@@ -60,7 +61,7 @@ settings:
   - name: info_activity
     type: info
     label: Account Inactivity
-    default: "You must seed at least 1 torrent or log in every 30 days to avoid being pruned."
+    default: "If a user has not actively logged in for 30 days, the profile is automatically deactivated and receives the user class 'Disabled'.<br>After deactivation, the profile can be reactivated within 60 days – after which it will be permanently deleted."
 
 login:
   path: /api/torrents
@@ -74,9 +75,9 @@ login:
 
 search:
   paths:
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/wiki/Torrent-API-(UNIT3D-v8.x.x)
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/blob/master/app/Http/Controllers/API/TorrentController.php#L476
-    - path: "/api/torrents/filter"
+    # https://hdinnovations.github.io/UNIT3D/torrent_api.html
+    # https://github.com/HDInnovations/UNIT3D/blob/master/app/Http/Controllers/API/TorrentController.php#L657
+    - path: api/torrents/filter
       response:
         type: json
 
@@ -160,6 +161,6 @@ search:
         0: 1 # normal
         1: 2 # double
     minimumseedtime:
-      # 5 days (as seconds = 5 x 24 x 60 x 60)
-      text: 432000
+      # 4 days (as seconds = 4 x 24 x 60 x 60)
+      text: 345600
 # json UNIT3D 6.0.4

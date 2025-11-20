@@ -10,6 +10,7 @@ links:
   - https://infire.si/
 
 caps:
+  # dont forget to update the path categories in the search block
   categorymappings:
     # Filmi
     - {id: 14, cat: Movies/SD, desc: "XviD", default: true}
@@ -142,6 +143,10 @@ login:
   test:
     path: index.php
     selector: a[href="logout.php"]
+
+download:
+  headers:
+    Referer: ["{{ .Config.sitelink }}torrents.php"]
 
 search:
   paths:

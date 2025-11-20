@@ -1,7 +1,7 @@
 ---
 id: world-of-tomorrow
 name: World-of-Tomorrow
-description: "World-of-Tomorrow is a Private German tracker"
+description: "World-of-Tomorrow is a GERMAN Private tracker"
 language: de-DE
 type: private
 encoding: UTF-8
@@ -116,8 +116,10 @@ login:
     username: "{{ .Config.username }}"
     password: "{{ .Config.password }}"
     pin: "{{ .Config.pin }}"
+    remember: 1
   error:
     - selector: table.tableinborder:contains("Login fehlgeschlagen!")
+    - selector: div#loginStatus
   test:
     path: index.php
     selector: a[href="logout.php"], title:contains("APRILSCHERZ")

@@ -12,14 +12,7 @@ links:
   - https://1337x.st/
   - https://x1337x.ws/
   - https://x1337x.eu/
-  - https://x1337x.se/
   - https://x1337x.cc/
-  - https://1337x.unblockninja.com/
-  - https://1337x.ninjaproxy1.com/
-  - https://1337x.proxyninja.org/
-  - https://1337x.proxyninja.net/
-  - https://1337x.torrentbay.st/
-  - https://1337x.torrentsbay.org/
 legacylinks:
   - https://1337x.is/
   - https://1337x.gd/
@@ -27,6 +20,13 @@ legacylinks:
   - https://1337x.abcproxy.org/
   - https://1337x.so/
   - https://1337x.unblockit.download/
+  - https://1337x.unblockninja.com/ # keyword search not working
+  - https://1337x.ninjaproxy1.com/ # keyword search not working
+  - https://1337x.proxyninja.org/ # keyword search not working
+  - https://1337x.proxyninja.net/ # keyword search not working
+  - https://1337x.torrentbay.st/ # keyword search not working
+  - https://1337x.torrentsbay.org/ # keyword search not working
+  - https://x1337x.se/
 
 caps:
   categorymappings:
@@ -120,6 +120,13 @@ caps:
   allowrawsearch: true
 
 settings:
+  - name: uploader
+    type: text
+    label: Filter by Uploader
+  - name: info_uploader
+    type: info
+    label: About filtering by Uploader
+    default: "You can filter by Uploader by entering a Case Sensitive username, or leave empty to get all results.<br>Note: this is the username of the Uploader and not the Groupname that often show up at the end of 1337x titles, eg -GalaxyRG."
   - name: info_flaresolverr
     type: info_flaresolverr
   - name: downloadlink
@@ -177,7 +184,7 @@ search:
       args: ["\\bS(20\\d{2})\\b", "$1"]
 
   rows:
-    selector: tr:has(a[href^="/torrent/"])
+    selector: "tr:has(a[href^=\"/torrent/\"]){{ if .Config.uploader }}:has(td[class^=\"coll-5\"]:contains({{ .Config.uploader }})){{ else }}{{ end }}"
 
   fields:
     title_default:
@@ -273,6 +280,10 @@ search:
       selector: td[class^="coll-2"]
     leechers:
       selector: td[class^="coll-3"]
+    _username:
+      selector: td[class^="coll-5"]
+    description:
+      text: "Uploader: {{ .Result._username }}"
     downloadvolumefactor:
       text: 0
     uploadvolumefactor:

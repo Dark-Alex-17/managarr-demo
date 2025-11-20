@@ -1,20 +1,15 @@
 ---
 id: torrent9
 name: Torrent9
-description: "Torrent9 is a FRENCH Public site for TV / MOVIES / GENERAL"
+description: "Torrent9 is a FRENCH Public site for MOVIES / TV / GENERAL"
 language: fr-FR
 type: public
 encoding: UTF-8
 followredirect: true
 testlinktorrent: false
 links:
-  - https://ww1.torrent9.fm/
-  - https://torrent9.to/
+  - https://www.torrent9.zone/
 legacylinks:
-  - https://ww1.torrent9.uno/
-  - https://wvw.t9.pe/
-  - https://www4.torrent9.to/
-  - https://www.torrent9.cat/
   - https://www.torrent09.uno/
   - https://www.torrent9.pl/ # this is a proxy for torrent9clone
   - https://torrent9.black-mirror.xyz/ # this is a proxy for torrent9clone
@@ -35,6 +30,9 @@ legacylinks:
   - https://torrent9.proxyninja.org/ # Error 1007
   - https://www.torrent9.se/
   - https://torrent9.unblockninja.com/ # 403 forbidden
+  - https://ww1.torrent9.fm/
+  - https://torrent9.to/
+  - https://www5.torrent9.to/
 
 caps:
   # dont forget to update the search fields category case block
@@ -56,6 +54,8 @@ caps:
   allowrawsearch: true
 
 settings:
+  - name: info_flaresolverr
+    type: info_flaresolverr
   - name: multilang
     type: checkbox
     label: Replace MULTi by another language in release name
@@ -101,7 +101,7 @@ download:
 
 search:
   paths:
-    - path: "{{ if .Keywords }}/search_torrent/{{ .Keywords }}{{ .Config.sort }}{{ else }}{{ end }}"
+    - path: "{{ if .Keywords }}search_torrent/{{ .Keywords }}{{ .Config.sort }}{{ else }}home/{{ end }}"
   keywordsfilters:
     # if searching for season packs with S01 to saison 1 #9712
     - name: re_replace
@@ -144,7 +144,7 @@ search:
       text: "{{ if .Result.title_optional }}{{ .Result.title_optional }}{{ else }}{{ .Result.title_default }}{{ end }}"
       filters:
         - name: re_replace
-          args: ["(?i)\\b(FRENCH|MULTI|TRUEFRENCH|VOSTFR|SUBFRENCH)\\b(.+?)(\\b(19|20\\d{2})\\b)$", "$3 $1$2"]
+          args: ["(?i)\\b(FRENCH|MULTI|TRUEFRENCH|VOSTFR|SUBFRENCH)\\b(.+?)(\\b((19|20)\\d{2})\\b)$", "$3 $1$2"]
     title_vostfr:
       text: "{{ .Result.title_phase1 }}"
       filters:

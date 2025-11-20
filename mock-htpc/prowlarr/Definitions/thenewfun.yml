@@ -18,7 +18,7 @@ caps:
     - {id: 140, cat: TV/Documentary, desc: "Doku - SD"}
     - {id: 142, cat: TV/Documentary, desc: "Doku - Sonstige"}
     - {id: 120, cat: Books, desc: "Ebook"}
-    - {id: 135, cat: Movies/UHD, desc: "Filme - 2160p"}
+    - {id: 150, cat: Movies/UHD, desc: "Filme - 2160p"}
     - {id: 131, cat: TV/Anime, desc: "Filme - Animie"}
     - {id: 101, cat: Movies/BluRay, desc: "Filme - Blue Ray"}
     - {id: 102, cat: Movies/Other, desc: "Filme - Bollywood"}
@@ -96,11 +96,15 @@ settings:
   - name: info_tpp
     type: info
     label: Results Per Page
-    default: For best results, change the <b>Torrents pro Seite:</b> setting to <b>100</b> on your Control Panel. The default is <i>15</i>.
+    default: For best results, change the <b>Torrents pro Seite:</b> setting to <b>100</b> on your <b>UserCP</b> page. The default is <i>15</i>.
   - name: info_activity
     type: info
     label: Account Inactivity
     default: "Inactive accounts are automatically deleted after 42 days and leechers are also kicked."
+  - name: info_seedhours
+    type: info
+    label: Seeding Hours
+    default: Before using this indexer, make sure that you have set <b>Meine Seedzeit</b> on your <b>UserCP</b> page.
 
 login:
   path: takelogin.php
@@ -116,7 +120,8 @@ login:
 
 search:
   # https://the-new-fun.spdns.eu/browse.php?showsearch=1&c140=1&c142=1&search=2022+1080p&incldead=1&orderby=added&sort=desc
-  path: browse.php
+  paths:
+    - path: browse.php
   inputs:
     $raw: "{{ range .Categories }}c{{.}}=1&{{end}}"
     showsearch: 1

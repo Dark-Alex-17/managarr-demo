@@ -1,12 +1,14 @@
 ---
 id: turkseed-api
-name: TurkSeed
-description: "TurkSeed is a TURKISH Private Torrent Tracker for MOVIES / TV / GENERAL"
+name: TurkSeed (API)
+description: "TurkSeed (Aturk) is a TURKISH Private Torrent Tracker for MOVIES / TV / GENERAL"
 language: tr-TR
 type: private
 encoding: UTF-8
 links:
   - https://turkseed.com/
+legacylinks:
+  - https://turkseed.net/
 
 caps:
   categorymappings:
@@ -20,11 +22,13 @@ caps:
     - {id: 28, cat: Console, desc: "GAME - OYUN"}
     - {id: 26, cat: Other, desc: "Other"}
     - {id: 27, cat: PC, desc: "PROGRAM"}
+    - {id: 30, cat: Audio, desc: "Music"}
 
   modes:
     search: [q]
     tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
     movie-search: [q, imdbid, tmdbid]
+    music-search: [q]
 
 settings:
   - name: apikey
@@ -75,9 +79,9 @@ login:
 
 search:
   paths:
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/wiki/Torrent-API-(UNIT3D-v8.x.x)
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/blob/master/app/Http/Controllers/API/TorrentController.php#L476
-    - path: "/api/torrents/filter"
+    # https://hdinnovations.github.io/UNIT3D/torrent_api.html
+    # https://github.com/HDInnovations/UNIT3D/blob/master/app/Http/Controllers/API/TorrentController.php#L657
+    - path: api/torrents/filter
       response:
         type: json
 
@@ -148,8 +152,13 @@ search:
           args: ["(?i)(Vahşi Batı)", "Vahşi_Batı"]
         - name: replace
           args: [" & ", "_&_"]
+    _internal:
+      selector: internal
+      case:
+        False: "{{ .False }}"
+        True: "{{ .True }}"
     description:
-      text: "{{ .Result.genre }}"
+      text: "{{ if .Result._internal }}Internal{{ else }}{{ end }}{{ if and .Result._internal .Result.genre }} | {{ else }}{{ end }}{{ .Result.genre }}"
     seeders:
       selector: seeders
     leechers:
@@ -191,9 +200,10 @@ search:
         True: 2 # double
     uploadvolumefactor:
       text: "{{ if .Result._featured }}2{{ else }}{{ .Result.uploadvolumefactor_double_upload }}{{ end }}"
-    minimumratio:
-      text: 0.5
+# global MR is 0.6 but torrents must be seeded for 2 days regardless of ratio
+#    minimumratio:
+#      text: 0.6
     minimumseedtime:
-      # 1.5 days (as seconds = 1.5 x 24 x 60 x 60)
-      text: 129600
-# json UNIT3D 8.3.4
+      # 2 days (as seconds = 2 x 24 x 60 x 60)
+      text: 172800
+# json UNIT3D 9.0.8

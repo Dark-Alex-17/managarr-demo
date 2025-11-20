@@ -96,6 +96,7 @@ caps:
     - {id: 86, cat: Books/EBook, desc: "Ebooks"}
     - {id: 87, cat: Other, desc: "Wallpapers, Themes & Screensavers"}
     - {id: 89, cat: PC, desc: "Other Releases"}
+    - {id: 102, cat: Other, desc: "Post And Share"}
     - {id: 100, cat: Other, desc: "Tutorials"} # undocumented
     - {id: 103, cat: Other, desc: "Other Topic"} # undocumented
 
@@ -104,6 +105,10 @@ caps:
     book-search: [q]
 
 settings:
+  - name: info_novpn
+    type: info
+    label: VPN Not Allowed
+    default: "You may be banned if you use a VPN, proxy, TOR or data center to access the TeamOS web site.​ This mean all brands of VPNS, no exceptions!!"
   # using cookie method because login page is dynamically generated using JS #5572
   - name: cookie
     type: text

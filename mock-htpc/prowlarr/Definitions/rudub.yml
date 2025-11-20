@@ -9,48 +9,45 @@ type: semi-private
 encoding: windows-1251
 followredirect: true
 links:
-  - https://14december.rudub.online/
+  - https://nov19.rudub.pics/
 legacylinks:
-  - https://14november.rudub.online/
-  - https://15november.rudub.online/
-  - https://16november.rudub.online/
-  - https://17november.rudub.online/
-  - https://18november.rudub.online/
-  - https://19november.rudub.online/
-  - https://20november.rudub.online/
-  - https://21november.rudub.online/
-  - https://22november.rudub.online/
-  - https://23november.rudub.online/
-  - https://24november.rudub.online/
-  - https://25november.rudub.online/
-  - https://26november.rudub.online/
-  - https://27november.rudub.online/
-  - https://28november.rudub.online/
-  - https://29november.rudub.online/
-  - https://30november.rudub.online/
-  - https://01december.rudub.online/
-  - https://02december.rudub.online/
-  - https://03december.rudub.online/
-  - https://04december.rudub.online/
-  - https://05december.rudub.online/
-  - https://06december.rudub.online/
-  - https://07december.rudub.online/
-  - https://08december.rudub.online/
-  - https://09december.rudub.online/
-  - https://10december.rudub.online/
-  - https://11december.rudub.online/
-  - https://12december.rudub.online/
-  - https://13december.rudub.online/
-
+  - https://nov04.rudub.homes/
+  - http://nov05.rudub.homes/
+  - https://nov05.rudub.homes/
+  - http://nov06.rudub.homes/
+  - https://nov06.rudub.homes/
+  - http://nov07.rudub.pics/
+  - https://nov07.rudub.pics/
+  - http://nov08.rudub.pics/
+  - https://nov08.rudub.pics/
+  - http://nov09.rudub.pics/
+  - https://nov09.rudub.pics/
+  - http://nov10.rudub.pics/
+  - https://nov10.rudub.pics/
+  - http://nov11.rudub.pics/
+  - https://nov11.rudub.pics/
+  - http://nov12.rudub.pics/
+  - https://nov12.rudub.pics/
+  - http://nov13.rudub.pics/
+  - https://nov13.rudub.pics/
+  - http://nov14.rudub.pics/
+  - https://nov14.rudub.pics/
+  - http://nov15.rudub.pics/
+  - https://nov15.rudub.pics/
+  - http://nov16.rudub.pics/
+  - https://nov16.rudub.pics/
+  - http://nov17.rudub.pics/
+  - https://nov17.rudub.pics/
+  - http://nov18.rudub.pics/
+  - https://nov18.rudub.pics/
+  - http://nov19.rudub.pics/
 caps:
   categorymappings:
     - {id: 1, cat: TV, desc: "TV"}
-
   modes:
     search: [q]
     tv-search: [q, season, ep]
   allowrawsearch: true
-
 settings:
   - name: username
     type: text
@@ -86,7 +83,6 @@ settings:
     options:
       desc: desc
       asc: asc
-
 login:
   path: takelogin.php
   method: post
@@ -98,7 +94,6 @@ login:
   test:
     path: browse.php
     selector: a[href="logout.php"]
-
 search:
   paths:
     # http://rudub.tv/browse.php?search=&incldead=1&sort=4&type=desc
@@ -109,15 +104,12 @@ search:
     incldead: "{{ if .Config.freeleech }}3{{ else }}0{{ end }}"
     sort: "{{ .Config.sort }}"
     type: "{{ .Config.type }}"
-
   keywordsfilters:
     # strip season and/or ep
     - name: re_replace
       args: ["(?i)\\b(?:[SE]\\d{1,4}){1,2}\\b\\s?", ""]
-
   rows:
     selector: div.card__torlist__browse_2
-
   fields:
     category:
       text: 1

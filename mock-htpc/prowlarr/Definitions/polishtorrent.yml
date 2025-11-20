@@ -1,6 +1,6 @@
 ---
 id: polishtorrent
-name: Polish Torrent
+name: Polish Torrent (API)
 description: "Polish Torrent (PTT) is a POLISH Private Torrent Tracker for MOVIES / TV / GENERAL"
 language: pl-PL
 type: private
@@ -10,35 +10,40 @@ links:
 
 caps:
   categorymappings:
+    - {id: 32, cat: Movies/Other, desc: "Anime/Filmy"}
+    - {id: 31, cat: TV/Anime, desc: "Anime/Seriale"}
     - {id: 6, cat: PC/0day, desc: "Aplikacje/Programy"}
-    - {id: 31, cat: TV/Anime, desc: "Anime"}
+    - {id: 25, cat: Audio/Audiobook, desc: "Audiobook"}
     - {id: 4, cat: Movies, desc: "Bajki"}
-    - {id: 30, cat: TV, desc: "TV Seriale Bajki"}
-    - {id: 1, cat: Movies/HD, desc: "Filmy HD"}
-    - {id: 13, cat: Movies/DVD, desc: "DVD5/9"}
     - {id: 12, cat: Movies/BluRay, desc: "BD25/50_5/9"}
+    - {id: 20, cat: Books, desc: "Book"}
+    - {id: 13, cat: Movies/DVD, desc: "DVD5/9"}
     - {id: 14, cat: Movies/3D, desc: "Filmy 3D"}
+    - {id: 23, cat: Movies/UHD, desc: "Filmy 4K"}
+    - {id: 1, cat: Movies/HD, desc: "Filmy HD"}
     - {id: 16, cat: Movies/SD, desc: "Filmy SD"}
+    - {id: 15, cat: Movies, desc: "Filmy bez lektora"}
+    - {id: 34, cat: Movies/Other, desc: "Filmy HDTS - Kino"}
     - {id: 17, cat: Movies/Other, desc: "Filmy inne"}
-    - {id: 5, cat: PC/Games, desc: "Gry pc"}
+    - {id: 5, cat: PC/Games, desc: "Gry PC"}
     - {id: 24, cat: PC/Games, desc: "Gry dodatki"}
     - {id: 10, cat: Console, desc: "Gry Konsole"}
-    - {id: 18, cat: PC/Mobile-Android, desc: "Mobile"}
     - {id: 19, cat: Other, desc: "Inne"}
+    - {id: 33, cat: Movies, desc: "iNTERNAL"}
+    - {id: 18, cat: PC/Mobile-Android, desc: "Mobile"}
     - {id: 8, cat: Audio, desc: "Muzyka"}
+    - {id: 37, cat: TV, desc: "Reality TV"}
     - {id: 11, cat: Movies, desc: "Paczki"}
-    - {id: 27, cat: TV/Other, desc: "Teatr Telewizyjny"}
-    - {id: 25, cat: Audio/Audiobook, desc: "Audiobook"}
-    - {id: 20, cat: Books, desc: "Book"}
+    - {id: 36, cat: TV, desc: "Seriale TV - Całe Sezony"}
     - {id: 21, cat: TV/Sport, desc: "Sport"}
     - {id: 29, cat: Movies, desc: "Stare Filmy"}
-    - {id: 22, cat: TV/SD, desc: "TV Seriale SD"}
-    - {id: 23, cat: Movies/UHD, desc: "Filmy 4K"}
-    - {id: 9, cat: TV/HD, desc: "TV Seriale HD"}
-    - {id: 28, cat: TV/Documentary, desc: "TV Dokument"}
+    - {id: 27, cat: TV/Other, desc: "Teatr Telewizyjny"}
     - {id: 2, cat: TV/UHD, desc: "TV 4K"}
-    - {id: 15, cat: Movies, desc: "Filmy bez lektora"}
-    - {id: 7, cat: XXX, desc: "XXX 18+"}
+    - {id: 28, cat: TV/Documentary, desc: "TV Dokument"}
+    - {id: 30, cat: TV, desc: "TV Seriale Bajki"}
+    - {id: 9, cat: TV/HD, desc: "TV Seriale HD"}
+    - {id: 22, cat: TV/SD, desc: "TV Seriale SD"}
+    - {id: 38, cat: TV, desc: "Reality TV"}
 
   modes:
     search: [q]
@@ -93,7 +98,7 @@ settings:
   - name: info_activity
     type: info
     label: Account Inactivity
-    default: "<ul><li>Your account must be at least 90 days old to be subject to deactivation.</li><li>Last Login: You must be inactive for at least 90 days for your account to be deactivated.</li><li>Soft deletion of accounts: Deactivated user accounts will be soft deleted 120 days after deactivation.</li><li>User Groups: Accounts belonging to the following user groups may be automatically deactivated: Leech, User, PowerUser and SuperUser.</li><li>Please do not disregard the above information and log in to your account regularly to avoid deactivation.</li></ul>"
+    default: "<ul><li> login as much as possible – no login for 30 days results in the account as DISABLED.</li><li>Lack of login for another 60 days causes permanent account blocking.</li><li>after 90 days of inactivity, the account is automatically deleted by the system.</li><li>This policy applies to users in the following groups: User, PowerUser, SuperUser, and Leech.</li></ul>"
 
 login:
   path: /api/torrents
@@ -107,12 +112,11 @@ login:
 
 search:
   paths:
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/wiki/Torrent-API-(UNIT3D-v8.x.x)
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/blob/master/app/Http/Controllers/API/TorrentController.php#L476
-    - path: "/api/torrents/filter"
+    # https://hdinnovations.github.io/UNIT3D/torrent_api.html
+    # https://github.com/HDInnovations/UNIT3D/blob/master/app/Http/Controllers/API/TorrentController.php#L657
+    - path: api/torrents/filter
       response:
         type: json
-        noResultsMessage: "No Torrents Found"
 
   headers:
     Authorization: ["Bearer {{ .Config.apikey }}"]
@@ -129,7 +133,7 @@ search:
     "free[]": "{{ if .Config.freeleech }}100{{ else }}{{ end }}"
     sortField: "{{ .Config.sort }}"
     sortDirection: "{{ .Config.type }}"
-    perPage: 50
+    perPage: 100
 
   keywordsfilters:
     - name: re_replace
@@ -186,8 +190,13 @@ search:
           args: ["(?i)(film TV)", "film_TV"]
         - name: replace
           args: [" & ", "_&_"]
+    _internal:
+      selector: internal
+      case:
+        False: "{{ .False }}"
+        True: "{{ .True }}"
     description:
-      text: "{{ .Result.genre }}"
+      text: "{{ if .Result._internal }}Internal{{ else }}{{ end }}{{ if and .Result._internal .Result.genre }} | {{ else }}{{ end }}{{ .Result.genre }}"
     seeders:
       selector: seeders
     leechers:
@@ -229,7 +238,10 @@ search:
         True: 2 # double
     uploadvolumefactor:
       text: "{{ if .Result._featured }}2{{ else }}{{ .Result.uploadvolumefactor_double_upload }}{{ end }}"
+# global MR is 0.7 but torrents must be seeded for 5 days regardless of ratio
+#    minimumratio:
+#      text: 0.7
     minimumseedtime:
-      # 7 day (as seconds = 7 x 24 x 60 x 60)
-      text: 604800
-# json UNIT3D 8.3.0 (custom)
+      # 5 days (as seconds = 5 x 24 x 60 x 60)
+      text: 432000
+# json UNIT3D 9.1.5 (custom)

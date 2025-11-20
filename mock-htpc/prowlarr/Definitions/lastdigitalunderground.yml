@@ -22,18 +22,19 @@ caps:
     - {id: 42, cat: Movies/Other, desc: "Films: Shorts [TMDB UnListed]"}
     - {id: 17, cat: TV/Documentary, desc: "Films: Documentary"}
     - {id: 12, cat: Movies/Other, desc: "Films: FanEdits/Restorations"}
-    - {id: 27, cat: Movies/Foreign, desc: "Films SP1: Dub or Vid issues"}
+    - {id: 27, cat: Movies/Foreign, desc: "Films SP1: Dubs/Cams/Vid Issues"}
     - {id: 22, cat: Movies/Foreign, desc: "Films SP2: No English"}
     - {id: 28, cat: Movies/Other, desc: "Films SP3: Other"}
     - {id: 8, cat: Movies/Other, desc: "Anime: Films"}
     - {id: 9, cat: TV/Anime, desc: "Anime: Series/OVAs"}
-    - {id: 2, cat: TV, desc: "Series/TV: General"}
+    - {id: 2, cat: TV, desc: "Series/TV: Complete Seasons"}
     - {id: 41, cat: TV, desc: "Series/TV: Single Episodes"}
-    - {id: 31, cat: TV/Foreign, desc: "Series/TV SP1: Dub"}
+    - {id: 31, cat: TV/Foreign, desc: "Series/TV SP1: video issues or Dub"}
     - {id: 29, cat: TV/Foreign, desc: "Series/TV SP2: No English"}
     - {id: 32, cat: TV/Other, desc: "Series/TV SP3: Other"}
     - {id: 38, cat: TV/Other, desc: "Series/TV [TMDB unlisted]"}
     - {id: 40, cat: TV/Documentary, desc: "Series: Documentary"}
+    - {id: 46, cat: Other, desc: "Collections [Various Media]"}
     - {id: 20, cat: TV/Other, desc: "Culture: Stand-up"}
     - {id: 7, cat: Books/EBook, desc: "Culture: Ebooks"}
     - {id: 3, cat: Audio, desc: "Culture: Music"}
@@ -43,7 +44,8 @@ caps:
     - {id: 37, cat: TV/Other, desc: "Culture: Firearms and Freedom"}
     - {id: 36, cat: TV/Other, desc: "Culture: Roms"}
     - {id: 6, cat: XXX, desc: "Mature: NSFW [TMDB Listed]"}
-    - {id: 30, cat: XXX, desc: "Mature: NSFW [TMDB UnListed]"}
+    - {id: 45, cat: XXX, desc: "Mature: NSFW No ENG Subs"}
+    - {id: 30, cat: XXX, desc: "Mature: NSFW [UnListed]"}
     - {id: 15, cat: XXX/Pack, desc: "Mature: NSFW MegaPacks"}
     - {id: 10, cat: XXX, desc: "Mature: Hentai"}
     - {id: 14, cat: XXX/Other, desc: "Mature: Creators Corner"}
@@ -95,7 +97,7 @@ settings:
   - name: info_activity
     type: info
     label: Account Inactivity
-    default: "You are required to log in once per month. We will be purging user accounts via automated script set at an undisclosed interval."
+    default: "You must log in once every 60 days. You must download at least 1 item within your first month."
 
 login:
   path: /api/torrents
@@ -109,9 +111,9 @@ login:
 
 search:
   paths:
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/wiki/Torrent-API-(UNIT3D-v8.x.x)
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/blob/master/app/Http/Controllers/API/TorrentController.php#L476
-    - path: "/api/torrents/filter"
+    # https://hdinnovations.github.io/UNIT3D/torrent_api.html
+    # https://github.com/HDInnovations/UNIT3D/blob/master/app/Http/Controllers/API/TorrentController.php#L657
+    - path: api/torrents/filter
       response:
         type: json
 
@@ -178,8 +180,13 @@ search:
           args: ["(?i)(TV Movie)", "TV_Movie"]
         - name: replace
           args: [" & ", "_&_"]
+    _internal:
+      selector: internal
+      case:
+        False: "{{ .False }}"
+        True: "{{ .True }}"
     description:
-      text: "{{ .Result.genre }}"
+      text: "{{ if .Result._internal }}Internal{{ else }}{{ end }}{{ if and .Result._internal .Result.genre }} | {{ else }}{{ end }}{{ .Result.genre }}"
     seeders:
       selector: seeders
     leechers:
@@ -227,4 +234,4 @@ search:
     minimumseedtime:
       # 7 days (as seconds = 7 x 24 x 60 x 60)
       text: 604800
-# json UNIT3D 8.1.3
+# json UNIT3D 9.0.5

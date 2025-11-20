@@ -2,17 +2,17 @@
 services:
   radarr:
     image: darkalex17/radarr-mock:latest
-    container_name: radarr
+    container_name: radarr-mock
     restart: unless-stopped
 
   sonarr:
     image: darkalex17/sonarr-mock:latest
-    container_name: sonarr
+    container_name: sonarr-mock
     restart: unless-stopped
 
   prowlarr:
     image: darkalex17/prowlarr-mock:latest
-    container_name: prowlarr
+    container_name: prowlarr-mock
     restart: unless-stopped
 
   managarr:

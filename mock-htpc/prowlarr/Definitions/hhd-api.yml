@@ -12,13 +12,16 @@ caps:
   categorymappings:
     - {id: 1, cat: Movies, desc: "Movies"}
     - {id: 2, cat: TV, desc: "TV"}
-    - {id: 8, cat: TV/Anime, desc: "Anime"}
-    - {id: 7, cat: Audio, desc: "Music"}
-    - {id: 4, cat: Console, desc: "Games"}
+    - {id: 3, cat: TV/Anime, desc: "Anime"}
+    - {id: 4, cat: Audio, desc: "Music"}
+    - {id: 5, cat: Console, desc: "Games"}
     - {id: 6, cat: PC, desc: "Apps"}
-    - {id: 9, cat: Books/Technical, desc: "Books/E-Learning"}
-    - {id: 10, cat: Books/Comics, desc: "Manga"}
-    - {id: 11, cat: XXX, desc: "XXX"}
+    - {id: 7, cat: Books/Technical, desc: "Books"}
+    - {id: 8, cat: Audio/Audiobook, desc: "Audiobook"}
+    - {id: 11, cat: Books/Comics, desc: "Comics"}
+    - {id: 12, cat: Books/Mags, desc: "Magazine"}
+    - {id: 9, cat: Books/Comics, desc: "Manga"}
+    - {id: 10, cat: XXX, desc: "XXX"}
 
   modes:
     search: [q]
@@ -59,6 +62,10 @@ settings:
     options:
       desc: desc
       asc: asc
+  - name: info_activity
+    type: info
+    label: Account Inactivity
+    default: "To not get disabled, you are required to login to the site at least once every 30 days or be actively seeding at least 2 torrent."
 
 login:
   path: /api/torrents
@@ -71,9 +78,9 @@ login:
 
 search:
   paths:
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/wiki/Torrent-API-(UNIT3D-v8.x.x)
-    # https://github.com/HDInnovations/UNIT3D-Community-Edition/blob/master/app/Http/Controllers/API/TorrentController.php#L476
-    - path: "/api/torrents/filter"
+    # https://hdinnovations.github.io/UNIT3D/torrent_api.html
+    # https://github.com/HDInnovations/UNIT3D/blob/master/app/Http/Controllers/API/TorrentController.php#L657
+    - path: api/torrents/filter
       response:
         type: json
 
@@ -118,8 +125,6 @@ search:
       selector: details_link
     download:
       selector: download_link
-    infohash:
-      selector: info_hash
     poster:
       selector: meta.poster
       filters:
@@ -136,10 +141,17 @@ search:
       filters:
         - name: re_replace
           args: ["(?i)(Science Fiction)", "Science_Fiction"]
+        - name: re_replace
+          args: ["(?i)(TV Movie)", "TV_Movie"]
         - name: replace
           args: [" & ", "_&_"]
+    _internal:
+      selector: internal
+      case:
+        False: "{{ .False }}"
+        True: "{{ .True }}"
     description:
-      text: "{{ .Result.genre }}"
+      text: "{{ if .Result._internal }}Internal{{ else }}{{ end }}{{ if and .Result._internal .Result.genre }} | {{ else }}{{ end }}{{ .Result.genre }}"
     seeders:
       selector: seeders
     leechers:
@@ -151,7 +163,7 @@ search:
       selector: created_at
       filters:
         - name: append
-          args: " -10:00" # HAST
+          args: " +00:00" # GMT
         - name: dateparse
           args: "MM/dd/yyyy HH:mm:ss zzz"
     size:
@@ -181,9 +193,10 @@ search:
         True: 2 # double
     uploadvolumefactor:
       text: "{{ if .Result._featured }}2{{ else }}{{ .Result.uploadvolumefactor_double_upload }}{{ end }}"
-    minimumratio:
-      text: 7.0
+# global MR is 0.4 but torrents must be seeded for 7 days regardless of ratio
+#    minimumratio:
+#      text: 0.4
     minimumseedtime:
       # 7 days (as seconds = 7 x 24 x 60 x 60)
       text: 604800
-# json UNIT3D 8.3.4
+# json UNIT3D 9.1.7
