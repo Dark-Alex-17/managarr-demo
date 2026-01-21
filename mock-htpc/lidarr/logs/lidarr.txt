@@ -1282,3 +1282,156 @@
 2026-01-21 18:03:39.7|Warn|Torznab|Indexer Tokyo Toshokan (Prowlarr) rss sync didn't cover the period between 01/21/2026 14:14:00 and 01/21/2026 14:14:00 UTC. Search may be required.
 2026-01-21 18:03:39.8|Info|DownloadDecisionMaker|Processing 380 releases
 2026-01-21 18:03:41.0|Info|RssSyncService|RSS Sync Completed. Reports found: 380, Reports grabbed: 0, Reports pending: 39
+2026-01-21 18:19:01.5|Info|RssSyncService|Starting RSS Sync
+2026-01-21 18:19:01.7|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 01/21/2026 16:58:28 and 01/21/2026 16:58:28 UTC. Search may be required.
+2026-01-21 18:19:01.9|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 01/21/2026 18:03:31 and 01/21/2026 18:19:01 UTC. Search may be required.
+2026-01-21 18:19:07.9|Warn|Torznab|Indexer Tokyo Toshokan (Prowlarr) rss sync didn't cover the period between 01/21/2026 14:14:00 and 01/21/2026 14:14:00 UTC. Search may be required.
+2026-01-21 18:19:08.6|Info|DownloadDecisionMaker|Processing 381 releases
+2026-01-21 18:19:09.9|Info|RssSyncService|RSS Sync Completed. Reports found: 381, Reports grabbed: 0, Reports pending: 39
+2026-01-21 18:27:29.8|Info|DiskScanService|Scanning /music/
+2026-01-21 18:27:29.9|Info|ImportDecisionMaker|Reading file 1/11
+2026-01-21 18:27:29.9|Warn|AudioTag|Tag reading failed for /music/Pink Floyd/The Piper at the Gates of Dawn/02 - Lucifer Sam.wav.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: File does not begin with RIFF identifier
+   at TagLib.Riff.File.Read(Boolean read_tags, ReadStyle style, UInt32& riff_size, Int64& tag_start, Int64& tag_end)
+   at TagLib.Riff.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 18:27:29.9|Info|ImportDecisionMaker|Reading file 2/11
+2026-01-21 18:27:29.9|Warn|AudioTag|Tag reading failed for /music/Pink Floyd/The Piper at the Gates of Dawn/11 - Bike.wav.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: File does not begin with RIFF identifier
+   at TagLib.Riff.File.Read(Boolean read_tags, ReadStyle style, UInt32& riff_size, Int64& tag_start, Int64& tag_end)
+   at TagLib.Riff.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 18:27:29.9|Info|ImportDecisionMaker|Reading file 3/11
+2026-01-21 18:27:29.9|Warn|AudioTag|Tag reading failed for /music/Pink Floyd/The Piper at the Gates of Dawn/03 - Matilda Mother.wav.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: File does not begin with RIFF identifier
+   at TagLib.Riff.File.Read(Boolean read_tags, ReadStyle style, UInt32& riff_size, Int64& tag_start, Int64& tag_end)
+   at TagLib.Riff.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 18:27:29.9|Info|ImportDecisionMaker|Reading file 4/11
+2026-01-21 18:27:29.9|Warn|AudioTag|Tag reading failed for /music/Pink Floyd/The Piper at the Gates of Dawn/10 - The Scarecrow.wav.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: File does not begin with RIFF identifier
+   at TagLib.Riff.File.Read(Boolean read_tags, ReadStyle style, UInt32& riff_size, Int64& tag_start, Int64& tag_end)
+   at TagLib.Riff.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 18:27:29.9|Info|ImportDecisionMaker|Reading file 5/11
+2026-01-21 18:27:29.9|Warn|AudioTag|Tag reading failed for /music/Pink Floyd/The Piper at the Gates of Dawn/08 - The Gnome.wav.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: File does not begin with RIFF identifier
+   at TagLib.Riff.File.Read(Boolean read_tags, ReadStyle style, UInt32& riff_size, Int64& tag_start, Int64& tag_end)
+   at TagLib.Riff.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 18:27:29.9|Info|ImportDecisionMaker|Reading file 6/11
+2026-01-21 18:27:29.9|Warn|AudioTag|Tag reading failed for /music/Pink Floyd/The Piper at the Gates of Dawn/04 - Flaming.wav.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: File does not begin with RIFF identifier
+   at TagLib.Riff.File.Read(Boolean read_tags, ReadStyle style, UInt32& riff_size, Int64& tag_start, Int64& tag_end)
+   at TagLib.Riff.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 18:27:29.9|Info|ImportDecisionMaker|Reading file 7/11
+2026-01-21 18:27:29.9|Warn|AudioTag|Tag reading failed for /music/Pink Floyd/The Piper at the Gates of Dawn/06 - Take Up Thy Stethoscope and Walk.wav.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: File does not begin with RIFF identifier
+   at TagLib.Riff.File.Read(Boolean read_tags, ReadStyle style, UInt32& riff_size, Int64& tag_start, Int64& tag_end)
+   at TagLib.Riff.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 18:27:29.9|Info|ImportDecisionMaker|Reading file 8/11
+2026-01-21 18:27:29.9|Warn|AudioTag|Tag reading failed for /music/Pink Floyd/The Piper at the Gates of Dawn/09 - Chapter 24.wav.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: File does not begin with RIFF identifier
+   at TagLib.Riff.File.Read(Boolean read_tags, ReadStyle style, UInt32& riff_size, Int64& tag_start, Int64& tag_end)
+   at TagLib.Riff.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 18:27:29.9|Info|ImportDecisionMaker|Reading file 9/11
+2026-01-21 18:27:29.9|Warn|AudioTag|Tag reading failed for /music/Pink Floyd/The Piper at the Gates of Dawn/05 - Pow R. Toc H.wav.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: File does not begin with RIFF identifier
+   at TagLib.Riff.File.Read(Boolean read_tags, ReadStyle style, UInt32& riff_size, Int64& tag_start, Int64& tag_end)
+   at TagLib.Riff.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 18:27:29.9|Info|ImportDecisionMaker|Reading file 10/11
+2026-01-21 18:27:29.9|Warn|AudioTag|Tag reading failed for /music/Pink Floyd/The Piper at the Gates of Dawn/01 - Astronomy Domine.wav.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: File does not begin with RIFF identifier
+   at TagLib.Riff.File.Read(Boolean read_tags, ReadStyle style, UInt32& riff_size, Int64& tag_start, Int64& tag_end)
+   at TagLib.Riff.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 18:27:29.9|Info|ImportDecisionMaker|Reading file 11/11
+2026-01-21 18:27:29.9|Warn|AudioTag|Tag reading failed for /music/Pink Floyd/The Piper at the Gates of Dawn/07 - Interstellar Overdrive.wav.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: File does not begin with RIFF identifier
+   at TagLib.Riff.File.Read(Boolean read_tags, ReadStyle style, UInt32& riff_size, Int64& tag_start, Int64& tag_end)
+   at TagLib.Riff.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 18:27:29.9|Info|TrackGroupingService|Grouping 11 tracks
+2026-01-21 18:27:29.9|Info|IdentificationService|Identifying album 1/1
+2026-01-21 18:27:29.9|Info|ImportApprovedTracks|Importing 0 tracks

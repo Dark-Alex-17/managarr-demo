@@ -3495,3 +3495,10 @@ FeedUrl: https://eztvx.to/home
    at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, SearchCriteriaBase searchCriteria, Boolean isRecent) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 428
 
 
+2026-01-21 18:19:01.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3050]
+2026-01-21 18:19:01.5|Info|ReleaseSearchService|Searching indexer(s): [MixtapeTorrent] for Term: [], Offset: 0, Limit: 100, Categories: [3000]
+2026-01-21 18:19:01.5|Info|ReleaseSearchService|Searching indexer(s): [Tokyo Toshokan] for Term: [], Offset: 0, Limit: 100, Categories: [3000]
+2026-01-21 18:19:01.5|Info|ReleaseSearchService|Searching indexer(s): [TheRARBG] for Term: [], Offset: 0, Limit: 100, Categories: [3000]
+2026-01-21 18:19:01.5|Info|ReleaseSearchService|Searching indexer(s): [Nipponsei] for Term: [], Offset: 0, Limit: 100, Categories: [3000]
+2026-01-21 18:19:01.5|Info|ReleaseSearchService|Searching indexer(s): [BT.etree] for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3040]
+2026-01-21 18:19:01.5|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [3000]
