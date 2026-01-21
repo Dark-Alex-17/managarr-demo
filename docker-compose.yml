@@ -4,37 +4,21 @@ services:
     image: darkalex17/radarr-mock:latest
     container_name: radarr-mock
     restart: unless-stopped
-    volumes:
-      - ./mock-htpc/radarr:/config
-    ports:
-      - 7878:7878
 
   sonarr-mock:
     image: darkalex17/sonarr-mock:latest
     container_name: sonarr-mock
     restart: unless-stopped
-    volumes:
-      - ./mock-htpc/sonarr:/config
-    ports:
-      - 8989:8989
 
   lidarr-mock:
     image: darkalex17/lidarr-mock:latest
     container_name: lidarr-mock
     restart: unless-stopped
-    ports:
-      - 8686:8686
-    volumes:
-      - ./mock-htpc/lidarr:/config
 
   prowlarr-mock:
     image: darkalex17/prowlarr-mock:latest
     container_name: prowlarr-mock
     restart: unless-stopped
-    ports:
-      - 9696:9696
-    volumes:
-      - ./mock-htpc/prowlarr:/config
 
   managarr:
     image: darkalex17/managarr
