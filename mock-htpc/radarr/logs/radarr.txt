@@ -685,3 +685,905 @@
 
 2025-11-20 17:32:24.3|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
 2025-11-20 17:32:24.4|Info|ConsoleApp|Exiting main.
+2026-01-21 21:11:29.2|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr - Version 6.0.4.10291
+2026-01-21 21:11:29.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2026-01-21 21:11:29.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2026-01-21 21:11:29.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2026-01-21 21:11:29.6|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2026-01-21 21:11:29.7|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2026-01-21 21:11:29.7|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2026-01-21 21:11:29.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2026-01-21 21:11:29.7|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2026-01-21 21:11:29.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0290444s
+2026-01-21 21:11:29.7|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2026-01-21 21:11:29.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0312947s
+2026-01-21 21:11:29.7|Info|FluentMigrator.Runner.MigrationRunner|236: clear_last_rss_releases_info migrating
+2026-01-21 21:11:29.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2026-01-21 21:11:29.7|Info|clear_last_rss_releases_info|Starting migration of Main DB to 236
+2026-01-21 21:11:29.7|Info|FluentMigrator.Runner.MigrationRunner|ExecuteSqlStatement UPDATE "IndexerStatus" SET "LastRssSyncReleaseInfo" = NULL
+2026-01-21 21:11:29.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|UPDATE "IndexerStatus" SET "LastRssSyncReleaseInfo" = NULL
+2026-01-21 21:11:29.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0084868s
+2026-01-21 21:11:29.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (236, '2026-01-21T21:11:29', 'clear_last_rss_releases_info')
+2026-01-21 21:11:29.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|236: clear_last_rss_releases_info migrated
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0386844s
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|237: add_indexes migrating
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2026-01-21 21:11:29.8|Info|add_indexes|Starting migration of Main DB to 237
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Blocklist (MovieId)
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Blocklist_MovieId" ON "Blocklist" ("MovieId" ASC)
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0011852s
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Blocklist (Date)
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Blocklist_Date" ON "Blocklist" ("Date" ASC)
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0003477s
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex History (MovieId, Date)
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_History_MovieId_Date" ON "History" ("MovieId" ASC, "Date" DESC)
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0003684s
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|DeleteIndex History (DownloadId)
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP INDEX "IX_History_DownloadId"
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0004665s
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex History (DownloadId, Date)
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_History_DownloadId_Date" ON "History" ("DownloadId" ASC, "Date" DESC)
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0003687s
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Movies (MovieFileId)
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Movies_MovieFileId" ON "Movies" ("MovieFileId" ASC)
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0003388s
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Movies (Path)
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Movies_Path" ON "Movies" ("Path" ASC)
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0003284s
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (237, '2026-01-21T21:11:29', 'add_indexes')
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|237: add_indexes migrated
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0096625s
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|238: parse_title_from_existing_subtitle_files migrating
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2026-01-21 21:11:29.8|Info|parse_title_from_existing_subtitle_files|Starting migration of Main DB to 238
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|AlterTable SubtitleFiles
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 9.04E-05s
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn SubtitleFiles Title String
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "SubtitleFiles" ADD COLUMN "Title" TEXT
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.002659s
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|AlterTable SubtitleFiles
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 2.1E-05s
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn SubtitleFiles Copy Int32
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "SubtitleFiles" ADD COLUMN "Copy" INTEGER NOT NULL DEFAULT 0
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0007901s
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0029956s
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (238, '2026-01-21T21:11:29', 'parse_title_from_existing_subtitle_files')
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|238: parse_title_from_existing_subtitle_files migrated
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0120966s
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|239: add_minimum_upgrade_format_score_to_quality_profiles migrating
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2026-01-21 21:11:29.8|Info|add_minimum_upgrade_format_score_to_quality_profiles|Starting migration of Main DB to 239
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|AlterTable QualityProfiles
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 9E-07s
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn QualityProfiles MinUpgradeFormatScore Int32
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "QualityProfiles" ADD COLUMN "MinUpgradeFormatScore" INTEGER NOT NULL DEFAULT 1
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0009225s
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (239, '2026-01-21T21:11:29', 'add_minimum_upgrade_format_score_to_quality_profiles')
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|239: add_minimum_upgrade_format_score_to_quality_profiles migrated
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0103176s
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|240: drop_multi_episode_style_from_naming_config migrating
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2026-01-21 21:11:29.8|Info|drop_multi_episode_style_from_naming_config|Starting migration of Main DB to 240
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|DeleteColumn NamingConfig MultiEpisodeStyle
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "NamingConfig_temp" ("Id" INTEGER NOT NULL UNIQUE PRIMARY KEY AUTOINCREMENT, "ReplaceIllegalCharacters" INTEGER NOT NULL, "StandardMovieFormat" TEXT, "MovieFolderFormat" TEXT, "ColonReplacementFormat" INTEGER NOT NULL, "RenameMovies" INTEGER NOT NULL)
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "NamingConfig_temp" ("Id", "ReplaceIllegalCharacters", "StandardMovieFormat", "MovieFolderFormat", "ColonReplacementFormat", "RenameMovies") SELECT "Id", "ReplaceIllegalCharacters", "StandardMovieFormat", "MovieFolderFormat", "ColonReplacementFormat", "RenameMovies" FROM "NamingConfig"
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "NamingConfig"
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "NamingConfig_temp" RENAME TO "NamingConfig"
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0140963s
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (240, '2026-01-21T21:11:29', 'drop_multi_episode_style_from_naming_config')
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|240: drop_multi_episode_style_from_naming_config migrated
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0235006s
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|241: stevenlu_update_url migrating
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2026-01-21 21:11:29.8|Info|stevenlu_update_url|Starting migration of Main DB to 241
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2026-01-21 21:11:29.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.001627s
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (241, '2026-01-21T21:11:29', 'stevenlu_update_url')
+2026-01-21 21:11:29.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|241: stevenlu_update_url migrated
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0107964s
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|242: add_movie_keywords migrating
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2026-01-21 21:11:29.9|Info|add_movie_keywords|Starting migration of Main DB to 242
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|AlterTable MovieMetadata
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|=> 1.1E-06s
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn MovieMetadata Keywords String
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "MovieMetadata" ADD COLUMN "Keywords" TEXT
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0008163s
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (242, '2026-01-21T21:11:29', 'add_movie_keywords')
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|242: add_movie_keywords migrated
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0099833s
+2026-01-21 21:11:29.9|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2026-01-21 21:11:29.9|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0038856s
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0040167s
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|236: clear_last_rss_releases_info migrating
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2026-01-21 21:11:29.9|Info|clear_last_rss_releases_info|Starting migration of Log DB to 236
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (236, '2026-01-21T21:11:29', 'clear_last_rss_releases_info')
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|236: clear_last_rss_releases_info migrated
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0179831s
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|237: add_indexes migrating
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2026-01-21 21:11:29.9|Info|add_indexes|Starting migration of Log DB to 237
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (237, '2026-01-21T21:11:29', 'add_indexes')
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|237: add_indexes migrated
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0094111s
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|238: parse_title_from_existing_subtitle_files migrating
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2026-01-21 21:11:29.9|Info|parse_title_from_existing_subtitle_files|Starting migration of Log DB to 238
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (238, '2026-01-21T21:11:29', 'parse_title_from_existing_subtitle_files')
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|238: parse_title_from_existing_subtitle_files migrated
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0099404s
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|239: add_minimum_upgrade_format_score_to_quality_profiles migrating
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2026-01-21 21:11:29.9|Info|add_minimum_upgrade_format_score_to_quality_profiles|Starting migration of Log DB to 239
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (239, '2026-01-21T21:11:29', 'add_minimum_upgrade_format_score_to_quality_profiles')
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|239: add_minimum_upgrade_format_score_to_quality_profiles migrated
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0094476s
+2026-01-21 21:11:29.9|Info|FluentMigrator.Runner.MigrationRunner|240: drop_multi_episode_style_from_naming_config migrating
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2026-01-21 21:11:29.9|Info|drop_multi_episode_style_from_naming_config|Starting migration of Log DB to 240
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (240, '2026-01-21T21:11:29', 'drop_multi_episode_style_from_naming_config')
+2026-01-21 21:11:29.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2026-01-21 21:11:30.0|Info|FluentMigrator.Runner.MigrationRunner|240: drop_multi_episode_style_from_naming_config migrated
+2026-01-21 21:11:30.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.010035s
+2026-01-21 21:11:30.0|Info|FluentMigrator.Runner.MigrationRunner|241: stevenlu_update_url migrating
+2026-01-21 21:11:30.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2026-01-21 21:11:30.0|Info|stevenlu_update_url|Starting migration of Log DB to 241
+2026-01-21 21:11:30.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (241, '2026-01-21T21:11:30', 'stevenlu_update_url')
+2026-01-21 21:11:30.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2026-01-21 21:11:30.0|Info|FluentMigrator.Runner.MigrationRunner|241: stevenlu_update_url migrated
+2026-01-21 21:11:30.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0098036s
+2026-01-21 21:11:30.0|Info|FluentMigrator.Runner.MigrationRunner|242: add_movie_keywords migrating
+2026-01-21 21:11:30.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2026-01-21 21:11:30.0|Info|add_movie_keywords|Starting migration of Log DB to 242
+2026-01-21 21:11:30.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (242, '2026-01-21T21:11:30', 'add_movie_keywords')
+2026-01-21 21:11:30.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2026-01-21 21:11:30.0|Info|FluentMigrator.Runner.MigrationRunner|242: add_movie_keywords migrated
+2026-01-21 21:11:30.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.009843s
+2026-01-21 21:11:30.2|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:7878
+2026-01-21 21:11:30.7|Info|CommandExecutor|Starting 2 threads for tasks.
+2026-01-21 21:11:31.0|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2026-01-21 21:11:31.0|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2026-01-21 21:11:31.0|Info|Microsoft.Hosting.Lifetime|Content root path: /app/radarr/bin
+2026-01-21 21:11:31.1|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2026-01-21 21:11:41.4|Error|DownloadClientRemovesCompletedDownloadsCheck|Unknown error occurred in DownloadClientHistoryRetentionCheck HealthCheck
+
+[v6.0.4.10291] System.Net.Http.HttpRequestException: Resource temporarily unavailable (transmission:9091)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 326
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 312
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in ./NzbDrone.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 276
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in ./NzbDrone.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 315
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetSessionVariables(TransmissionSettings settings) in ./NzbDrone.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 195
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetConfig(TransmissionSettings settings) in ./NzbDrone.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 154
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetStatus() in ./NzbDrone.Core/Download/Clients/Transmission/TransmissionBase.cs:line 200
+   at NzbDrone.Core.HealthCheck.Checks.DownloadClientRemovesCompletedDownloadsCheck.Check() in ./NzbDrone.Core/HealthCheck/Checks/DownloadClientRemovesCompletedDownloadsCheck.cs:line 42
+
+
+2026-01-21 21:11:51.4|Error|DownloadClientSortingCheck|Unknown error occurred in DownloadClientSortingCheck HealthCheck
+
+[v6.0.4.10291] System.Net.Http.HttpRequestException: Resource temporarily unavailable (transmission:9091)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 326
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 312
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in ./NzbDrone.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 276
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in ./NzbDrone.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 315
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetSessionVariables(TransmissionSettings settings) in ./NzbDrone.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 195
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetConfig(TransmissionSettings settings) in ./NzbDrone.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 154
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetStatus() in ./NzbDrone.Core/Download/Clients/Transmission/TransmissionBase.cs:line 200
+   at NzbDrone.Core.HealthCheck.Checks.DownloadClientSortingCheck.Check() in ./NzbDrone.Core/HealthCheck/Checks/DownloadClientSortingCheck.cs:line 43
+
+
+2026-01-21 21:12:00.8|Info|DiskScanService|Scanning disk for Halo
+2026-01-21 21:12:00.9|Info|BackupService|Starting Backup
+2026-01-21 21:12:00.9|Info|DiskScanService|Completed scanning disk for Halo
+2026-01-21 21:12:00.9|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Halo (2019)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x169f06c0] EBML header parsing failed
+/movies/Halo (2019)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:00.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:00.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:00.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:00.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:00.9|Info|DiskScanService|Scanning disk for Indiana Jones and the Dial of Destiny
+2026-01-21 21:12:00.9|Info|DiskScanService|Completed scanning disk for Indiana Jones and the Dial of Destiny
+2026-01-21 21:12:00.9|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Indiana Jones and the Dial of Destiny (2023)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x290c86c0] EBML header parsing failed
+/movies/Indiana Jones and the Dial of Destiny (2023)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:00.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:00.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:00.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:00.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:00.9|Info|DiskScanService|Scanning disk for The Dark Knight
+2026-01-21 21:12:00.9|Info|DiskScanService|Completed scanning disk for The Dark Knight
+2026-01-21 21:12:00.9|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/The Dark Knight (2008)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0xf7246c0] EBML header parsing failed
+/movies/The Dark Knight (2008)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:00.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:00.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:00.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:00.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:00.9|Info|DiskScanService|Scanning disk for The Dark Knight Rises
+2026-01-21 21:12:00.9|Info|DiskScanService|Completed scanning disk for The Dark Knight Rises
+2026-01-21 21:12:00.9|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/The Dark Knight Rises (2012)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x3dc026c0] EBML header parsing failed
+/movies/The Dark Knight Rises (2012)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:00.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:00.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:00.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:00.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:00.9|Info|DiskScanService|Scanning disk for Batman Begins
+2026-01-21 21:12:00.9|Info|DiskScanService|Completed scanning disk for Batman Begins
+2026-01-21 21:12:00.9|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Batman Begins (2005)/batman-begins.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0xb6f96c0] EBML header parsing failed
+/movies/Batman Begins (2005)/batman-begins.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:00.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:00.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:00.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:00.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:00.9|Info|DiskScanService|Scanning disk for Indiana Jones and the Kingdom of the Crystal Skull
+2026-01-21 21:12:00.9|Info|DiskScanService|Completed scanning disk for Indiana Jones and the Kingdom of the Crystal Skull
+2026-01-21 21:12:00.9|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Indiana Jones and the Kingdom of the Crystal Skull (2008)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2c6cf6c0] EBML header parsing failed
+/movies/Indiana Jones and the Kingdom of the Crystal Skull (2008)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:00.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:00.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:00.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:00.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:01.0|Info|DiskScanService|Scanning disk for Indiana Jones and the Last Crusade
+2026-01-21 21:12:01.0|Info|DiskScanService|Completed scanning disk for Indiana Jones and the Last Crusade
+2026-01-21 21:12:01.0|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Indiana Jones and the Last Crusade (1989)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x9adb6c0] EBML header parsing failed
+/movies/Indiana Jones and the Last Crusade (1989)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:01.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:01.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:01.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:01.0|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:01.0|Info|DiskScanService|Scanning disk for Indiana Jones and the Temple of Doom
+2026-01-21 21:12:01.0|Info|DiskScanService|Completed scanning disk for Indiana Jones and the Temple of Doom
+2026-01-21 21:12:01.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:01.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:01.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:01.0|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:01.0|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2026-01-21 21:12:01.0|Info|DiskScanService|Scanning disk for Raiders of the Lost Ark
+2026-01-21 21:12:01.0|Info|DiskScanService|Completed scanning disk for Raiders of the Lost Ark
+2026-01-21 21:12:01.0|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Raiders of the Lost Ark (1981)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x27ad76c0] EBML header parsing failed
+/movies/Raiders of the Lost Ark (1981)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:01.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:01.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:01.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:01.0|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:01.0|Info|DiskScanService|Scanning disk for Star Wars
+2026-01-21 21:12:01.0|Info|DiskScanService|Completed scanning disk for Star Wars
+2026-01-21 21:12:01.0|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Star Wars (1977)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x3dd116c0] EBML header parsing failed
+/movies/Star Wars (1977)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:01.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:01.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:01.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:01.0|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:01.0|Info|DiskScanService|Scanning disk for The Empire Strikes Back
+2026-01-21 21:12:01.0|Info|DiskScanService|Completed scanning disk for The Empire Strikes Back
+2026-01-21 21:12:01.0|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/The Empire Strikes Back (1980)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x78446c0] EBML header parsing failed
+/movies/The Empire Strikes Back (1980)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:01.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:01.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:01.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:01.0|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:01.0|Info|DiskScanService|Scanning disk for Return of the Jedi
+2026-01-21 21:12:01.0|Info|DiskScanService|Completed scanning disk for Return of the Jedi
+2026-01-21 21:12:01.0|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Return of the Jedi (1983)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x407736c0] EBML header parsing failed
+/movies/Return of the Jedi (1983)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:01.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:01.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:01.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:01.0|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:01.0|Info|DiskScanService|Scanning disk for Star Wars: Episode I - The Phantom Menace
+2026-01-21 21:12:01.0|Info|DiskScanService|Completed scanning disk for Star Wars: Episode I - The Phantom Menace
+2026-01-21 21:12:01.0|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Star Wars Episode I - The Phantom Menace (1999)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x4a1e6c0] EBML header parsing failed
+/movies/Star Wars Episode I - The Phantom Menace (1999)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:01.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:01.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:01.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:01.0|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:01.0|Info|DiskScanService|Scanning disk for Star Wars: Episode II - Attack of the Clones
+2026-01-21 21:12:01.0|Info|DiskScanService|Completed scanning disk for Star Wars: Episode II - Attack of the Clones
+2026-01-21 21:12:01.0|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Star Wars Episode II - Attack of the Clones (2002)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x28ed06c0] EBML header parsing failed
+/movies/Star Wars Episode II - Attack of the Clones (2002)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:01.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:01.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:01.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:01.0|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:01.0|Info|DiskScanService|Scanning disk for Star Wars: Episode III - Revenge of the Sith
+2026-01-21 21:12:01.0|Info|DiskScanService|Completed scanning disk for Star Wars: Episode III - Revenge of the Sith
+2026-01-21 21:12:01.0|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Star Wars Episode III - Revenge of the Sith (2005)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2d10a6c0] EBML header parsing failed
+/movies/Star Wars Episode III - Revenge of the Sith (2005)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:01.1|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:01.1|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:01.1|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:01.1|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:01.1|Info|DiskScanService|Scanning disk for Star Wars: The Force Awakens
+2026-01-21 21:12:01.1|Info|DiskScanService|Completed scanning disk for Star Wars: The Force Awakens
+2026-01-21 21:12:01.1|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Star Wars The Force Awakens (2015)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x419056c0] EBML header parsing failed
+/movies/Star Wars The Force Awakens (2015)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:01.1|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:01.1|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:01.1|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:01.1|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:01.1|Info|DiskScanService|Scanning disk for Star Wars: The Last Jedi
+2026-01-21 21:12:01.1|Info|DiskScanService|Completed scanning disk for Star Wars: The Last Jedi
+2026-01-21 21:12:01.1|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Star Wars The Last Jedi (2017)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x2a20f6c0] EBML header parsing failed
+/movies/Star Wars The Last Jedi (2017)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:01.1|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:01.1|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:01.1|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:01.1|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:01.1|Info|DiskScanService|Scanning disk for Star Wars: The Rise of Skywalker
+2026-01-21 21:12:01.1|Info|DiskScanService|Completed scanning disk for Star Wars: The Rise of Skywalker
+2026-01-21 21:12:01.1|Error|VideoFileInfoReader|Unable to parse media info from file: /movies/Star Wars The Rise of Skywalker (2019)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x3e74c6c0] EBML header parsing failed
+/movies/Star Wars The Rise of Skywalker (2019)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:01.1|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:01.1|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:01.1|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:01.1|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:01.1|Info|DiskScanService|Scanning disk for Harry Potter and the Philosopher's Stone
+2026-01-21 21:12:01.1|Info|DiskScanService|Completed scanning disk for Harry Potter and the Philosopher's Stone
+2026-01-21 21:12:01.1|Error|VideoFileInfoReader|Unable to parse media info from file: /films/Harry Potter and the Philosopher's Stone (2001)/movie.mkv
+
+[v6.0.4.10291] FFMpegCore.Exceptions.FFMpegException: ffprobe exited with non-zero exit-code (1 - [matroska,webm @ 0x102676c0] EBML header parsing failed
+/films/Harry Potter and the Philosopher's Stone (2001)/movie.mkv: Invalid data found when processing input)
+   at FFMpegCore.FFProbe.GetStreamJson(String filePath, Int32 outputCapacity, FFOptions ffOptions)
+   at NzbDrone.Core.MediaFiles.MediaInfo.VideoFileInfoReader.GetMediaInfo(String filename) in ./NzbDrone.Core/MediaFiles/MediaInfo/VideoFileInfoReader.cs:line 67
+
+
+2026-01-21 21:12:01.1|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:01.1|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:01.1|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:01.1|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:01.1|Info|RefreshMovieService|Updating info for Dune: Part Three
+2026-01-21 21:12:01.3|Info|RefreshCollectionService|Updating info for The Dark Knight Collection
+2026-01-21 21:12:01.5|Info|RefreshCollectionService|Updating info for Dead Space Collection
+2026-01-21 21:12:02.0|Info|DiskScanService|Scanning disk for Dune: Part Three
+2026-01-21 21:12:02.0|Info|DiskScanService|Completed scanning disk for Dune: Part Three
+2026-01-21 21:12:02.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:02.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:02.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:02.0|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:02.0|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2026-01-21 21:12:02.0|Info|DiskScanService|Scanning disk for Test
+2026-01-21 21:12:02.0|Info|DiskScanService|Completed scanning disk for Test
+2026-01-21 21:12:02.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:02.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:02.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:02.0|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:02.0|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2026-01-21 21:12:02.0|Info|DiskScanService|Scanning disk for Dead Space: Downfall
+2026-01-21 21:12:02.0|Info|DiskScanService|Completed scanning disk for Dead Space: Downfall
+2026-01-21 21:12:02.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-01-21 21:12:02.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-01-21 21:12:02.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-01-21 21:12:02.0|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-01-21 21:12:02.0|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2026-01-21 21:12:02.1|Info|RefreshCollectionService|Updating info for Dune Collection
+2026-01-21 21:12:02.1|Info|HousekeepingService|Running housecleaning tasks
+2026-01-21 21:12:02.2|Info|MediaCoverService|Downloading Poster for [Dune: Part Three (2026)][tt31378509, 1170608] https://image.tmdb.org/t/p/original/gp1MVNsRyH76PHlJVhRk6PHylDY.jpg
+2026-01-21 21:12:02.2|Info|RefreshCollectionService|Updating info for Harry Potter Collection
+2026-01-21 21:12:02.4|Info|RefreshCollectionService|Updating info for Indiana Jones Collection
+2026-01-21 21:12:02.6|Info|RefreshCollectionService|Updating info for Star Wars Collection
+2026-01-21 21:12:02.6|Info|MetadataService|Movie folder does not exist, skipping metadata image creation
+2026-01-21 21:12:02.7|Info|Database|Vacuuming Log database
+2026-01-21 21:12:02.7|Info|Database|Log database compressed
+2026-01-21 21:12:02.7|Info|Database|Vacuuming Main database
+2026-01-21 21:12:02.9|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2026-01-21 21:12:03.0|Info|Database|Main database compressed
+2026-01-21 21:12:03.1|Info|RssSyncService|Starting RSS Sync
+2026-01-21 21:12:06.2|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission
+
+[v6.0.4.10291] System.Net.Http.HttpRequestException: Resource temporarily unavailable (transmission:9091)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 326
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 312
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient(HttpRequestBuilder requestBuilder, TransmissionSettings settings, Boolean reauthenticate) in ./NzbDrone.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 276
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in ./NzbDrone.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 315
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in ./NzbDrone.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 240
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(IReadOnlyCollection`1 hashStrings, TransmissionSettings settings) in ./NzbDrone.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 50
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in ./NzbDrone.Core/Download/Clients/Transmission/TransmissionBase.cs:line 43
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in ./NzbDrone.Core/Download/TrackedDownloads/DownloadMonitoringService.cs:line 94
+
+
+2026-01-21 21:12:06.8|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:12:10.9|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:12:13.1|Error|Torznab|An error occurred while processing indexer feed. 
+
+[v6.0.4.10291] System.Net.Http.HttpRequestException: Resource temporarily unavailable (prowlarr:9696)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 326
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 312
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Get(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 327
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in ./NzbDrone.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 58
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.<>c__DisplayClass4_0.<GetCapabilities>b__0() in ./NzbDrone.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./NzbDrone.Common/Cache/Cached.cs:line 98
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities(NewznabSettings indexerSettings) in ./NzbDrone.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Core.Indexers.Newznab.NewznabRequestGenerator.GetRecentRequests() in ./NzbDrone.Core/Indexers/Newznab/NewznabRequestGenerator.cs:line 92
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.<>c.<FetchRecent>b__15_0(IIndexerRequestGenerator g) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 50
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, Boolean isRecent) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 110
+
+
+2026-01-21 21:12:13.8|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:12:14.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/15/api?t=movie&cat=2000,2060,2070,2020,2040,2045&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:17:14 due to recent failures." />
+2026-01-21 21:12:14.0|Warn|Torznab|Unable to connect to indexer
+
+[v6.0.4.10291] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/15/api?t=movie&cat=2000,2060,2070,2020,2040,2045&extended=1&apikey=(removed)&offset=0&limit=100]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 332
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 305
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 359
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:17:14 due to recent failures." />
+
+
+2026-01-21 21:12:14.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log above the ValidationFailure for more details. HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/15/api?t=movie&cat=2000,2060,2070,2020,2040,2045&extended=1&apikey=(removed)&offset=0&limit=100]
+2026-01-21 21:12:16.8|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:12:17.2|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:12:20.2|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:12:23.2|Error|Torznab|An error occurred while processing indexer feed. 
+
+[v6.0.4.10291] System.Net.Http.HttpRequestException: Resource temporarily unavailable (prowlarr:9696)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 326
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 312
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Get(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 327
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in ./NzbDrone.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 58
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.<>c__DisplayClass4_0.<GetCapabilities>b__0() in ./NzbDrone.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./NzbDrone.Common/Cache/Cached.cs:line 98
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities(NewznabSettings indexerSettings) in ./NzbDrone.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Core.Indexers.Newznab.NewznabRequestGenerator.GetRecentRequests() in ./NzbDrone.Core/Indexers/Newznab/NewznabRequestGenerator.cs:line 92
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.<>c.<FetchRecent>b__15_0(IIndexerRequestGenerator g) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 50
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, Boolean isRecent) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 110
+
+
+2026-01-21 21:12:23.2|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/16/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:13:02 due to recent failures." />
+2026-01-21 21:12:23.2|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/16/api?t=caps&apikey=(removed) 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:13:02 due to recent failures." />
+2026-01-21 21:12:23.2|Warn|Torznab|API Request Limit reached for kickasstorrents.ws (Prowlarr). Disabled for 00:00:40
+2026-01-21 21:12:33.2|Error|Torznab|An error occurred while processing indexer feed. 
+
+[v6.0.4.10291] System.Net.Http.HttpRequestException: Resource temporarily unavailable (prowlarr:9696)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 326
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 312
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Get(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 327
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in ./NzbDrone.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 58
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.<>c__DisplayClass4_0.<GetCapabilities>b__0() in ./NzbDrone.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./NzbDrone.Common/Cache/Cached.cs:line 98
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities(NewznabSettings indexerSettings) in ./NzbDrone.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Core.Indexers.Newznab.NewznabRequestGenerator.GetRecentRequests() in ./NzbDrone.Core/Indexers/Newznab/NewznabRequestGenerator.cs:line 92
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.<>c.<FetchRecent>b__15_0(IIndexerRequestGenerator g) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 50
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, Boolean isRecent) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 110
+
+
+2026-01-21 21:12:34.5|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/17/api?t=movie&cat=2000,2040,2030,2045,2070,2010,2060,2020&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:17:34 due to recent failures." />
+2026-01-21 21:12:34.5|Warn|Torznab|Unable to connect to indexer
+
+[v6.0.4.10291] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/17/api?t=movie&cat=2000,2040,2030,2045,2070,2010,2060,2020&extended=1&apikey=(removed)&offset=0&limit=100]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 332
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 305
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 359
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:17:34 due to recent failures." />
+
+
+2026-01-21 21:12:34.5|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log above the ValidationFailure for more details. HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/17/api?t=movie&cat=2000,2040,2030,2045,2070,2010,2060,2020&extended=1&apikey=(removed)&offset=0&limit=100]
+2026-01-21 21:12:35.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:12:37.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:12:38.8|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/30/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:13:38 due to recent failures." />
+2026-01-21 21:12:38.8|Warn|Torznab|Unable to connect to indexer
+
+[v6.0.4.10291] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/30/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 332
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 305
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 359
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:13:38 due to recent failures." />
+
+
+2026-01-21 21:12:38.8|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log above the ValidationFailure for more details. HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/30/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100]
+2026-01-21 21:12:40.6|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/30/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:13:38 due to recent failures." />
+2026-01-21 21:12:40.6|Warn|Torznab|Unable to connect to indexer
+
+[v6.0.4.10291] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/30/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 332
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 305
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 359
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:13:38 due to recent failures." />
+
+
+2026-01-21 21:12:40.6|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log above the ValidationFailure for more details. HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/30/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100]
+2026-01-21 21:12:42.8|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:12:43.2|Error|Torznab|An error occurred while processing indexer feed. 
+
+[v6.0.4.10291] System.Net.Http.HttpRequestException: Resource temporarily unavailable (prowlarr:9696)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 326
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 312
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Get(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 327
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in ./NzbDrone.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 58
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.<>c__DisplayClass4_0.<GetCapabilities>b__0() in ./NzbDrone.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./NzbDrone.Common/Cache/Cached.cs:line 98
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities(NewznabSettings indexerSettings) in ./NzbDrone.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Core.Indexers.Newznab.NewznabRequestGenerator.GetRecentRequests() in ./NzbDrone.Core/Indexers/Newznab/NewznabRequestGenerator.cs:line 92
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.<>c.<FetchRecent>b__15_0(IIndexerRequestGenerator g) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 50
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, Boolean isRecent) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 110
+
+
+2026-01-21 21:12:43.4|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/45/api?t=movie&cat=2000,2040,2045,2060&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:17:43 due to recent failures." />
+2026-01-21 21:12:43.4|Warn|Torznab|API Request Limit reached for YTS (Prowlarr). Disabled for 00:05:00
+2026-01-21 21:12:44.8|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:12:47.2|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:12:49.1|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:12:53.3|Error|Torznab|An error occurred while processing indexer feed. 
+
+[v6.0.4.10291] System.Net.Http.HttpRequestException: Resource temporarily unavailable (prowlarr:9696)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 326
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 312
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Get(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 327
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities(NewznabSettings indexerSettings) in ./NzbDrone.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 58
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.<>c__DisplayClass4_0.<GetCapabilities>b__0() in ./NzbDrone.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 35
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./NzbDrone.Common/Cache/Cached.cs:line 98
+   at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities(NewznabSettings indexerSettings) in ./NzbDrone.Core/Indexers/Newznab/NewznabCapabilitiesProvider.cs:line 37
+   at NzbDrone.Core.Indexers.Newznab.NewznabRequestGenerator.GetRecentRequests() in ./NzbDrone.Core/Indexers/Newznab/NewznabRequestGenerator.cs:line 92
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.<>c.<FetchRecent>b__15_0(IIndexerRequestGenerator g) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 50
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, Boolean isRecent) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 110
+
+
+2026-01-21 21:12:55.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/17/api?t=movie&cat=2000,2040,2030,2045,2070,2010,2060,2020&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:17:54 due to recent failures." />
+2026-01-21 21:12:55.0|Warn|Torznab|Unable to connect to indexer
+
+[v6.0.4.10291] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/17/api?t=movie&cat=2000,2040,2030,2045,2070,2010,2060,2020&extended=1&apikey=(removed)&offset=0&limit=100]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 332
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 305
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 359
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:17:54 due to recent failures." />
+
+
+2026-01-21 21:12:55.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log above the ValidationFailure for more details. HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/17/api?t=movie&cat=2000,2040,2030,2045,2070,2010,2060,2020&extended=1&apikey=(removed)&offset=0&limit=100]
+2026-01-21 21:12:55.3|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:12:57.3|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:12:59.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/30/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:13:38 due to recent failures." />
+2026-01-21 21:12:59.0|Warn|Torznab|Unable to connect to indexer
+
+[v6.0.4.10291] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/30/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 332
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 305
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 359
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:13:38 due to recent failures." />
+
+
+2026-01-21 21:12:59.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log above the ValidationFailure for more details. HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/30/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100]
+2026-01-21 21:13:01.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr-mock:9696/30/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:13:38 due to recent failures." />
+2026-01-21 21:13:01.0|Warn|Torznab|Unable to connect to indexer
+
+[v6.0.4.10291] NzbDrone.Common.Http.TooManyRequestsException: HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/30/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 115
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 332
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 305
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 359
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 01/21/2026 21:13:38 due to recent failures." />
+
+
+2026-01-21 21:13:01.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log above the ValidationFailure for more details. HTTP request failed: [429:TooManyRequests] [GET] at [http://prowlarr-mock:9696/30/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100]
+2026-01-21 21:13:03.2|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:13:05.2|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:13:07.5|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:13:09.5|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2026-01-21 21:13:53.2|Warn|Torznab|Internet Archive (Prowlarr) server is currently unavailable. http://prowlarr-mock:9696/12/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2026-01-21 21:13:53.2|Info|DownloadDecisionMaker|Processing 114 releases
+2026-01-21 21:13:53.6|Info|RssSyncService|RSS Sync Completed. Reports found: 114, Reports grabbed: 0
+2026-01-21 21:16:49.3|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2026-01-21 21:16:49.4|Info|ConsoleApp|Exiting main.
