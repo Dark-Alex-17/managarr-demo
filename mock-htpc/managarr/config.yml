@@ -1,11 +1,16 @@
 ---
 radarr:
   - name: Movies
-    host: radarr-mock
+    host: radarr
     port: 7878
     api_token: 2374332474216e6720407021206b6579
 sonarr:
   - name: TV Shows
-    host: sonarr-mock
+    host: sonarr
     port: 8989
     api_token: 08717304eb94465f81c5129bb46cc2f9
+lidarr:
+  - name: Music
+    host: lidarr
+    port: 8686
+    api_token: 611b3863baa2442f975afbc8f1377037

@@ -1,0 +1,1284 @@
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/T.N.T/04 - Live Wire.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3820/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/T.N.T/03 - The Jack.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3821/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/T.N.T/05 - T.N.T.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3822/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/T.N.T/06 - Rocker.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3823/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/T.N.T/09 - School Days.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3824/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/T.N.T/01 - It’s a Long Way to the Top (If You Wanna Rock ’n’ Roll).flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3825/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/T.N.T/08 - High Voltage.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3826/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/T.N.T/07 - Can I Sit Next to You Girl.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3827/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/T.N.T/02 - Rock ’n’ Roll Singer.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3828/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Flick of the Switch/03 - Flick of the Switch.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3829/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Flick of the Switch/10 - Brain Shake.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3830/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Flick of the Switch/08 - Bedlam in Belgium.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3831/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Flick of the Switch/07 - Deep in the Hole.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3832/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Flick of the Switch/09 - Badlands.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3833/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Flick of the Switch/06 - Guns for Hire.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3834/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Flick of the Switch/01 - Rising Power.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3835/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Flick of the Switch/05 - Landslide.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3836/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Flick of the Switch/02 - This House Is on Fire.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3837/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Flick of the Switch/04 - Nervous Shakedown.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3838/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Dirty Deeds Done Dirt Cheap/06 - There's Gonna Be Some Rockin'.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3839/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Dirty Deeds Done Dirt Cheap/01 - Dirty Deeds Done Dirt Cheap.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3840/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Dirty Deeds Done Dirt Cheap/04 - Rocker.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3841/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Dirty Deeds Done Dirt Cheap/08 - Ride On.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3842/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Dirty Deeds Done Dirt Cheap/09 - Squealer.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3843/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Dirty Deeds Done Dirt Cheap/03 - Big Balls.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3844/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Dirty Deeds Done Dirt Cheap/02 - Love at First Feel.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3845/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Dirty Deeds Done Dirt Cheap/07 - Ain't No Fun (Waiting Round to Be a Millionaire).flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3846/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Dirty Deeds Done Dirt Cheap/05 - Problem Child.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3847/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Ballbreaker/11 - Ballbreaker.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3848/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Ballbreaker/03 - The Furor.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3849/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Ballbreaker/08 - Love Bomb.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3850/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Ballbreaker/05 - The Honey Roll.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3851/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Ballbreaker/02 - Cover You in Oil.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3852/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Ballbreaker/07 - Hail Caesar.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3853/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Ballbreaker/04 - Boogie Man.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3854/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Ballbreaker/06 - Burnin' Alive.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3855/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Ballbreaker/10 - Whiskey on the Rocks.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3856/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Ballbreaker/09 - Caught With Your Pants Down.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3857/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Ballbreaker/01 - Hard as a Rock.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3858/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/If You Want Blood You’ve Got It/10 - Rocker.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3859/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/If You Want Blood You’ve Got It/01 - Riff Raff.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3860/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/If You Want Blood You’ve Got It/07 - Rock ’n’ Roll Damnation.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3861/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/If You Want Blood You’ve Got It/03 - Bad Boy Boogie.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3862/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/If You Want Blood You’ve Got It/06 - Whole Lotta Rosie.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3863/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/If You Want Blood You’ve Got It/09 - Let There Be Rock.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3864/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/If You Want Blood You’ve Got It/08 - High Voltage.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3865/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/If You Want Blood You’ve Got It/04 - The Jack.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3866/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/If You Want Blood You’ve Got It/02 - Hell Ain’t a Bad Place to Be.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3867/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/If You Want Blood You’ve Got It/05 - Problem Child.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3868/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Powerage/07 - Gone Shootin'.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3869/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Powerage/05 - Sin City.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3870/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Powerage/03 - Gimme a Bullet.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3871/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Powerage/02 - Down Payment Blues.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.8|Info|ImportDecisionMaker|Reading file 3872/3915
+2026-01-21 17:34:44.8|Warn|AudioTag|Tag reading failed for /music/AC+DC/Powerage/01 - Rock 'n' Roll Damnation.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3873/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/AC+DC/Powerage/06 - What's Next to the Moon.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3874/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/AC+DC/Powerage/08 - Up to My Neck in You.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3875/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/AC+DC/Powerage/04 - Riff Raff.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3876/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/AC+DC/Powerage/09 - Kicked in the Teeth.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3877/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Tool/Fear Inoculum/Disk 1/01 - Fear Inoculum.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3878/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Tool/Fear Inoculum/Disk 1/02 - Pneuma.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3879/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Tool/Fear Inoculum/Disk 2/01 - Invincible.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3880/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Tool/Fear Inoculum/Disk 4/02 - Chocolate Chip Trip.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3881/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Tool/Fear Inoculum/Disk 4/01 - Culling Voices.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3882/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Tool/Fear Inoculum/Disk 5/02 - Mockingbeat.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3883/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Tool/Fear Inoculum/Disk 5/01 - 7empest.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3884/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Tool/Fear Inoculum/Disk 3/01 - Legion Inoculant.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3885/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Tool/Fear Inoculum/Disk 3/02 - Descending.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3886/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 1/04 - Day One.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3887/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 1/13 - Coward.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3888/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 1/06 - Message From Home.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3889/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 1/02 - Cornfield Chase.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3890/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 1/15 - S.T.A.Y.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3891/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 1/01 - Dreaming of the Crash.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3892/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 1/05 - Stay.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3893/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 1/10 - A Place Among the Stars.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3894/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 1/12 - I’m Going Home.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3895/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 1/14 - Detach.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3896/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 1/03 - Dust.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3897/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 1/08 - Mountains.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3898/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 1/07 - The Wormhole.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3899/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 1/11 - Running Out.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3900/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 1/16 - Where We’re Going.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3901/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 1/09 - Afraid of Time.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3902/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 2/07 - What Happens Now.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3903/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 2/04 - No Need to Come Back.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3904/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 2/02 - Flying Drone.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3905/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 2/14 - Do Not Go Gentle Into That Good Night.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3906/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 2/05 - Imperfect Lock.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3907/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 2/08 - Who’s They.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3908/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 2/06 - No Time for Caution.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3909/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 2/09 - Murph.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3910/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 2/01 - First Step.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3911/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 2/13 - Day One Dark.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3912/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 2/03 - Atmospheric Entry.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3913/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 2/10 - Organ Variation.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3914/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 2/11 - Tick‐Tock.flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|ImportDecisionMaker|Reading file 3915/3915
+2026-01-21 17:34:44.9|Warn|AudioTag|Tag reading failed for /music/Hans Zimmer/Interstellar - Original Motion Picture Soundtrack/Disk 2/12 - Day One (original demo).flac.  File is corrupt
+
+[v3.1.0.4875] TagLib.CorruptFileException: FLAC stream not found at starting position.
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at NzbDrone.Core.MediaFiles.AudioTag.Read(String path) in ./NzbDrone.Core/MediaFiles/AudioTag.cs:line 72
+
+
+2026-01-21 17:34:44.9|Info|TrackGroupingService|Grouping 3915 tracks
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 1/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 2/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 3/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 4/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 5/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 6/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 7/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 8/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 9/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 10/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 11/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 12/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 13/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 14/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 15/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 16/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 17/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 18/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 19/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 20/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 21/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 22/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 23/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 24/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 25/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 26/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 27/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 28/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 29/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 30/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 31/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 32/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 33/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 34/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 35/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 36/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 37/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 38/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 39/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 40/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 41/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 42/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 43/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 44/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 45/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 46/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 47/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 48/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 49/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 50/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 51/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 52/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 53/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 54/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 55/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 56/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 57/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 58/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 59/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 60/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 61/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 62/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 63/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 64/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 65/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 66/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 67/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 68/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 69/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 70/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 71/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 72/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 73/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 74/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 75/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 76/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 77/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 78/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 79/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 80/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 81/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 82/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 83/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 84/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 85/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 86/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 87/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 88/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 89/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 90/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 91/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 92/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 93/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 94/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 95/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 96/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 97/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 98/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 99/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 100/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 101/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 102/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 103/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 104/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 105/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 106/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 107/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 108/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 109/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 110/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 111/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 112/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 113/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 114/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 115/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 116/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 117/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 118/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 119/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 120/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 121/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 122/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 123/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 124/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 125/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 126/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 127/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 128/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 129/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 130/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 131/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 132/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 133/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 134/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 135/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 136/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 137/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 138/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 139/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 140/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 141/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 142/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 143/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 144/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 145/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 146/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 147/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 148/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 149/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 150/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 151/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 152/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 153/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 154/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 155/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 156/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 157/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 158/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 159/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 160/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 161/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 162/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 163/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 164/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 165/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 166/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 167/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 168/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 169/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 170/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 171/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 172/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 173/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 174/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 175/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 176/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 177/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 178/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 179/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 180/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 181/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 182/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 183/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 184/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 185/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 186/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 187/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 188/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 189/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 190/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 191/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 192/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 193/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 194/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 195/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 196/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 197/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 198/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 199/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 200/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 201/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 202/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 203/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 204/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 205/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 206/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 207/208
+2026-01-21 17:34:45.1|Info|IdentificationService|Identifying album 208/208
+2026-01-21 17:34:45.1|Info|ImportApprovedTracks|Importing 0 tracks
+2026-01-21 17:34:47.3|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:34:47.3|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Piano Music (1977)]. 6 active indexers
+2026-01-21 17:34:54.8|Info|DownloadDecisionMaker|Processing 3 releases
+2026-01-21 17:34:54.8|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Symphonic Poems, Vol. 3: Battle of the Huns / Festklänge / Ce qu'on entend sur la montagne (2006)]. 6 active indexers
+2026-01-21 17:34:59.0|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:34:59.0|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - André Watts Plays Liszt, Album 1 (1992)]. 7 active indexers
+2026-01-21 17:35:13.3|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:35:13.3|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - André Watts Plays Liszt, Album 2 (1986)]. 7 active indexers
+2026-01-21 17:35:41.7|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:35:41.7|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - André Watts plays Liszt (2016)]. 7 active indexers
+2026-01-21 17:36:08.8|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:36:08.8|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Metanoia: Piano works by Franz Liszt (2016)]. 7 active indexers
+2026-01-21 17:36:12.8|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:36:12.8|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - 12 Études d'exécution transcendante (1995)]. 7 active indexers
+2026-01-21 17:36:19.8|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:36:19.8|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Berman Plays Liszt (1992)]. 7 active indexers
+2026-01-21 17:36:28.0|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:36:28.0|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Harmonies poétiques et religieuses (2004)]. 7 active indexers
+2026-01-21 17:36:40.0|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:36:40.0|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Hungarian Coronation Mass (1980)]. 7 active indexers
+2026-01-21 17:36:46.3|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:36:46.3|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Requiem (1994)]. 7 active indexers
+2026-01-21 17:37:02.3|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:37:02.3|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Liebestraum / Rigoletto-Paraphrase / Faust-Walzer / Paganini-Etüden (1)]. 7 active indexers
+2026-01-21 17:37:30.0|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:37:30.1|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - 19 Ungarische Rhapsodien (1973)]. 7 active indexers
+2026-01-21 17:37:34.9|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:37:34.9|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Piano Works (1996)]. 7 active indexers
+2026-01-21 17:37:40.6|Info|DownloadDecisionMaker|Processing 3 releases
+2026-01-21 17:37:40.6|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Lieder für Tenor (2006)]. 7 active indexers
+2026-01-21 17:38:11.9|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:38:11.9|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Symphonic Poems (2002)]. 7 active indexers
+2026-01-21 17:38:22.0|Info|DownloadDecisionMaker|Processing 3 releases
+2026-01-21 17:38:22.8|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Athanor (2018)]. 7 active indexers
+2026-01-21 17:38:48.3|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:38:48.3|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Transcendental Etudes, S. 139 (complete) (2016)]. 7 active indexers
+2026-01-21 17:38:52.5|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:38:52.5|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Harmonies poétiques et religieuses (2016)]. 7 active indexers
+2026-01-21 17:39:05.2|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:39:05.2|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Mephisto-Walzer (1990)]. 7 active indexers
+2026-01-21 17:39:10.8|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:39:10.8|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Organ Works (1)]. 7 active indexers
+2026-01-21 17:39:20.7|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:39:20.7|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Orgelwerke (1994)]. 7 active indexers
+2026-01-21 17:39:30.9|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:39:30.9|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Organ Works (1995)]. 7 active indexers
+2026-01-21 17:39:37.0|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:39:37.0|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Die großen Orgelwerke (2011)]. 7 active indexers
+2026-01-21 17:40:28.0|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:40:28.0|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Organ Works (1994)]. 7 active indexers
+2026-01-21 17:40:33.5|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:40:33.5|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Symphonische Dichtungen in Orgeltranskriptionen (1999)]. 7 active indexers
+2026-01-21 17:40:41.2|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:40:41.2|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Tasso / Les Préludes / Mazeppa / Orphée (1994)]. 7 active indexers
+2026-01-21 17:40:49.1|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:40:49.1|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Faust-Symphonie (1991)]. 7 active indexers
+2026-01-21 17:41:05.3|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:41:05.3|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Nikolai Lugansky plays Liszt (2011)]. 7 active indexers
+2026-01-21 17:41:11.1|Info|DownloadDecisionMaker|No results found
+2026-01-21 17:41:11.1|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Symphonic Poems (1992)]. 7 active indexers
+2026-01-21 17:41:18.4|Info|DownloadDecisionMaker|Processing 3 releases
+2026-01-21 17:41:19.2|Info|ReleaseSearchService|Searching indexers for [Franz Liszt - Liszt & Wagner (2017)]. 7 active indexers
+2026-01-21 17:41:24.3|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2026-01-21 17:41:24.3|Info|RootFolderWatchingService|Stopping directory watching for path /music/
+2026-01-21 17:41:24.4|Info|ConsoleApp|Exiting main.
+2026-01-21 17:47:29.3|Info|Bootstrap|Starting Lidarr - /app/lidarr/bin/Lidarr - Version 3.1.0.4875
+2026-01-21 17:47:29.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2026-01-21 17:47:29.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2026-01-21 17:47:29.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2026-01-21 17:47:29.6|Info|MigrationController|*** Migrating data source=/config/lidarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2026-01-21 17:47:29.7|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2026-01-21 17:47:29.7|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2026-01-21 17:47:29.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2026-01-21 17:47:29.7|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2026-01-21 17:47:29.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.027767s
+2026-01-21 17:47:29.7|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2026-01-21 17:47:29.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0288332s
+2026-01-21 17:47:29.7|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2026-01-21 17:47:29.7|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2026-01-21 17:47:29.7|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2026-01-21 17:47:29.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2026-01-21 17:47:29.7|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2026-01-21 17:47:29.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0035527s
+2026-01-21 17:47:29.7|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2026-01-21 17:47:29.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0037518s
+2026-01-21 17:47:30.0|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8686
+2026-01-21 17:47:30.5|Info|RootFolderWatchingService|Watching directory /music/
+2026-01-21 17:47:30.6|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2026-01-21 17:47:30.6|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2026-01-21 17:47:30.6|Info|Microsoft.Hosting.Lifetime|Content root path: /app/lidarr/bin
+2026-01-21 17:47:30.6|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2026-01-21 17:48:00.7|Info|RssSyncService|Starting RSS Sync
+2026-01-21 17:48:01.5|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 01/21/2026 16:58:28 and 01/21/2026 16:58:28 UTC. Search may be required.
+2026-01-21 17:48:01.6|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 01/21/2026 17:30:35 and 01/21/2026 17:48:01 UTC. Search may be required.
+2026-01-21 17:48:11.2|Warn|Torznab|Indexer Tokyo Toshokan (Prowlarr) rss sync didn't cover the period between 01/21/2026 14:14:00 and 01/21/2026 14:14:00 UTC. Search may be required.
+2026-01-21 17:48:11.2|Info|DownloadDecisionMaker|Processing 381 releases
+2026-01-21 17:48:13.4|Info|RssSyncService|RSS Sync Completed. Reports found: 381, Reports grabbed: 0, Reports pending: 39
+2026-01-21 17:48:57.9|Info|ReleaseSearchService|Searching indexers for [Hans Zimmer - Black Hawk Down: Original Motion Picture Soundtrack (2001)]. 7 active indexers
+2026-01-21 17:49:05.0|Info|DownloadDecisionMaker|No results found
+2026-01-21 18:03:31.1|Info|RssSyncService|Starting RSS Sync
+2026-01-21 18:03:31.3|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 01/21/2026 17:48:01 and 01/21/2026 18:03:31 UTC. Search may be required.
+2026-01-21 18:03:31.7|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 01/21/2026 16:58:28 and 01/21/2026 16:58:28 UTC. Search may be required.
+2026-01-21 18:03:39.7|Warn|Torznab|Indexer Tokyo Toshokan (Prowlarr) rss sync didn't cover the period between 01/21/2026 14:14:00 and 01/21/2026 14:14:00 UTC. Search may be required.
+2026-01-21 18:03:39.8|Info|DownloadDecisionMaker|Processing 380 releases
+2026-01-21 18:03:41.0|Info|RssSyncService|RSS Sync Completed. Reports found: 380, Reports grabbed: 0, Reports pending: 39

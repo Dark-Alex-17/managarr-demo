@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<artist>
+  <biography />
+  <outline />
+  <lockdata>false</lockdata>
+  <dateadded>2025-11-08 23:44:54</dateadded>
+  <title>AC+DC</title>
+  <runtime>54</runtime>
+  <country />
+  <genre>Hard Rock</genre>
+  <genre>Rock</genre>
+  <studio />
+  <musicbrainzartistid>66c662b6-6e2f-4930-8610-912e24c63ed1</musicbrainzartistid>
+  <art>
+    <poster>/nfs/music/AC+DC/folder.jpg</poster>
+    <fanart>/nfs/music/AC+DC/backdrop.jpg</fanart>
+    <fanart>/nfs/music/AC+DC/fanart.jpg</fanart>
+  </art>
+  <album>
+    <title>Back in Black</title>
+  </album>
+  <album>
+    <title>Ballbreaker</title>
+  </album>
+  <album>
+    <title>Black Ice</title>
+  </album>
+  <album>
+    <title>Blow Up Your Video</title>
+  </album>
+  <album>
+    <title>Dirty Deeds Done Dirt Cheap</title>
+  </album>
+  <album>
+    <title>Flick of the Switch</title>
+  </album>
+  <album>
+    <title>Fly on the Wall</title>
+  </album>
+  <album>
+    <title>For Those About to Rock (We Salute You)</title>
+  </album>
+  <album>
+    <title>High Voltage</title>
+  </album>
+  <album>
+    <title>Highway to Hell</title>
+  </album>
+  <album>
+    <title>If You Want Blood You’ve Got It</title>
+  </album>
+  <album>
+    <title>Let There Be Rock</title>
+  </album>
+  <album>
+    <title>POWER UP</title>
+  </album>
+  <album>
+    <title>Powerage</title>
+  </album>
+  <album>
+    <title>The Razors Edge</title>
+  </album>
+  <album>
+    <title>Rock or Bust</title>
+  </album>
+  <album>
+    <title>Stiff Upper Lip</title>
+  </album>
+  <album>
+    <title>T.N.T</title>
+  </album>
+  <name>AC/DC</name>
+</artist>

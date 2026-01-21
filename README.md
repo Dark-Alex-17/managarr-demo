@@ -3,6 +3,7 @@ A demo repository with a basic HTPC configuration for demonstration and testing 
 
 ## One-Command Run
 To clone the repo and run the demo all in one go, the following command will download the [managarr-demo](./managarr-demo.sh) script and run it:
+
 ```shell
 curl https://raw.githubusercontent.com/Dark-Alex-17/managarr-demo/main/managarr-demo.sh > /tmp/managarr-demo.sh && bash /tmp/managarr-demo.sh
 ```
@@ -20,10 +21,43 @@ This demo has no download functionality. It is an eventual goal to have a mock A
 to emulate this functionality for a full demo experience.
 
 ## Building
-To build and push both the [prowlarr](./prowlarr.Dockerfile) and [radarr](./radarr.Dockerfile) images, it is easiest to just use the [build script](./build.sh):
+This repo uses [just](https://github.com/casey/just) to manage build tasks.
+
+To build any individual mock Servarr docker image or even all of them, you can use the `build` recipes in the [justfile](./justfile):
 
 ```shell
-./build.sh
+$ just --list
+Available recipes:
+    ...
+    
+    [build]
+    build-all      # Build all mock container images
+    build-lidarr   # Build the Lidarr mock image
+    build-prowlarr # Build the Prowlarr mock image
+    build-radarr   # Build the Radarr mock image
+    build-sonarr   # Build the Sonarr mock image
+
+    ...
+```
+
+## Pushing
+This repo uses [just](https://github.com/casey/just) to manage push tasks.
+
+To push any individual mock Servarr docker image or even all of them, you can use the `push` recipes in the [justfile](./justfile):
+
+```shell
+$ just --list
+Available recipes:
+    ...
+
+    [push]
+    push-all       # Push all mock container images
+    push-lidarr    # Push the Lidarr mock image
+    push-prowlarr  # Push the Prowlarr mock image
+    push-radarr    # Push the Radarr mock image
+    push-sonarr    # Push the Sonarr mock image
+
+    ...
 ```
 
 ## Running directly with docker compose

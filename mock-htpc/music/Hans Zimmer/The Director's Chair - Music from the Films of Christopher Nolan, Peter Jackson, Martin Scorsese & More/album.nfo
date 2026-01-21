@@ -1,0 +1,621 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<album>
+  <review />
+  <outline />
+  <lockdata>false</lockdata>
+  <dateadded>2024-09-24 17:10:26</dateadded>
+  <title>The Director's Chair: Music from the Films of Christopher Nolan, Peter Jackson, Martin Scorsese &amp; More</title>
+  <year>2023</year>
+  <premiered>2023-01-01</premiered>
+  <releasedate>2023-01-01</releasedate>
+  <runtime>956</runtime>
+  <country />
+  <genre>Classical</genre>
+  <studio />
+  <musicbrainzalbumid>d3f18464-e8b6-47ee-b69d-3f1b7dc58c05</musicbrainzalbumid>
+  <musicbrainzreleasegroupid>da768b95-2022-48c3-8472-06c8a95a8743</musicbrainzreleasegroupid>
+  <art>
+    <poster>/config/metadata/library/fa/faf21bfbb043b6e0a35df1c2620de982/folder.jpg</poster>
+  </art>
+  <artist>Dario Marianelli</artist>
+  <artist>Evan Jolly</artist>
+  <artist>Evan Jolly, Howard Shore</artist>
+  <artist>James Fitzpatrick, The City of Prague Philharmonic Orchestra</artist>
+  <artist>London Music Works</artist>
+  <artist>London Music Works, Howard Shore</artist>
+  <artist>Mark Ayres</artist>
+  <artist>Michael Kamen</artist>
+  <artist>The City of Prague Philharmonic Orchestra</artist>
+  <artist>The City of Prague Philharmonic Orchestra, Ennio Morricone</artist>
+  <artist>The City of Prague Philharmonic Orchestra, Howard Shore</artist>
+  <artist>The City of Prague Philharmonic Orchestra, Nic Raine</artist>
+  <artist>The City of Prague Philharmonic Orchestra, Nic Raine, Crouch End Festival Chorus, Howard Shore</artist>
+  <artist>The City of Prague Philharmonic Orchestra, Nic Raine, Howard Shore</artist>
+  <artist>The City of Prague Philharmonic Orchestra, Nic Raine, Jill Washington, Ennio Morricone</artist>
+  <artist>The City of Prague Philharmonic Orchestra, Paul Bateman, Ennio Morricone</artist>
+  <albumartist>Hans Zimmer</albumartist>
+  <track>
+    <title>01 - Cornfield Chase (From Interstellar)</title>
+    <duration>02:10</duration>
+  </track>
+  <track>
+    <title>02 - The Ecstasy of Gold (From The Good, the Bad and the Ugly)</title>
+    <duration>03:03</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>3</position>
+    <title>Concerning Hobbits (From "The Lord of the Rings: The Fellowship of the Ring ")</title>
+    <duration>02:44</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>4</position>
+    <title>The Thief (From "Hugo")</title>
+    <duration>04:20</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>5</position>
+    <title>Final Showdown (From "X-Men" Soundtrack)</title>
+    <duration>02:30</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>6</position>
+    <title>Epilogue - The Falls (From "The Mission")</title>
+    <duration>01:39</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>7</position>
+    <title>Compromise / Bella's Theme (From "The Twilight Saga: Eclipse")</title>
+    <duration>02:26</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>8</position>
+    <title>This Land (From "The Lion King")</title>
+    <duration>02:57</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>9</position>
+    <title>Bella's Truck / Florida (From "The Twilight Saga: Eclipse")</title>
+    <duration>01:37</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>10</position>
+    <title>Avengers (From "The Avengers")</title>
+    <duration>02:08</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>11</position>
+    <title>Dickon (From "The Secret Garden" Soundtrack)</title>
+    <duration>01:11</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>12</position>
+    <title>Main Theme (From "Once Upon a Time in America")</title>
+    <duration>02:10</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>13</position>
+    <title>Zoosters Breakout (From "Madagascar")</title>
+    <duration>01:40</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>14</position>
+    <title>Dreaming of Bag End (From "The Hobbit: An Unexpected Journey")</title>
+    <duration>01:49</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>15</position>
+    <title>What Shall We Die For? (From "Pirates of The Caribbean: At World's End")</title>
+    <duration>02:05</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>16</position>
+    <title>Jacob Black (From "The Twilight Saga: Eclipse")</title>
+    <duration>01:55</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>17</position>
+    <title>Why Do We Fall? (From "The Dark Knight Rises")</title>
+    <duration>02:06</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>18</position>
+    <title>First Kiss (From "The Twilight Saga: Eclipse")</title>
+    <duration>01:52</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>19</position>
+    <title>Kingsfoil (From "The Hobbit: The Desolation of Smaug")</title>
+    <duration>02:22</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>20</position>
+    <title>Gabriel's Oboe (From "The Mission")</title>
+    <duration>02:21</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>21</position>
+    <title>The Untouchables (From "The Untouchables")</title>
+    <duration>02:24</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>22</position>
+    <title>Discombobulate (From "Sherlock Holmes")</title>
+    <duration>02:23</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>23</position>
+    <title>Up Is Down (From "Pirates of the Caribbean: At World's End")</title>
+    <duration>02:39</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>24</position>
+    <title>Cops or Criminals (From "The Departed")</title>
+    <duration>01:59</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>25</position>
+    <title>Regan's Theme (From "Exorcist II")</title>
+    <duration>02:39</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>26</position>
+    <title>The Good, The Bad and The Ugly (From "The Good, The Bad and The Ugly")</title>
+    <duration>02:53</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>27</position>
+    <title>Feast of Starlight (From "The Hobbit: The Desolation of Smaug")</title>
+    <duration>02:45</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>28</position>
+    <title>This Is Going to Hurt (From "The Ring")</title>
+    <duration>02:51</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>29</position>
+    <title>Suite (From "Total Recall")</title>
+    <duration>02:34</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>30</position>
+    <title>Brooklyn Heights (From "Gangs of New York")</title>
+    <duration>02:32</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>31</position>
+    <title>Hope and Memory / Minas Tirith (From "The Lord of the Rings: The Return of the King")</title>
+    <duration>02:38</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>32</position>
+    <title>Fear Will Find You (From "The Dark Knight Rises")</title>
+    <duration>03:10</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>33</position>
+    <title>Wedding Plans (From "The Twilight Saga: Eclipse")</title>
+    <duration>02:56</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>34</position>
+    <title>Mutiny (From "Pirates of the Caribbean: On Stranger Tides")</title>
+    <duration>02:52</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>35</position>
+    <title>Honor (From "The Pacific")</title>
+    <duration>02:59</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>36</position>
+    <title>The Mission (From "The Mission")</title>
+    <duration>03:01</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>37</position>
+    <title>New York City Surprise (From "Madagascar 3: Europe's Most Wanted")</title>
+    <duration>03:06</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>38</position>
+    <title>As Easy As Breathing (From "The Twilight Saga: Eclipse")</title>
+    <duration>03:04</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>39</position>
+    <title>Vespertilio (From "Batman Begins")</title>
+    <duration>02:55</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>40</position>
+    <title>Main Theme (From "Rain Man")</title>
+    <duration>03:10</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>41</position>
+    <title>Main Theme (From "Thelma and Louise")</title>
+    <duration>02:56</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>42</position>
+    <title>Mind If I Cut In? (From "The Dark Knight Rises")</title>
+    <duration>03:25</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>43</position>
+    <title>Solomon (From "12 Years a Slave")</title>
+    <duration>03:20</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>44</position>
+    <title>The Fields of Pelennor (From "The Lord of the Rings: The Return of the King")</title>
+    <duration>03:12</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>45</position>
+    <title>Alien</title>
+    <duration>03:50</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>46</position>
+    <title>Over Hill (From "The Hobbit: An Unexpected Journey")</title>
+    <duration>03:20</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>47</position>
+    <title>Love Theme (From "Cinema Paradiso")</title>
+    <duration>03:34</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>48</position>
+    <title>On Earth As It Is In Heaven (From "The Mission")</title>
+    <duration>03:33</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>49</position>
+    <title>Main Theme (From "A Fistful of Dollars")</title>
+    <duration>03:31</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>50</position>
+    <title>The Quest for Erebor (From "The Hobbit: The Desolation of Smaug")</title>
+    <duration>03:16</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>51</position>
+    <title>Main Theme (From "For A Few Dollars More")</title>
+    <duration>03:24</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>52</position>
+    <title>Protector of the Common Folk (From "The Hobbit: The Desolation of Smaug")</title>
+    <duration>03:29</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>53</position>
+    <title>Main Theme (From "Back to the Future")</title>
+    <duration>03:24</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>54</position>
+    <title>Davy Jones (From "Pirates Of The Caribbean: Dead Man's Chest")</title>
+    <duration>03:24</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>55</position>
+    <title>Fawkes The Phoenix (From "Harry Potter and the Chamber of Secrets")</title>
+    <duration>03:37</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>56</position>
+    <title>The Red Tent (From "The Red Tent")</title>
+    <duration>03:37</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>57</position>
+    <title>Evenstar (From "The Lord of the Rings: The Two Towers")</title>
+    <duration>03:38</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>58</position>
+    <title>The Riders of Rohan (From "The Lord of the Rings: The Two Towers")</title>
+    <duration>03:52</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>59</position>
+    <title>Twilight and Shadow (From "The Lord of the Rings: The Return of the King")</title>
+    <duration>03:53</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>60</position>
+    <title>A Thunder Battle (From "The Hobbit: An Unexpected Journey")</title>
+    <duration>03:38</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>61</position>
+    <title>Antrozous (From "Batman Begins")</title>
+    <duration>03:52</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>62</position>
+    <title>Heart of the Volunteer (From "Pearl Harbor")</title>
+    <duration>03:49</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>63</position>
+    <title>The White Tree (From "The Lord of the Rings: The Return of the King")</title>
+    <duration>03:47</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>64</position>
+    <title>Harmonica Man (From "Once Upon a Time in the West")</title>
+    <duration>03:54</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>65</position>
+    <title>Introduce a Little Anarchy (From "The Dark Knight")</title>
+    <duration>03:40</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>66</position>
+    <title>There and Back Again (From "The Hobbit: The Battle of the Five Armies")</title>
+    <duration>04:18</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>67</position>
+    <title>Chevaliers de Sangreal (From "The Da Vinci Code")</title>
+    <duration>04:09</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>68</position>
+    <title>Jasper (From "The Twilight Saga: Eclipse")</title>
+    <duration>03:55</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>69</position>
+    <title>Angelica (From "Pirates of the Caribbean: On Stranger Tides")</title>
+    <duration>04:16</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>70</position>
+    <title>Sons of Durin (From "The Hobbit: The Battle of the Five Armies")</title>
+    <duration>04:25</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>71</position>
+    <title>No Time for Caution (From "Interstellar")</title>
+    <duration>03:56</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>72</position>
+    <title>Gollum's Song (From "The Lord of the Rings: The Two Towers")</title>
+    <duration>04:05</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>73</position>
+    <title>Into the West (From "The Lord of the Rings: The Return of the King")</title>
+    <duration>04:40</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>74</position>
+    <title>The Last Goodbye (From "The Hobbit: The Battle of the Five Armies")</title>
+    <duration>04:29</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>75</position>
+    <title>Now We Are Free (From "Gladiator")</title>
+    <duration>14:28</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>76</position>
+    <title>Aggressive Expansion (From "The Dark Knight")</title>
+    <duration>04:32</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>77</position>
+    <title>Deborah's Theme (From "Once Upon a Time in America")</title>
+    <duration>04:45</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>78</position>
+    <title>Drink Up, Me Hearties (From "Pirates of The Caribbean: At World's End")</title>
+    <duration>04:37</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>79</position>
+    <title>Time (From "Inception")</title>
+    <duration>04:35</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>80</position>
+    <title>Barbastella (From "Batman Begins")</title>
+    <duration>04:42</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>81</position>
+    <title>Into the West (From "The Lord of the Rings: The Return of the King")</title>
+    <duration>04:39</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>82</position>
+    <title>Hedwig's Theme (From "Harry Potter and the Philosopher's Stone")</title>
+    <duration>04:54</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>83</position>
+    <title>Molossus (From "Batman Begins")</title>
+    <duration>04:57</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>84</position>
+    <title>Like a Dog Chasing Cars (From "The Dark Knight")</title>
+    <duration>04:55</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>85</position>
+    <title>Hero (From "Kung Fu Panda")</title>
+    <duration>04:47</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>86</position>
+    <title>Jacob Black / As Easy as Breathing (From "The Twilight Saga: Eclipse")</title>
+    <duration>04:51</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>87</position>
+    <title>Injection (From "Mission: Impossible Ii")</title>
+    <duration>04:53</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>88</position>
+    <title>The Prophecy (From "The Lord of the Rings: The Fellowship of the Ring ")</title>
+    <duration>05:01</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>89</position>
+    <title>Eclipse - First Kiss / Wedding Plans (From "The Twilight Saga: Eclipse")</title>
+    <duration>04:46</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>90</position>
+    <title>Courage and Wisdom (From "The Hobbit: The Battle of the Five Armies")</title>
+    <duration>05:09</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>91</position>
+    <title>Mombasa (From "Inception")</title>
+    <duration>04:54</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>92</position>
+    <title>May It Be (From "The Lord of the Rings: The Fellowship of the Ring")</title>
+    <duration>05:19</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>93</position>
+    <title>End Credits (From "The Silence of the Lambs")</title>
+    <duration>05:16</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>94</position>
+    <title>Old Friends (From "The Hobbit: An Unexpected Journey")</title>
+    <duration>05:06</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>95</position>
+    <title>Harry's Wondrous World (From "Harry Potter and the Philosopher's Stone")</title>
+    <duration>05:05</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>96</position>
+    <title>Dream Within a Dream (From "Inception")</title>
+    <duration>05:05</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>97</position>
+    <title>Over Hill / Dreaming of Bag End (From "The Hobbit: An Unexpected Journey")</title>
+    <duration>05:04</duration>
+  </track>
+  <track>
+    <disc>1</disc>
+    <position>98</position>
+    <title>Red Sea (From "The Prince of Egypt")</title>
+    <duration>05:14</duration>
+  </track>
+</album>
