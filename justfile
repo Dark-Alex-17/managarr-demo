@@ -47,7 +47,7 @@ default:
 # Push the Prowlarr mock image
 [group: 'push']
 @push-prowlarr: build-prowlarr
-    docker push-t {{REPO}}/prowlarr-mock:{{VERSION}}
+    docker push {{REPO}}/prowlarr-mock:{{VERSION}}
 
 # Push all mock container images
 [group: 'push']
