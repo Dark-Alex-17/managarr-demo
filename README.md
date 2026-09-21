@@ -35,6 +35,7 @@ Available recipes:
     build-lidarr   # Build the Lidarr mock image
     build-prowlarr # Build the Prowlarr mock image
     build-radarr   # Build the Radarr mock image
+    build-readarr  # Build the Readarr mock image
     build-sonarr   # Build the Sonarr mock image
 
     ...
@@ -55,6 +56,7 @@ Available recipes:
     push-lidarr    # Push the Lidarr mock image
     push-prowlarr  # Push the Prowlarr mock image
     push-radarr    # Push the Radarr mock image
+    push-readarr   # Push the Readarr mock image
     push-sonarr    # Push the Sonarr mock image
 
     ...
