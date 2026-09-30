@@ -14,3 +14,8 @@ lidarr:
     host: lidarr-mock
     port: 8686
     api_token: 611b3863baa2442f975afbc8f1377037
+readarr:
+  - name: Books
+    host: readarr-mock
+    port: 8787
+    api_token: fe0bd24f3efe41bfa43d7b425245f55c

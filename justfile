@@ -20,6 +20,11 @@ default:
 @build-lidarr:
     docker build -f lidarr.Dockerfile -t {{REPO}}/lidarr-mock:{{VERSION}} .
 
+# Build the Readarr mock image
+[group: 'build']
+@build-readarr:
+    docker build -f readarr.Dockerfile -t {{REPO}}/readarr-mock:{{VERSION}} .
+
 # Build the Prowlarr mock image
 [group: 'build']
 @build-prowlarr:
@@ -27,7 +32,7 @@ default:
 
 # Build all mock container images
 [group: 'build']
-@build-all: build-radarr build-sonarr build-lidarr build-prowlarr
+@build-all: build-radarr build-sonarr build-lidarr build-readarr build-prowlarr
 
 # Push the Radarr mock image
 [group: 'push']
@@ -44,6 +49,11 @@ default:
 @push-lidarr: build-lidarr
     docker push {{REPO}}/lidarr-mock:{{VERSION}}
 
+# Push the Readarr mock image
+[group: 'push']
+@push-readarr: build-readarr
+    docker push {{REPO}}/readarr-mock:{{VERSION}}
+
 # Push the Prowlarr mock image
 [group: 'push']
 @push-prowlarr: build-prowlarr
@@ -51,7 +61,7 @@ default:
 
 # Push all mock container images
 [group: 'push']
-@push-all: push-radarr push-sonarr push-lidarr push-prowlarr
+@push-all: push-radarr push-sonarr push-lidarr push-readarr push-prowlarr
 
 # Run the demo
 [group: 'run']

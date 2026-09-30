@@ -15,6 +15,11 @@ services:
     container_name: lidarr-mock
     restart: unless-stopped
 
+  readarr-mock:
+    image: darkalex17/readarr-mock:latest
+    container_name: readarr-mock
+    restart: unless-stopped
+
   prowlarr-mock:
     image: darkalex17/prowlarr-mock:latest
     container_name: prowlarr-mock
@@ -32,6 +37,8 @@ services:
       sonarr-mock:
         condition: service_started
       lidarr-mock:
+        condition: service_started
+      readarr-mock:
         condition: service_started
       prowlarr-mock:
         condition: service_started
